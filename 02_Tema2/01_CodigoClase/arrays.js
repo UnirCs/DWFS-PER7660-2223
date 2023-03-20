@@ -49,3 +49,8 @@ console.log(arrayConElementos);
 
 arrayNumerico.sort();
 console.log(arrayNumerico);
+
+//Recorrer arrays usando bucles
+for(let indice = 0; indice < arrayConElementos.length; indice++) {
+    console.log("elemento " + indice + " es " + arrayConElementos[indice]);
+}
