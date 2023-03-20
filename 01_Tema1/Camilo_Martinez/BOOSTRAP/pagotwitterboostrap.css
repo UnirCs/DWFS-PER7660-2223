@@ -1,0 +1,158 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.formato{
+    background-color: rgba(242, 243, 247, 0.918);
+}
+
+label,.produto{
+    font-weight: bolder;
+    color:rgb(66, 63, 63);
+    font-style: cursive;
+}
+.username1{
+    border-style: solid;
+    border-width: 1%;
+    border-color: gray;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    background-color: gray;
+    width: 5%;
+    font-size: 1rem;
+    scale:.9;
+    margin-left: 1%;
+}
+
+.username,.nombre,.apellido{
+    border-style: solid;
+    border-width: 2%;
+    border-color: gray;
+    border-radius: 5%;
+}
+
+.form1{
+    margin-top: .5%;
+    margin-left: -3%;
+}
+
+.mail{
+    width:85%; 
+}
+
+.division{
+    margin:1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: .1rem;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.check,
+.pagos
+{
+    margin-left: 2rem;
+}
+
+.boton{
+    margin-left: 1rem;
+}
+.cardname,.products{
+    font-size:.6rem;
+    color:grey
+}
+
+/*sidebar*/
+
+.sidebar{
+    background-color:azure;
+    border-radius: 15px;
+}
+
+.numeritem{
+    color:rgba(0, 0, 0, 0.733);  
+    font-weight: bolder;
+    background-color:rgb(139, 136, 136);
+    border-radius: 100%;  
+}
+
+.productosall{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding:1%;
+    border-style:solid;
+    border-width: 1px;
+    border-color: gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.productostable{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding:1%;
+    border-style:solid;
+    border-width: 1px;
+    border-color: gray;
+    margin-top: -.5%;;
+}
+
+.products{
+    margin: 2px;
+    padding-right:1rem;
+    width: 10px;
+    max-width: 10px;
+}
+
+.costpripro{
+    margin-top: 2% ;
+    color: gray;
+}
+
+.promotioncode{
+    background-color: rgba(29, 233, 46, 0.623);
+    padding-top: 2%;
+}
+
+.prom{
+    font-size: .8rem;
+    font-style: italic;
+    padding-left: 5%;
+}
+
+.total{
+    padding: 5%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.boxcode{
+    margin: 1rem;
+    border-style:solid;
+    border-color:gray;
+    border-width: .1rem;
+    justify-content:center;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.codebutton{
+    margin-left: -15%;
+    background-color: gray;
+    border-radius: 10px;   
+
+}
+
+.buttoncode{
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: -25%;
+}

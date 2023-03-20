@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./pagotwitterboostrap.css">
+    </head>
+    <body>
+
+        <div class="row container-fluid pt-5 formato">
+            <div class="col-1"></div>
+            <div class="content col-md-8 col-sm-12">
+                <h3> <strong> Dirección de Facturación </strong></h3>
+                <form class="row">
+                    <section class="datos">
+                        <div class="row form-group pt-4 col-12">
+
+                            <div class="col-6">
+                                <label for="name"> <strong>Nombre</strong>
+                                </label>
+                                <input type="name" class="form-control w-75" placeholder=" Nombre"
+                                    id="name">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="name"> <strong> Apellido </strong>
+                                </label>
+                                <input type="name" class="form-control w-75" placeholder=" Apellido"
+                                    id="name">
+                            </div>
+                        </div>
+
+                        <div class="user row pt-4 col-12">
+
+                            <label for="username">
+                                <strong>Username</strong>
+                            </label>
+                            <span for="inputUsername" class="col-sm-1
+                                col-form-label username1"> <strong> @ </strong>
+                            </span>
+                            <div class="col-sm-10">
+                                <input type="usermane" class="form-control
+                                    form1" placeholder=" username##" id="inputUsername">
+                            </div>
+                        </div>
+
+                        <div class="form-group pt-4">
+                            <label for="email"><strong>Email </strong>(opcional)</label>
+                            <input type="email" class="form-control mail" placeholder=" ejemplo@gmail.com"
+                                id="email">
+                        </div>
+
+                        <div class="form-group pt-4">
+                            <label for="direccion"><strong>Dirección</strong></label>
+                            <input type="direccion" class="form-control mail"
+                                id="direccion" placeholder=" Cra xx # xx - xx">
+                        </div>
+
+                        <div class="form-group pt-4">
+                            <label for="direccion1"><strong>Dirección </strong>(opcional)</label>
+                            <input type="direccion1" class="form-control mail"
+                                id="direccion1" placeholder=" Cra xx # xx - xx">
+                        </div>
+                    </section>
+
+                    <section class="ubicacion">
+                        <div class="row form-group pt-4 col-12">
+
+                            <div class="col-3 mr-5">
+                                <label for="departamento"> <strong>Departamento</strong>
+                                </label>
+                                <select class="form-control">
+                                    <option>Seleccione</option>
+                                    <option>Amazonas</option>
+                                    <option>Antioquia</option>
+                                    <option>Arauca</option>
+                                    <option>Atlántico</option>
+                                    <option>Bogotá</option>
+                                    <option>Bolívar</option>
+                                    <option>Boyacá</option>
+                                    <option>Caldas</option>
+                                    <option>Caquetá</option>
+                                    <option>Casanare</option>
+                                    <option>Cauca</option>
+                                </select>
+                            </div>
+
+                            <div class="col-3 ml-5">
+                                <label for="coudad"> <strong> Ciudad </strong>
+                                </label>
+                                <select class="form-control">
+                                    <option>Seleccione</option>
+                                    <option>Leticia</option>
+                                    <option>Medellín</option>
+                                    <option>Arauca</option>
+                                    <option>Barranquilla</option>
+                                    <option>Bogotá</option>
+                                    <option>Cartagena de Indias </option>
+                                    <option>Tunja</option>
+                                    <option>Manizales</option>
+                                    <option>Florencia</option>
+                                    <option>Yopal</option>
+                                    <option>Popayán</option>
+                                </select>
+                            </div>
+
+                            <div class="col-3 ml-5">
+                                <label for="cod"> <strong> Codigo Postal
+                                    </strong> </label>
+                                <input type="number" class="form-control" placeholder=" xxxxxx"
+                                    id="cod">
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="division"></div>
+
+                    <section class="check">
+                        <label>
+                            <input type="checkbox" name="optionsCheckboxes"
+                                value="option1">
+                            <span>La dirrecion de Facturacion es la misma del
+                                envío</span>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="optionsCheckboxes"
+                                value="option2">
+                            <span>Guardar la dirección para futuras compras</span>
+                        </label>
+                    </section>
+
+                    <div class="division"></div>
+
+                    <section class="pagos">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"
+                                name="flexRadioDefault" id="flexRadio1">
+                            <label class="form-check-label"
+                                for="flexRadioDefault1">
+                                Tarjeta Credito
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"
+                                name="flexRadioDefault" id="flexRadio2">
+                            <label class="form-check-label"
+                                for="flexRadioDefault1">
+                                Tarjeta Debido
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"
+                                name="flexRadioDefault" id="flexRadio3">
+                            <label class="form-check-label"
+                                for="flexRadioDefault1">
+                                Paypal
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"
+                                name="flexRadioDefault" id="flexRadio4">
+                            <label class="form-check-label"
+                                for="flexRadioDefault1">
+                                Nequi o Daviplata
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="tarjetas">
+
+                        <div class="row form-group pt-4 col-12">
+                            <div class="col-6">
+                                <label for="nombretar"> <strong>Nombre en la
+                                        terjeta</strong> </label>
+                                <input type="text" class="form-control w-75" placeholder=" Nombre"
+                                    id="nombretar">
+                                <p class="cardname">Nombre completo de la
+                                    tarjeta</p>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="tarjeta"> <strong> Numero de tarjeta
+                                    </strong> </label>
+                                <input type="number" class="form-control w-75" placeholder=" xxxx-xxxx-xxxx-xxxx"
+                                    id="tarjeta">
+                            </div>
+                        </div>
+
+                        <div class="row form-group pt-1 col-12">
+
+                            <div class="col-3 mr-5">
+                                <label for="expirate"> <strong>Fecha de
+                                        Expiracion</strong> </label>
+                                <input type="date" class="form-control w-75"
+                                    id="expirate">
+                            </div>
+
+                            <div class="col-3 ml-5">
+                                <label for="cvv"> <strong> CVV </strong>
+                                </label>
+                                <input type="number" class="form-control w-75" placeholder=" XXX"
+                                    id="cvv">
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <div class="division"></div>
+
+                    <section class="boton pb-5">
+                        <button type="submit" class="btn btn-primary w-75
+                            boton">Pagar</button>
+                    </section>
+
+                </form>
+            </div>
+            
+            <div class="sidebar col-md-3 col-sm-12">
+                <section class="row productostitulo ">
+                    <div class="title w-50 d-flex justify-content-evenly p-2 fw-semibold">
+                       <h5>Tus Productos</h5> 
+                    </div>
+                    <div class="item w-50 d-flex justify-content-end">
+                        <div class="numeritem p-2 pr-5">
+                            3
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section class="  mt-3">
+                    <div class="row productosall">
+                        <div class="primerpro w-50 justify-content-center">
+                            <div class="produto">Producto 1</div>
+                            <p class="products">Descripcion</p>
+                        </div>
+                        <div class="costpripro d-flex w-50 justify-content-center">
+                            $ 35
+                        </div>
+                    </div>
+                    <div class="row productostable">
+                        <div class="primerpro w-50 justify-content-center">
+                            <div class="produto">Producto 2</div>
+                            <p class="products">Descripcion</p>
+                        </div>
+                        <div class="costpripro d-flex w-50 justify-content-center">
+                            $ 35
+                        </div>
+                    </div>
+                    <div class="row productostable">
+                        <div class="primerpro w-50 justify-content-center">
+                            <div class="produto">Producto 3</div>
+                            <p class="products">Descripcion</p>
+                        </div>
+                        <div class="costpripro d-flex w-50 justify-content-center">
+                            $ 35
+                        </div>
+                    </div>
+                    <div class="row productostable promotioncode">
+                        <div class="primerpro w-50 justify-content-center">
+                            <div class="produto ">PROM. CODE</div>
+                            <p class="promcode prom">PRUEBAUNIR</p>
+                        </div>
+                        <div class="costpripro d-flex w-50 justify-content-center">
+                             -$ 15
+                        </div>
+                    </div>
+                    <div class="row productostable total">
+                        <div class="primerpro w-50 justify-content-center">
+                            <div class="produto">Total</div>
+                        </div>
+                        <div class="totalp d-flex w-50 justify-content-center">
+                            $ 90
+                        </div>
+                    </div>
+                </section>
+
+                <section class="codedes">
+                    <form class="row boxcode">
+                        
+                        <div class="w-75 codeinfo">
+                          <input type="text" class="form-control" id="inputPassword2" placeholder=" Ej: 1234" >
+                        </div>
+                        <div class="w-25 codebutton ">
+                          <button type="submit" for="inputPassword2" class="btn buttoncode">Code</button>
+                        </div>
+                      </form>
+                </section>
+            </div>
+            
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
