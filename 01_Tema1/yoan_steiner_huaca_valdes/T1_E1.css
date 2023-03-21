@@ -1,0 +1,21 @@
+#pagina{
+   border: 2px;
+   background-color: #3A637F; 
+   width: 60%;
+   height: 100%;
+   margin-left: 20%;
+   margin-right: 20%;
+   
+   /*font-family: ;*/
+}
+
+#encabezado{
+   height: 20%;
+}
+
+/*Colores de las letras */
+
+h1,h3 {
+   color: #EAF37F;
+}
+
