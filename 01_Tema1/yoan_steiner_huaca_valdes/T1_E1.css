@@ -11,11 +11,16 @@
 
 #encabezado{
    height: 20%;
+   position: relative;
 }
 
 /*Colores de las letras */
 
 h1,h3 {
    color: #EAF37F;
+}
+
+#encabezado > h1,h3 {
+   text-align: center;
 }
 
