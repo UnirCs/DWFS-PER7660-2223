@@ -1,26 +1,33 @@
-#pagina{
-   border: 2px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+*{
+   font-family: 'Montserrat', sans-serif;
+}
+header,main,footer{
    background-color: #3A637F; 
-   width: 60%;
-   height: 100%;
    margin-left: 20%;
    margin-right: 20%;
-   
    /*font-family: ;*/
 }
 
 #encabezado{
-   height: 20%;
-   position: relative;
+   border: 30px;
+   border-color: red;
 }
 
 /*Colores de las letras */
 
-h1,h3 {
+h1,h4 {
    color: #EAF37F;
+   text-align: center;
 }
 
-#encabezado > h1,h3 {
-   text-align: center;
+#encabezado > h1 {
+   padding-top: 10%;
+   margin-bottom: 10px;
+}
+
+h4{
+   margin-top: 0%;
+   padding-bottom: 20px;
 }
 
