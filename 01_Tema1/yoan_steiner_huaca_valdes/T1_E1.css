@@ -67,6 +67,7 @@ main{
 h3{
    color: #EAF37F;
    font-weight: 600;
+   margin-bottom: 0px;
 }
 
 article>header,p{
@@ -90,7 +91,7 @@ li{
    margin-bottom: 10px;
 }
 
-table{
+#table1{
    margin-left: 10%;
 }
 
@@ -101,10 +102,35 @@ td{
 
 svg{
    height: 25PX;
+   width: 30px;
+}
+
+#table2{
+   margin-left: 10%;
+   
+}
+
+#botones{
+   display: grid;
+   grid-template-columns: repeat(4,30px);
+   align-items: center;
 }
 
 
+.boton{
+   background:#eaf37f;
+   border-radius: 50%;
+   height: 12PX;
+   width: 12px;
+   
+}
 
-
+.botonvacio{
+   background:#eaf37f;
+   border-radius: 50%;
+   height: 12PX;
+   width: 12px;
+   opacity: 0.2;
+}
 
 
