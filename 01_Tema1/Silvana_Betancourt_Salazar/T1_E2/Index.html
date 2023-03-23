@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles.css">
+</header>
+
+<body>
+    <form>
+        <div class="container container-fondo">
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h5 class="card-title">Billing address</h5>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="primerNombre" class="form-label">First name</label>
+                                <input type="input" class="form-control" id="primerNombre">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="segundoNombre" class="form-label">Last name</label>
+                                <input type="input" class="form-control" id="segundoNombre">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="primerNombre" class="form-label">Username</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Email(Optional)</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="yo@hotmail.com"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Address</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="123 av napo"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Address 2 (Optional)</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="apartamento"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Country</label>
+                            <select class="browser-default custom-select">
+                                <option selected>Choose..</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label class="form-label">State</label>
+                            <select class="browser-default custom-select">
+                                <option selected>Choose..</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="zip" class="form-label ">Zip</label>
+                                <input type="input" class="form-control input-ancho" id="zip">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <hr>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Shipping addres is the same as my billing addres
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Save this information for next time
+                                </label>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="card-title">Payment</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                    id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Credit card
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Debit card
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                    id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    Paypal
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="nombreTj" class="form-label">Name on card</label>
+                                <input type="input" class="form-control" id="nombreTj">
+                                <span>Full name as displayed on card</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="numTj" class="form-label">Credit card number</label>
+                                <input type="input" class="form-control" id="numTj">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="expiFch" class="form-label">Expiration</label>
+                                <input type="input" class="form-control input-ancho" id="expiFch">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="cvvTj" class="form-label ">CVV</label>
+                                <input type="input" class="form-control input-ancho" id="cvvTj">
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-lg button-ancho">Continue to
+                                checkout</button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col">
+                    <div class="form-group row">
+                        <h5 class="card-title title-cart-pad">Your cart</h5>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext input-cart" id="staticEmail" value="3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table class="table table-sm">
+                            <tr>
+                                <td>
+                                    <label class="form-label label-titulo">Product name</label>
+                                    <span class="span-titulo">Brief description</span>
+                                </td>
+                                <td>
+                                    <span>$12</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="form-label label-titulo">Second producto</label>
+                                    <span class="span-titulo">Brief description</span>
+                                </td>
+                                <td>
+                                    <span>$8</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="form-label label-titulo">Third item</label>
+                                    <span class="span-titulo">Brief description</span>
+                                </td>
+                                <td>
+                                    <span>$5</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="form-label label-titulo span-color">Promo code</label>
+                                    <span class="span-titulo span-color">EXAMPLECODE</span>
+                                </td>
+                                <td>
+                                    <span class="span-color">-$5</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="form-label label-titulo">Total(USD)</label>
+                                </td>
+                                <td>
+                                    <span>$20</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col div-paddin-promo">
+                            <div class="div-doble-border">
+                                <div class="input-group mb-3 div-ancho-promo">
+
+                                    <input type="text" class="form-control" placeholder="Promo code"
+                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <button class="btn btn-outline-secondary button-color" type="button"
+                                        id="button-addon2">Redeem</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</body>
+
+</html>

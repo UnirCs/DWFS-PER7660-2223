@@ -1,0 +1,68 @@
+.container-fondo{
+    background-color: rgb(250, 251, 252)!important;
+}
+
+.input-ancho{
+    width: 100px!important;
+}
+.div-ancho-promo{
+    width: 300px!important;
+    
+}
+.div-paddin-promo{
+    padding-left: 0px!important;
+}
+.button-ancho {
+    width: 600px!important;
+}
+
+.span-titulo {
+    display: block;
+    font-size: x-small;
+}
+
+.label-titulo{
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size:11px
+}
+
+table {
+    width: 300px!important;
+    background-color: white!important;
+}
+
+.span-color{
+    color: rgb(34, 221, 34);
+}
+
+.button-color{
+    background-color: grey!important;
+    color: white!important;
+}
+
+.div-doble-border{
+    
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 310px;
+    margin-top: 1px;
+    border: solid 0.1em !important;
+    border-color:#e9e5e5!important
+}
+.title-cart-pad{
+    padding-top: 5px;
+}
+
+.input-cart{
+    text-align: right;
+    width: 200px!important;
+    background-image: url("./imagenes/circulo.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    color: white;
+    padding-right: 15px;
+}   
