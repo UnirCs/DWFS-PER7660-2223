@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To checkout</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body class="h-full">
+
+    <div class="mx-auto max-w-5xl py-6 sm:px-6 lg:px-8">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-2">
+                <div class="mt-5 md:col-span-2 md:mt-0">
+                    <div class="sm:overflow-hidden sm:rounded-md">
+                        <div class=" px-4 py-5 sm:p-6">
+                            <div class="px-4 sm:px-0 mb-5">
+                                <h1 class="text-2xl font-semibold leading-6 text-gray-900">Billing address</h1>
+                            </div>
+                            <div class="grid grid-cols-6 gap-6">
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="first-name"
+                                        class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="last-name"
+                                        class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-6">
+                                    <label for="company-website"
+                                        class="block text-sm font-medium leading-6 text-gray-900">Username</label>
+                                    <div class="mt-2 flex rounded-md shadow-sm">
+                                        <span
+                                            class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 px-3 text-gray-500 sm:text-sm">@</span>
+                                        <input type="text" name="company-website" id="company-website"
+                                            class="block w-full flex-1 rounded-none rounded-r-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                            placeholder="Username">
+                                    </div>
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-6">
+                                    <label for="email-address"
+                                        class="block text-sm font-medium leading-6 text-gray-900">Email
+                                        <span class="text-gray-500">(Optional)</span></label>
+                                    <input type="text" name="email-address" id="email-address" autocomplete="email"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        placeholder="you@example.com">
+                                </div>
+
+                                <div class="col-span-6">
+                                    <label for="street-address"
+                                        class="block text-sm font-medium leading-6 text-gray-900">Address 2 <span
+                                            class="text-gray-500">(Optional)</span></label>
+                                    <input type="text" name="street-address" id="street-address"
+                                        autocomplete="street-address"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        placeholder="Apartment or suite">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                                    <label for="city"
+                                        class="block text-sm font-medium leading-6 text-gray-900">Country</label>
+                                    <select id="city" name="city"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                        <option>Choose</option>
+                                        <option>United States</option>
+                                        <option>Canada</option>
+                                        <option>Mexico</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="region" class="block text-sm font-medium leading-6 text-gray-900">State
+                                        / Province</label>
+                                    <select id="city" name="city"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                        <option>Choose</option>
+                                        <option>California</option>
+                                        <option>Washington</option>
+                                        <option>Texas</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="postal-code"
+                                        class="block text-sm font-medium leading-6 text-gray-900">ZIP / Postal
+                                        code</label>
+                                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hidden sm:block" aria-hidden="true">
+                            <div class="py-5">
+                                <div class="border-t border-gray-200"></div>
+                            </div>
+                        </div>
+
+                        <div class=" px-4 py-5 sm:p-5 space-y-2">
+                            <div class="flex items-start">
+                                <div class="flex h-6 items-center">
+                                    <input id="comments" name="comments" type="checkbox"
+                                        class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                                </div>
+                                <div class="ml-3 text-sm leading-6">
+                                    <label for="comments" class="font-medium text-gray-900">Shipping address is the
+                                        same as my billing address</label>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex h-6 items-center">
+                                    <input id="candidates" name="candidates" type="checkbox"
+                                        class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                                </div>
+                                <div class="ml-3 text-sm leading-6">
+                                    <label for="candidates" class="font-medium text-gray-900">Save this information
+                                        for next time</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hidden sm:block" aria-hidden="true">
+                            <div class="py-5">
+                                <div class="border-t border-gray-200"></div>
+                            </div>
+                        </div>
+
+                        <div class=" px-4 py-5 sm:p-6">
+                            <div class="px-4 sm:px-0 mb-5">
+                                <h1 class="text-2xl font-semibold leading-6 text-gray-900">Payment</h1>
+                            </div>
+                            <div class="mt-4 space-y-2">
+                                <div class="flex items-center">
+                                    <input id="push-everything" name="push-notifications" type="radio"
+                                        class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" checked>
+                                    <label for="push-everything"
+                                        class="ml-3 block text-sm font-medium leading-6 text-gray-900">Credit
+                                        card</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input id="push-email" name="push-notifications" type="radio"
+                                        class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                                    <label for="push-email"
+                                        class="ml-3 block text-sm font-medium leading-6 text-gray-900">Debit
+                                        card</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input id="push-nothing" name="push-notifications" type="radio"
+                                        class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                                    <label for="push-nothing"
+                                        class="ml-3 block text-sm font-medium leading-6 text-gray-900">Paypal</label>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 grid grid-cols-6 gap-6">
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="first-name"
+                                        class="block text-sm font-medium leading-6 text-gray-900">Name on card</label>
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                        <span class="text-gray-500 text-sm">Full name as displayed on card</span>
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="last-name"
+                                        class="block text-sm font-medium leading-6 text-gray-900">Credit card
+                                        number</label>
+                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="region"
+                                        class="block text-sm font-medium leading-6 text-gray-900">Expiration</label>
+                                    <input type="text" name="region" id="region" autocomplete="address-level1"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="postal-code"
+                                        class="block text-sm font-medium leading-6 text-gray-900">CVV</label>
+                                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
+                                        class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hidden sm:block" aria-hidden="true">
+                            <div class="py-5">
+                                <div class="border-t border-gray-200"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="submit"
+                                class="group relative flex w-full justify-center rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                    <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" viewBox="0 0 20 20"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                Continue to checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-5">
+                <div class="px-4 sm:px-0 mb-5 flex justify-between">
+                    <h1 class="text-2xl font-semibold leading-6 text-gray-500">Your cart</h1>
+                    <span
+                        class="ml-3 inline-flex items-center px-2.5 py-0.5 rounded-full text-l font-medium bg-gray-500 text-white">
+                        3
+                    </span>
+                </div>
+                <div class="shadow rounded-md overflow-hidden mb-5">
+                    <dl>
+                        <div class="bg-white px-2 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <div class="md:col-span-2">
+                                <dt class="text-base font-medium text-gray-900">Product name</dt>
+                                <dd class="mt-1 text-sm text-gray-500 sm:mt-0 sm:col-span-1">Brief description</dd>
+                            </div>
+                            <div class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1 text-right">
+                                <dd class="text-base font-medium text-gray-500">$12</dd>
+                            </div>
+                        </div>
+                        <div class="border-t bg-white px-2 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <div class="md:col-span-2">
+                                <dt class="text-base font-medium text-gray-900">Second product</dt>
+                                <dd class="mt-1 text-sm text-gray-500 sm:mt-0 sm:col-span-1">Brief description</dd>
+                            </div>
+                            <div class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1 text-right">
+                                <dd class="text-base font-medium text-gray-500">$8</dd>
+                            </div>
+                        </div>
+                        <div class="bg-white border-t px-2 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <div class="md:col-span-2">
+                                <dt class="text-base font-medium text-gray-900">Third item</dt>
+                                <dd class="mt-1 text-sm text-gray-500 sm:mt-0 sm:col-span-1">Brief description</dd>
+                            </div>
+                            <div class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1 text-right">
+                                <dd class="text-base font-medium text-gray-500">$5</dd>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 border-t px-2 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <div class="md:col-span-2">
+                                <dt class="text-base font-medium text-green-500">Promo code</dt>
+                                <dd class="mt-1 text-sm text-green-500 sm:mt-0 sm:col-span-1">EXAMPLECODE</dd>
+                            </div>
+                            <div class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1 text-right">
+                                <dd class="text-base font-medium text-green-500">-$5</dd>
+                            </div>
+                        </div>
+                        <div class="bg-white border-t px-2 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <div class="md:col-span-2">
+                                <dt class="text-base font-medium text-gray-900">Total (USD)</dt>
+                            </div>
+                            <div class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1 text-right">
+                                <dd class="text-base font-bold text-gray-900">$20</dd>
+                            </div>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="shadow rounded-md overflow-hidden">
+                    <dl>
+                        <div class="bg-white sm:gap-4 p-2">
+                            <div>
+                                <div class="relative rounded-md shadow-sm">
+                                    <input type="text" name="price" id="price"
+                                        class="block w-full rounded-md border-0 py-1.5 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        placeholder="Promo code">
+                                    <div class="absolute inset-y-0 right-0 flex items-center">
+                                        <label for="currency" class="sr-only">Currency</label>
+                                        <button type="button"
+                                            class="inline-flex items-center px-3 py-1.5 border border-transparent text-sm h-full font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                            Redeem
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </dl>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
