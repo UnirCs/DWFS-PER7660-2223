@@ -1,0 +1,48 @@
+body {
+    background-color: #3a637f;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.titulo {
+    text-align: center;
+    color: #f5f66f;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+.column {
+    float: left;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 60%;
+}
+
+.column>h2 {
+    color: #f5f66f;
+}
+
+.column>* {
+    padding-left: 1%;
+    padding-right: 5%;
+}
+
+ul.experiencia {
+    /* lines */
+    border-left: 2px solid white;
+}
+
+.yellow {
+    color: #f5f66f;
+}
+
+.blue {
+    color: darkblue;
+}
