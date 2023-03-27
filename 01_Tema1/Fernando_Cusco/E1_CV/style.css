@@ -1,0 +1,60 @@
+* {
+    font-family: 'Roboto';
+}
+
+img {
+    position: relative;
+    left: 110px;
+    top: 60px;
+    margin-top: -50px;
+}
+
+.contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.detalle {
+    width: 50%;
+    padding: 20px;
+    border: 8px solid rgb(37, 32, 109);
+}
+
+.experiencia {
+    width: 50%;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.detalle > hr {
+    border: 3px solid rgb(37, 32, 109);
+    width: 80%;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    color: #10357d;
+}
+
+p, h3, ul {
+    color: #05647a;
+}
+
+.tituloexp {
+    height: 50px;
+    background-color: #a6a6a6;
+    padding: 5px 40px;
+    
+}
+
+.tituloexp > h2 {
+    margin-bottom: 30px;
+}
+
+.psubtitulo {
+    font-size: 24px;
+}
