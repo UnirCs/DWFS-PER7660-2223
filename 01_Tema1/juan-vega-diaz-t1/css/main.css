@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.8rem !important;
+    background-color: #0E0C29;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+}
+
+.ppal {
+    font-size: 1.2rem !important;
+}
+
+.tabla-ppal {
+    width: 100%;
+}
+
+.td-ppal {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    width: 40%;
+    /* text-align: center; */
+}
+
+.foto-perfil {
+    width: 180px;
+    border-radius: 50%;
+    border: 8px solid white;
+
+}
+
+.nombre {
+    padding-top: 5PX;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profesion {
+    font-size: 1.1rem;
+}
+
+.titulo {
+    font-size: 1.1rem;
+    color: #00E5E8;
+    font-weight: bold;
+}
+
+.sub-titulo {
+    font-size: 0.9rem;
+    color: #43BEE6;
+    font-weight: bold;
+}
+
+.texto-normal {
+    font-size: 1.1rem;
+}
+
+.texto-pequeño {
+    font-size: 0.9rem;
+    /* text-align: center; */
+}
+
+.tabla-idioma {
+    width: 100%;
+    /* text-align: center; */
+}
+
+.row {
+    padding-top: 15px;
+}

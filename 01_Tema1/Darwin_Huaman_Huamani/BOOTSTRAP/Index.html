@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body style="background-color: whitesmoke; margin: 20px;">
+
+    <div class="form-group" style="display: flex;">
+        <div style="width: 100%;">
+            <form>
+                <h2>Dirección de Envío</h2>
+                <div class="form-group" style="display: flex;">
+                    <div style="width: 40%;">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" style="width: 80%;">
+                    </div>
+                    <div style="width: 40%;">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="username">Nombre de Usuario</label>
+                    <input type="text" class="form-control" id="username" placeholder="Nombre de Usuario" style="width: 80%;">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="text" class="form-control" id="correo" placeholder="correo@ejemplo.com" style="width: 80%;">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="1234 Main St" style="width: 80%;">
+                </div>
+                <div class="form-group">
+                    <label for="direccion2">Dirección 2</label>
+                    <input type="text" class="form-control" id="direccion2" placeholder="Apartamento o lugar" style="width: 80%;">
+                </div>
+                <div class="form-group" style="display: flex;">
+                    <div style="width: 30%;">
+                        <label for="pais">Pais</label>
+                        <select id="pais" class="form-control" style="width: 70%;">
+                            <option>Perú</option>
+                            <option>Colombia</option>
+                            <option>Ecuador</option>
+                            <option>España</option>
+                        </select>
+                    </div>
+                    <div style="width: 30%;">
+                        <label for="estado">Pais</label>
+                        <select id="estado" class="form-control" style="width: 70%;">
+                            <option>Lima</option>
+                            <option>Arequipa</option>
+                            <option>Trujillo</option>
+                        </select>
+                    </div>
+                    <div style="width: 20%;">
+                        <label for="zip">Zip</label>
+                        <input type="text" class="form-control" id="zip">
+                    </div>
+                </div>
+
+                <hr class="hr" style="width: 81%;" />
+
+                <div class="form-check">
+                    <input type="checkbox" id="check1" class="form-check-input">
+                    <label for="check1">La dirección de envío es la misma que mi dirección de facturación</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="check2" class="form-check-input">
+                    <label for="check2">Guardar esta información para la próxima vez</label>
+                </div>
+
+                <hr class="hr" style="width: 81%;" />
+
+                <h2>Pago</h2>
+                <div class="form-radio">
+                    <input type="radio" class="form-radio-input" name="pago" id="pago1" checked>
+                    <label for="pago1">Tarjeta de Crédito</label>
+                </div>
+                <div class="form-radio">
+                    <input type="radio" class="form-radio-input" name="pago" id="pago2">
+                    <label for="pago2">Tarjeta de Débito</label>
+                </div>
+                <div class="form-radio">
+                    <input type="radio" class="form-radio-input" name="pago" id="pago3">
+                    <label for="pago3">Paypal</label>
+                </div>
+                <br>
+                <div class="form-group" style="display: flex;">
+                    <div style="width: 40%;">
+                        <label for="numTarjeta">Número de Tarjeta</label>
+                        <input type="text" class="form-control" id="numTarjeta" name="numTarjeta" style="width: 80%;">
+                        <small id="ayuda" class="form-text text-muted">Nombre completo como se muestra en la
+                            tarjeta</small>
+                    </div>
+                    <div style="width: 40%;">
+                        <label for="numCredito">Tarjeta de Crédito</label>
+                        <input type="text" class="form-control" id="numCredito" name="numCredito">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group" style="display: flex;">
+                    <div>
+                        <label for="expiracion">Expiracion</label>
+                        <input type="text" class="form-control" id="expiracion" name="expiracion" style="width: 70%;">
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv" name="cvv">
+                    </div>
+                </div>
+
+                <hr class="hr" style="width: 81%;">
+
+                <button type="submit" class="btn btn-primary" style="width: 80%;">Continuar con la Verificación</button>
+
+            </form>
+        </div>
+        <div style="width: 50%;">
+            <h2>Tu tarjeta</h2>
+            <ol class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Nombre de Producto</div>
+                        Breve descripción
+                    </div>
+                    <span class="badge bg-primary rounded-pill">12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Segundo Producto</div>
+                        Breve descripción
+                    </div>
+                    <span class="badge bg-primary rounded-pill">8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Tercer Producto</div>
+                        Breve descripción
+                    </div>
+                    <span class="badge bg-primary rounded-pill">5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Codigo de Promoción</div>
+                        CODIGO DE EJEMPLO
+                    </div>
+                    <span class="badge bg-primary rounded-pill">5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Total</div>
+                        Contenido para el elemento de la lista
+                    </div>
+                    <span class="badge bg-primary rounded-pill">20</span>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
