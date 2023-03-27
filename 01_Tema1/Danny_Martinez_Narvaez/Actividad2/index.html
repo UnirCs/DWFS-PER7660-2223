@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Danny Martínez</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="p-3 border mt-2 m-5 bg-light text-dark">
+            <div class="form-row">
+                <div class="col-12 col-md-8 row">
+                    <div class="col-12">
+                        <h2>Billing Address</h2>
+                    </div>
+                    <div class="col-lg-6 col-md-8 mb-1">
+                        <label for="name">First Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="First name">
+                    </div>
+                    <div class="col-lg-6 col-md-8 mb-1">
+                        <label for="apellido">Last Name</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Last Name">
+                    </div>
+                    <div class="input-group p-3">
+                        <label class="col-lg-12 col-md-8 p-0" for="userName">Username</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="col-lg-12 col-md-8 mb-1">
+                        <label for="mail">Email (Opcional)</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="you@example">
+                    </div>
+                    <div class="col-lg-12 col-md-8 mb-1">
+                        <label for="direccion">Addres</label>
+                        <input type="text" class="form-control" id="direccion" placeholder="Apartment or suite">
+                    </div>
+                    <div class="col-lg-12 col-md-8 mb-1">
+                        <label for="direccionDos">Addres 2 (Optional)</label>
+                        <input type="text" class="form-control" id="direccionDos" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-lg-4 col-md-8 m-0">
+                        <label for="Country">Country</label>
+                        <input type="text" class="form-control" id="Country" placeholder="Country">
+                    </div>
+                    <div class="col-lg-4 col-md-8 m-0">
+                        <label for="State">State</label>
+                        <input type="text" class="form-control" id="State" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-lg-4 col-md-8 m-0">
+                        <label for="Zip">Zip</label>
+                        <input type="text" class="form-control" id="Zip" placeholder="1234 Main St">
+                    </div>
+                    <hr class="p-0 mb-2 bg-white col-lg-12 col-md-8">
+                    <div class="col-lg-12 col-md-8 custom-control custom-checkbox ml-3">
+                        <input type="checkbox" class="custom-control-input" id="ch1">
+                        <label class="custom-control-label" for="ch1">Shipping address is the same as my billing
+                            address</label>
+                    </div>
+                    <div class="col-lg-12 col-md-8 custom-control custom-checkbox ml-3">
+                        <input type="checkbox" class="custom-control-input" id="ch2">
+                        <label class="custom-control-label" for="ch2">Save this information for next time</label>
+                    </div>
+                    <hr class="p-0 mb-2 bg-white col-lg-12 col-md-8">
+                    <h4 class="col-lg-12 col-md-8">Payment</h4>
+                    <div class="col-lg-12 col-md-8">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input">
+                            <label class="custom-control-label" for="debit">Debit card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input">
+                            <label class="custom-control-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-8 pt-3">
+                        <label for="card-name">Name on card</label>
+                        <input type="text" class="form-control" id="card-name">
+                        <small class="text-muted">Full name as displayed on card</small>
+                    </div>
+                    <div class="col-lg-6 col-md-8 pt-3">
+                        <label for="card-number">Credit card number</label>
+                        <input type="text" class="form-control" id="card-number">
+                    </div>
+                    <div class="col-lg-4 col-md-8 pt-3">
+                        <label for="card-expiration">Expiration</label>
+                        <input type="text" class="form-control" id="card-expiration">
+                    </div>
+                    <div class="col-lg-3 col-md-8 pt-3">
+                        <label for="card-cvv">CVV</label>
+                        <input type="text" class="form-control" id="card-cvv">
+                    </div>
+                    <hr class="p-0 mb-2 bg-white col-lg-12 col-md-8">
+                    <button class="btn btn-primary btn-md btn-block mt-3 ml-2 mr-2">Continue to checkout</button>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="m-0 p-0 row">
+                        <h4 class="col-11 p-0 ">Your cart</h4>
+                        <h4 class=" col-1 pl-1 pr-1 rounded-circle text-right bg-dark text-white">3</h4>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between ">
+                            <div >
+                                <h6>Product name</h6>
+                                <small class="text-muted">Brief description</small>
+                            </div>
+                            <span class="text-muted">$12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between ">
+                            <div>
+                                <h6>Second product</h6>
+                                <small class="text-muted">Brief description</small>
+                            </div>
+                            <span class="text-muted">$8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between ">
+                            <div>
+                                <h6>Third item</h6>
+                                <small class="text-muted">Brief description</small>
+                            </div>
+                            <span class="text-muted">$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light ">
+                            <div class="text-success">
+                                <h6>Promo code</h6>
+                                <small>EXAMPLECODE</small>
+                            </div>
+                            <span class="text-success">-$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between ">
+                            <span>Total (USD)</span>
+                            <strong>$20</strong>
+                        </li>
+                    </ul>
+                    <div class="col-12 input-group p-0 mt-2">
+                        <input type="text" class="form-control" placeholder="Promo code">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-secondary">Redeem</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
