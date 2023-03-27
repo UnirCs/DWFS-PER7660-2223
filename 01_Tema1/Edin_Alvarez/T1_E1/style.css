@@ -1,0 +1,58 @@
+.imagen {
+    position: center;
+    top: 20%;
+    right: 5%;
+    width: 180px;
+    height: 180px;
+    display:block;
+    margin:auto;    
+}
+body {
+    color: yellow;
+    background-color: hsla(210, 86%, 19%, 0.816);
+    margin-top: 40px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cuerpo {
+    display: flex;
+}
+
+h1, h3 {
+    color: rgb(209, 209, 30);
+    text-align: center;
+}
+
+h4, p, li {
+    color: white;
+}
+
+h2 {
+    color:rgb(209, 209, 30);
+}
+
+.tabla-datos{
+    margin: 0 auto;
+    width: auto;
+}
+
+td {
+    width: 70%;
+}
+
+ol {
+    list-style: none;
+}
+
+#perfil {
+    text-align: justify;
+}
+
+.nombre {
+    text-align: center;
+}
