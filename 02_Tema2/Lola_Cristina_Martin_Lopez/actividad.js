@@ -126,7 +126,7 @@ function greyConverter() {
                 suma=pixels[i][j][k]+suma;
             }
             media= suma/3; 
-            pixels[i][j]=[suma,suma,suma];
+            pixels[i][j]=[media,media,media];
         }
     }
 
@@ -188,7 +188,7 @@ function scaleDown() {
              //recorremos el ancho de la antigua imagen, pero solo guardamos los datos de la imagen antigua cuando sean columnas impares.      
             for (let j = 0; j < pixels[i].length; j++) {
                 if(j%2!=0){
-                    columns[positionY]= pixels[i][j]; //hacemos copia de lo que hay en la imagen antigfua, en la imagen nueva 
+                    newColumns[positionY]= pixels[i][j]; //hacemos copia de lo que hay en la imagen antigfua, en la imagen nueva 
                     positionY++;
                 }
             }
