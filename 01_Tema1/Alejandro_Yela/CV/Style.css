@@ -1,0 +1,138 @@
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #213968;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #213968;
+}
+
+h3:not(.seccion-izq h3) {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 23px;
+}
+
+h4:not(.seccion-izq h3) {
+  color: #444440;
+}
+
+h5 {
+  color: #858585;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+p {
+  font-family: "Assistant", sans-serif;
+  font-size: 20px;
+  color: #444440;
+}
+
+li:not(.seccion-izq li) {
+  color: #444440;
+}
+
+.cv-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 450px 1fr;
+}
+
+.seccion-izq {
+  background-color: #30415b;
+  color: white;
+  grid-column: 1 / 1;
+  grid-row: 1 / 100;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.seccion-izq ul {
+  padding-left: 0;
+  margin-bottom: 100px;
+}
+
+.seccion-izq li, h3 {
+  margin-bottom: 40px;
+}
+.seccion-izq h3 {
+  flex: 1;
+}
+
+.seccion-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.foto-cv {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.perfil-profesional p {
+  font-weight: bold;
+  text-align: justify;
+}
+
+h3:not(.seccion-izq h3) {
+  font-weight: bold;
+  color: #5ba7d1;
+}
+
+li:not(.seccion-izq li) {
+  font-size: 20px;
+}
+
+.titulo-cv {
+  margin-left: 50px;
+}
+
+.titulo-cv h2 {
+  margin-bottom: 0;
+}
+
+.titulo-cv h4 {
+  margin-top: 0;
+  font-weight: lighter;
+  color:#858585;
+}
+
+.titulo-cv,
+.perfil-profesional,
+.experiencia-laboral {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.experiencia-laboral li {
+  margin-bottom: 20px;
+}
+
+.seccion-izq ul li {
+  display: flex;
+  align-items: center;
+}
+
+.seccion-izq ul li img {
+  margin-right: 10px;
+  height: 30px;
+}
+
