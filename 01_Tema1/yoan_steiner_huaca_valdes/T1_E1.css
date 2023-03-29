@@ -133,4 +133,7 @@ svg{
    opacity: 0.2;
 }
 
+.timeline ul li{
+list-style: none;
+}
 
