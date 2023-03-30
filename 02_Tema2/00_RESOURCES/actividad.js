@@ -41,6 +41,8 @@ function ejemplo() {
 function redConverter() {
     let outputPath = 'output/tucan_red.jpg';
     let pixels = handler.getPixels();
+    console.log("ROJOOOOOOOO");
+    console.log(pixels);
 
     //Aqui tu codigo
 
@@ -188,7 +190,7 @@ function merge(alphaFirst, alphaSecond) {
 }
 
 
-/**
+/**4
  * Programa de prueba
  * NO DEBES MODIFICAR ESTAS LÍNEAS DE CÓDIGO
  *
