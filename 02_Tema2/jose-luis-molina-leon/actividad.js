@@ -261,7 +261,7 @@ function merge(alphaFirst, alphaSecond) {
         pixels.push(fila);
     }
 
-    dogHandler.savePixels(arrayDogPixels, outputPath);
+    dogHandler.savePixels(pixels, outputPath);
 }
 
 
