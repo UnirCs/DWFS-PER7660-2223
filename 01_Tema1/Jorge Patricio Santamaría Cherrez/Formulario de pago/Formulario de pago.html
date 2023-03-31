@@ -1,0 +1,67 @@
+<html lang="es">
+<head>
+    
+<title>Formulario de pago</title>
+    <head>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  
+</head>
+<body>
+    <section class="d-flex justify-content-center align-items-center">
+        <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4"> 
+            <div class="mb-4 d-flex justify-content-start align-items-center">
+              
+                <h4>  <i class="bi bi-credit-card"></i>  FORMULARIO DE PAGO</h4>
+            </div>
+            <div class="mb-1">
+                <form id = "contacto" >
+                    <div class="mb-4 d-flex justify-content-between"> 
+                        <div>
+                            <label for="nombre"> <i class="bi bi-person-fill"></i> Nombre del titular</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder= "ej: Jorge" required>
+                    
+                        </div>
+                        <div >
+                            <label for="apellido"> <i class="bi bi-person-bounding-box"></i> Apellido del titular</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido" placeholder= "ej: Santamaria" required>
+                            <div class="apellido text-danger"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="numero"><i class="bi bi-credit-card"></i> N&uacutemero de tarjeta</label>
+                        <input type="number" class="form-control" name="numero" id="numero" required >
+                     
+                        
+                    </div> 
+                    <div class="mb-4">
+                        <label for="codigo"><i class="bi bi-credit-card"></i> C&oacutedigo de seguridad: </label>
+                        
+                        <input type="text" class="form-control" name="codigo" id="codigo" maxlength="3" placeholder= "ingrese 3 digitos" required>
+                 
+                    </div>  
+                    <div class="mb-4">
+                        <label for="fecha"> <i class="bi bi-credit-card"></i> Fecha de expiraci&oacuten</label>
+                        <input type="text" class="form-control" name="fecha" id="fecha" placeholder= "Mes" required>  <input type="text" class="form-control" name="fecha2" id="fecha2" placeholder= "Año" required>
+                       
+                    </div> 
+                    
+                    <div class="mb-2">
+                        <button id ="botton" class="col-12 btn btn-primary d-flex justify-content-between ">
+                            <span>Pagar </span><i id="icono" class="bi bi-cursor-fill "></i>
+                        </button>
+                    </div> 
+                              
+                </form>
+            </div>
+        </div>
+    </section>
+  
+</body>
+</html>
+
+
+
+
+
