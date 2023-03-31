@@ -85,3 +85,12 @@
     margin-top: 15px;
     line-height: 25px;
   }
+
+  .justified-description{
+    width: 400px; 
+    text-align: justify;
+  }
+
+  .items{
+    width: 15px;
+  }
