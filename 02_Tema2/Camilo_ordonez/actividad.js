@@ -148,6 +148,17 @@ function blackAndWhiteConverter() {
 
     //Aqui tu codigo
 
+    for (let f = 0; f < pixels.length; f++) {
+        for (let c = 0; c < pixels[f].length; c++) {
+            let media = (pixels[f][c][0]+pixels[f][c][1]+pixels[f][c][2])/3
+            if(media < 43){
+                pixels[f][c]=[0,0,0];   
+            }else{
+                pixels[f][c]=[255,255,255];
+            }
+        }
+    }
+
     handler.savePixels(pixels, outputPath);
 }
 
@@ -164,15 +175,18 @@ function scaleDown() {
     //Aqui tu codigo
 
     for (let f = 0; f < pixels.length; f++) {
-        for (let c = 0; c < pixels[f].length; c++) {
-            let media = (pixels[f][c][0]+pixels[f][c][1]+pixels[f][c][2])/3
-            if(media < 43){
-                pixels[f][c]=[0,0,0];   
-            }else{
-                pixels[f][c]=[255,255,255];
+        let nuevaF = [];
+        if(f % 2 === 0){
+            for (let c = 0; c < pixels[f].length; c++) {
+                if(columna %2 === 0){
+                    nuevaF.push(pixels[f][c]);   
+                }
             }
+            nuevaImagen.push(nuevaF);
         }
     }
+
+    
 
     handler.savePixels(nuevaImagen, outputPath, handler.getShape()[0] / 2, handler.getShape()[1] / 2);
 }
