@@ -1,4 +1,4 @@
-## Promesas en JavaScript
+# Promesas en JavaScript
 
 En este ejercicio trataremos de aunar algunos de los conceptos que hemos ido trabajando en los tres primeros temas de la asignatura.
 Concretamente:
@@ -18,3 +18,14 @@ Recuerda que el contenido HTML de un elemento es accesible a través de la propi
 
 Debes consultar la [documentación sobre “onClick”](https://www.w3schools.com/jsref/event_onclick.asp) para realizar este ejercicio.
 
+**Estado inicial del boton y parrafo:**
+
+![](https://github.com/UnirCs/DWFS-PER7660-2223/blob/master/03_Tema3/00_RESOURCES/Inicial.png)
+
+**Hacemos click en el boton 1 vez:**
+
+![](https://github.com/UnirCs/DWFS-PER7660-2223/blob/master/03_Tema3/00_RESOURCES/Click1.png)
+
+**Hacemos click en el boton otra vez y sucesivas...:**
+
+![](https://github.com/UnirCs/DWFS-PER7660-2223/blob/master/03_Tema3/00_RESOURCES/Click2.png)
