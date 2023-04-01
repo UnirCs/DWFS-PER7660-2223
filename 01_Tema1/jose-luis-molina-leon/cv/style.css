@@ -1,0 +1,96 @@
+.personal-data{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 5% 0rem 5%;
+    width: 1000px;
+}
+
+.left-position{
+    width: 50%;
+    background-color: #c5e0b4;
+    padding: 30px;
+}
+
+.right-position{
+    width: 45%;
+    background-color: #e2e4e5;
+    display: grid;
+    padding: 1rem;
+}
+
+#foto-perfil{
+    align-items: center;
+    text-align: center ;
+    width: 150px;
+    border: 3px solid #92d050;
+}
+
+.image-content{
+    text-align: center;
+    width: 100%;
+}
+
+.section-title{
+    position: block;
+    margin-bottom: 60px !important;
+}
+
+.section-title-ico{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 50px;
+}
+
+.section-title-back{
+    position: absolute;
+    margin-left: -40px;
+    width: 500px;
+    height:50px;
+}
+
+.texto {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top:  10px;
+  }
+
+  .section-content{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .section-content-left{
+    line-height: 5px;
+  }
+
+  .foto-br{
+    width: 430px;
+    height: 5px;
+  }
+
+  .name{
+    text-align: center;
+  }
+  .title{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .info{
+    margin-top: 15px;
+    line-height: 25px;
+  }
+
+  .justified-description{
+    width: 400px; 
+    text-align: justify;
+  }
+
+  .items{
+    width: 15px;
+  }
