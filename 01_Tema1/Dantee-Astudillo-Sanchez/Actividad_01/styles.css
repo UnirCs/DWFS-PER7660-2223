@@ -1,0 +1,56 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+    width: 60%;
+    border: 0.3px solid #21a1ad;
+    padding: 10px;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .spacing {
+    letter-spacing: 3px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .hr-start {
+    width: 85%;
+    height: 1px;
+    color: black;
+  }
+  li::marker {
+    color: white;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  .text-upper {
+    text-transform: uppercase;
+  }
+  .text-white {
+    color: white;
+  }
+  .text-title {
+    color: rgb(193 235 0);
+  }
+  .margin-header {
+    padding-top: 30px;
+  }
+  .general-table {
+    width: 100%;
+    text-align: center;
+  }
+  .info-td {
+    width: 50%;
+    text-align: justify;
+    vertical-align: super;
+    padding: 10px;
+  }
+  .title-td {
+    height: 10px;
+    overflow: hidden;
+  }
+  .bg-body{
+        background-color: #00486ec2;
+  }

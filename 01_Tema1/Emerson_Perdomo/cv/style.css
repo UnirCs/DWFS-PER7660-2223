@@ -1,0 +1,28 @@
+#container {
+display: grid;
+grid-template-columns: 25% auto  ;
+gap: 2rem;
+margin:5rem;
+}
+
+p {
+    color: gray;
+}
+
+h3 {
+    margin: 0;
+}
+h3 + h3 {
+    font-size: 1.1rem;
+    color: navy;
+}
+
+div:first-child {
+    font-size: 1.2rem;
+}
+div > p {
+    background-color:whitesmoke;
+}
+h1 ~ p {
+    background-color:bisque;
+}
