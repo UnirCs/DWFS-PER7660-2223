@@ -16,6 +16,14 @@
  */
 var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
+function obtenerLetraDni(dni) { 
+    return Number(dni)>0 && dni <Number(99999999)? dni + letras[Number(dni)%23] : null;
+
+}
+
+console.log("funcion 1 ----")
+console.log(obtenerLetraDni(50487965));
+console.log(obtenerLetraDni(12345678));
 /**
  * Funcion 2
  * 
@@ -27,6 +35,13 @@ var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', '
  * 
  * Ejemplo: esPar(4) -> true
  */
+
+function esPar (num){
+    return Math.round(num)%2 == 0 ? true : false;
+}
+console.log("funcion 2 ----")
+console.log(esPar(4));
+console.log(esPar(3));
 
 
 /**
@@ -41,6 +56,16 @@ var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', '
  * Ejemplo: formatStr("Esto es un Ejemplo") -> "ESToeSuNEJeMPLo"
  */
 
+function formatStr(text){
+    return (Array.from(text.replace(/\s+/g,"")).map( element => 
+                    element.match(/[^aeiou]/) ? element.toUpperCase():element))
+                    .join("");
+}
+
+console.log("funcion 3 ----")
+console.log(formatStr("Esto es un Ejemplo"));
+console.log(formatStr("OTRO Ejemplo"));
+
 
 /**
  * Funcion 3
@@ -54,3 +79,14 @@ var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', '
  * 
  * Ejemplo: esPalindromo("Dabale arroz a la zorra el abad") -> true
  */
+
+
+function esPalindromo(text){
+    // le quitamos los espacios en blanco
+    // lo transformamos en array y luego lo invertimos el orden 
+    return text.replace(/\s+/g,"").toLowerCase() === text.replace(/\s+/g,"").toLowerCase().split('').reverse().join('');
+}
+
+console.log("funcion 4 ----")
+console.log(esPalindromo("Dabale arroz a la zorra el abad"));
+console.log(esPalindromo("Dabale arrrz a la zorra el abad"));
