@@ -1,0 +1,49 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3a637f;
+    color: #dfde87;
+}
+
+.header{
+    text-align: center;
+}
+
+.header .subtitle{
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+header .horizontal-hr{
+    border: none;
+    background-color: white;
+    height: 0.2rem;
+}
+
+.title, .subtitle, .title-content{
+    text-transform: uppercase;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 3rem;
+}
+
+.content .paragraph-content{
+    color: white;
+    font-size: 14px;
+    margin: 0 6rem 4rem 0;
+}
+
+.ul-contact li, .ul-skills li, .ul-experience li{
+    color: white;
+    margin-top: 1rem;
+}
+
+.ul-skills{
+    list-style: none;
+    padding: 0;
+}
