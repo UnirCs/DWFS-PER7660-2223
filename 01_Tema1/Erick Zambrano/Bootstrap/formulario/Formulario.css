@@ -1,0 +1,45 @@
+
+
+
+
+.titulo {
+    /*background-color: tomato;*/
+    /*color: #f5eeee;*/
+    border: 2px solid #324ccd;
+    /*margin: 2px;*/
+    padding: 15px;
+}
+
+body{
+    font-style: oblique;
+    margin: 50px;
+}
+
+form{
+    margin: 10px;
+    margin-top: 50px;
+}
+
+#promo{
+    /*style: "color:limegreen"*/
+    color: limegreen;
+    font-weight: bold;
+}
+
+p.promo{
+    /*style: "color:limegreen"*/
+    color: limegreen;
+    font-weight: bold;
+}
+
+span.promo{
+    /*style: "color:limegreen"*/
+    color: limegreen;
+    font-weight: bold;
+}
+
+span.cart{
+    /*style: "color:limegreen"*/
+    color: black;
+    font-weight: bold;
+}
