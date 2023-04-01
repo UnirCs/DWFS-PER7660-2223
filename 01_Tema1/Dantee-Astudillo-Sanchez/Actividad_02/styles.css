@@ -1,0 +1,8 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css');
+
+label{
+    font-weight: 500;
+  }
+  .font-small{
+    font-size: x-small;
+  }

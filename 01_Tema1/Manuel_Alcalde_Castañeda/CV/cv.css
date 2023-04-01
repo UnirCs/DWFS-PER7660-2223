@@ -1,0 +1,20 @@
+body {
+   background-color: rgb(194 215 235);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: #3e4c7e;
+}
+
+td {
+  width: 50%;
+  text-align: justify;
+  padding: 1.5%;
+}
+
+.text-dark{
+  color: #000 !important;
+  font-weight: bold;
+}
+
+.no-dot{
+  list-style-type: none;
+}
