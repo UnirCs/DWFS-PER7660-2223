@@ -14,7 +14,14 @@
  * 
  * Ejemplo: duplicador([1,2,3,4]) -> [4,8]
  */
+function duplicador(list) { 
+    return  list.filter(elemNumb =>Number(elemNumb)%2==0)
+                .map(par => par * 2);
 
+}
+
+console.log("funcion 1 ----")
+console.log(duplicador([1,2,3,4]));
 
 
 /**
@@ -26,7 +33,12 @@
  * 
  * Ejemplo: media([1,2,3,4]) -> 2.5
  */
+function media(list) { 
+    return  list.reduce((acumulador, valorActual) => acumulador + valorActual)/list.length;
+}
 
+console.log("funcion 2 ----")
+console.log(media([1,2,3,4]));
 
 
 /**
@@ -40,6 +52,12 @@
  * Ejemplo: eliminarDuplicados([5,1,2,1,3,3,4,5]) -> [2,4]
  */
 
+function eliminarDuplicados(list) { 
+    return list.filter((item) => list.indexOf(item) === list.lastIndexOf(item));
+}
+
+console.log("funcion 3 ----")
+console.log(eliminarDuplicados([5,1,2,1,3,3,4,5]));
 
 /**
  * Funcion 4
@@ -59,6 +77,28 @@
  * Ejemplo: nCharConsec(*, 4, "Est** e**** un ej**plo") -> false
  * 
  */
+
+function nCharConsec(charFind, charRepetition, sentence) { 
+    let cont = 0;
+    let valid = false;
+    Array.from(sentence).map(function(element){
+                if ((cont==4)&&(element!=charFind))
+                    valid = true;
+                if ((cont!=4)&&(element==charFind)) {
+                    valid = false;
+                    cont++;
+                }else
+                    cont=0;
+    });
+    return valid;
+}
+
+console.log("funcion 4 ----")
+console.log(nCharConsec("*", 4, "Est**** es un ejemplo"));
+console.log(nCharConsec("*", 4, "Est* *** es un ejemplo"));
+console.log(nCharConsec("*", 4, "Est** e* un ej**plo"));
+console.log(nCharConsec("*", 4, "Est** e**** un ej**plo"));
+
 
 
 /**
@@ -84,3 +124,36 @@
  * [7, 5] (2+6+7 /3 = 5)
  * [1, 4] (2+6+7+1 /4 = 4)
  */
+
+// funcion que nos da un numero randon de 0 - max
+/**
+ * @param max maximun value to make random number
+ * @return random number
+ */
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+function generador(listLenght) { 
+    //Este metodo creara en primer lugar un array de numeros aleatorios no repetidos, de tamaño N.
+    let arrayRandon = new Set();
+    for (let i=0; i<listLenght; i++ ){
+        arrayRandon.add(getRandomInt(10));
+    }
+    // Despues filtrara el array para eliminar los 0 y los duplicados, si hay alguno.
+    // no hay duplicados, porque la variable se inicializo de tipo set (permite almacenar valores únicos de cualquier tipo)
+    arrayRandon = Array.from(arrayRandon).filter(element => Number(element) != 0);
+
+    // Despues, creara un mapa donde: 
+    // - Las claves seran los valores de cada una de las coordenadas del array creado
+    // - Los valores seran la media de todos los elementos del array filtrado previos anteriores a cada componente del array 
+    //   filtrado, incluyendo el valor del componente actual del array filtrado que se esta utilizando
+
+    let mapResult = new Map();
+    // la suma de los valores y lo divides entre el total de valores
+    arrayRandon.forEach((element, index) => {mapResult.set(element,media(arrayRandon.slice(0, index+1)))});
+    return mapResult
+}
+
+console.log("funcion 5 ----")
+console.log(generador(6));
