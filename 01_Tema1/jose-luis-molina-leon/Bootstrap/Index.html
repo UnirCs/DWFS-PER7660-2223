@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulario pago</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Styles.css" />
+  </head>
+
+  <body>
+    <div
+      class="container mt-4"
+      style="background-color: #f1f1f1ea"
+    >
+      <!-- Aquí va el contenido del contenedor -->
+      <div class="row m-3">
+        <div class="col-8">
+          <div class="row mt-3">
+            <div class="">
+              <h2>Billing address</h2>
+            </div>
+            <div class="col-6">
+              <div class="mb-3">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="last_name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Username</label>
+              <div class="input-group">
+                <label class="input-group-text">@</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <label class="form-label mt-3">Email (Optional)</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="you@example.com"
+              />
+              <label class="form-label mt-3">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="1234 Main St"
+              />
+              <label class="form-label mt-3">Address 2 (Optional)</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Apartment or suite"
+              />
+            </div>
+            <div class="col-12 mt-3 mb-4">
+              <div class="row">
+                <div class="col-5">
+                  <label>Country</label>
+                  <select class="form-control">
+                    <option value="">Choose...</option>
+                    <option value="ecuador">Ecuador</option>
+                    <option value="peru">Colombia</option>
+                  </select>
+                </div>
+                <div class="col-4">
+                  <label>State</label>
+                  <select class="form-control">
+                    <option value="">Choose...</option>
+                    <option value="cuenca">Cuenca</option>
+                    <option value="quito">Quito</option>
+                    <option value="guayaquil">Guayaquil</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <label> ZIP</label>
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="col-12">
+              <div class="mb-3">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    checked
+                  />
+                  <label class="form-check-label">
+                    Shipping address is the same as my billing address
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" />
+                  <label class="form-check-label">
+                    Save this information for next time
+                  </label>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="col-12">
+              <div class="mb-3">
+                <h3>Payment</h3>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input form-check-rounded"
+                  type="checkbox"
+                  value=""
+                  checked
+                />
+                <label class="form-check-label"> Credit card </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input form-check-rounded"
+                  type="checkbox"
+                  value=""
+                />
+                <label class="form-check-label"> Debit card </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input form-check-rounded"
+                  type="checkbox"
+                  value=""
+                />
+                <label class="form-check-label"> Paypal </label>
+              </div>
+            </div>
+            <div class="col-12 mt-2 mb-3">
+              <div class="row">
+                <div class="col-6">
+                  <div class="mb-1">
+                    <label for="name_card" class="form-label"
+                      >Name on card</label
+                    >
+                    <input type="text" class="form-control" />
+                    <small style="color: #928e8e"
+                      >Full name as displayed on card</small
+                    >
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="mb-1">
+                    <label for="credit_card" class="form-label"
+                      >Credit card number</label
+                    >
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="mb-3">
+                    <label for="expiration" class="form-label"
+                      >Expiration</label
+                    >
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="mb-3">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="col-12 mt-3">
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-primary w-100">
+                  Continue to checkout
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row mt-3">
+            <div class="col-12 mb-3">
+              <div
+                class="d-flex justify-content-between align-items-start align-items-end"
+              >
+                <h2 style="color: #7d817d">Your cart</h2>
+                <label class="input-group-text rounded">3</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <ol class="list-group list-group-numbered">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Product name</div>
+                    Brief description
+                  </div>
+                  <span>$12</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Second product</div>
+                    Brief description
+                  </div>
+                  <span>$8</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Third item</div>
+                    Brief description
+                  </div>
+                  <span>$5</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold" style="color: #12bb14">Promo code</div>
+                    <span style="color: #12bb14">Example code</span>
+                  </div>
+                  <span style="color: #12bb14">- $5</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Total (USD)</div>
+                  </div>
+                  <span><strong> $20</strong></span>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3" style="background-color: white">
+              <div class="input-group mb-1" style="padding: 10px">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Promo code"
+                  aria-label="Promo code"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Redeem
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
