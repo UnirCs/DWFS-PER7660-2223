@@ -2,7 +2,7 @@ const ImageHandler = require('./ImageHandler.js')
 
 
 //let path = '02_Tema2/Yoan_Steiner_Huaca/input/cat.jpg';
-let path = 'input/cat.jpg';
+let path = 'input/tucan.jpg';
 let handler = new ImageHandler(path);
 
 
@@ -42,26 +42,10 @@ function ejemplo() {
 function redConverter() {
     let outputPath = 'output/tucan_red.jpg';
     let pixels = handler.getPixels();
-    let contador=0;
-    let contador2=0;
 
-     pixels.forEach( (subpixels,index) => {
-        console.log('entra al ciclo pixels y subpixel vale: '+subpixels.length);
-        subpixels[index].forEach((element,index)=>{
-            console.log(subpixels[index].length);
-            console.log(index+'-'+element);
-            contador2+=1;
+    pixels=modificadorRGBImagenes(pixels,1);
 
-        });
-        contador+=1;
-     });
-    
-    console.log(pixels.length);
-    console.log('pixels: '+contador); 
-    console.log(pixels[0].length);
-    console.log('subpixels: '+contador2);
-
-    //handler.savePixels(pixels, outputPath);
+     handler.savePixels(pixels, outputPath);
 }
 
 /**
@@ -73,7 +57,7 @@ function greenConverter() {
     let outputPath = 'output/tucan_green.jpg';
     let pixels = handler.getPixels();
 
-    //Aqui tu codigo
+    pixels=modificadorRGBImagenes(pixels,2);
 
     handler.savePixels(pixels, outputPath);
 }
@@ -87,7 +71,7 @@ function blueConverter() {
     let outputPath = 'output/tucan_blue.jpg';
     let pixels = handler.getPixels();
 
-    //Aqui tu codigo
+    pixels=modificadorRGBImagenes(pixels,3);
 
     handler.savePixels(pixels, outputPath);
 }
@@ -105,7 +89,7 @@ function greyConverter() {
     let outputPath = 'output/tucan_grey.jpg';
     let pixels = handler.getPixels();
 
-    //Aqui tu codigo
+    pixels=modificadorRGBImagenes(pixels,4);
 
     handler.savePixels(pixels, outputPath);
 }
@@ -121,7 +105,7 @@ function blackAndWhiteConverter() {
     let outputPath = 'output/tucan_black_and_white.jpg';
     let pixels = handler.getPixels();
 
-    //Aqui tu codigo
+    pixels=modificadorRGBImagenes(pixels,5);
 
     handler.savePixels(pixels, outputPath);
 }
@@ -136,7 +120,8 @@ function scaleDown() {
     let outputPath = 'output/tucan_scale_down.jpg';
     let pixels = handler.getPixels();
 
-    //Aqui tu codigo
+    pixels=modificadorRGBImagenes(pixels,6);
+    let nuevaImagen=pixels;
 
     handler.savePixels(nuevaImagen, outputPath, handler.getShape()[0] / 2, handler.getShape()[1] / 2);
 }
@@ -236,4 +221,58 @@ switch (optionN) {
     case 8: invertColors(); break;
     case 9: merge(0.3, 0.7); break;
     default: ejemplo();
+}
+
+
+/* Código propio YSH 04/04/2023 */
+
+function  modificadorRGBImagenes(pixelsRGB,opcion){
+    
+    let newResult=[];
+
+    pixelsRGB.forEach( (subpixels,indexPixels) => {   
+
+        subpixels.forEach((element,indexSubpixel)=>{ 
+
+            if (opcion===6 ) {
+            
+                    if (indexPixels%2 + indexSubpixel%2 ===0 ) 
+                    newResult.push(pixelsRGB[indexPixels][indexSubpixel]); 
+            }
+            else {   
+                    pixelsRGB[indexPixels][indexSubpixel][0]=valoresModificar(opcion,'R', pixelsRGB[indexPixels][indexSubpixel]);
+                    pixelsRGB[indexPixels][indexSubpixel][1]=valoresModificar(opcion,'G', pixelsRGB[indexPixels][indexSubpixel]);
+                    pixelsRGB[indexPixels][indexSubpixel][2]=valoresModificar(opcion,'B', pixelsRGB[indexPixels][indexSubpixel]);
+                 
+            } 
+
+        });
+       
+     });
+
+     return resultPixelsRGB;
+}
+
+function valoresModificar(opcion,posicion,valoresInicialesRGB){
+    switch (opcion) {
+        case 1: posicion==='R'? valoresInicialesRGB[0]: 0 ; break;
+        case 2: posicion==='G'? valoresInicialesRGB[1]: 0 ; break;
+        case 3: posicion==='B'? valoresInicialesRGB[2]: 0 ; break;
+        case 4: media(valoresInicialesRGB); break;
+        case 5: media(valoresInicialesRGB) < 128 ? 0 : 255; break;
+        /*case 6: scaleDown(); break;*/
+        /*case 7: dimBrightness(2); break;
+        case 8: invertColors(); break;
+        case 9: merge(0.3, 0.7); break;
+        default: ejemplo();*/
+    }
+    return result;
+}
+
+function media (valoresRGB){
+    let media= ( valoresRGB[0]+
+                 valoresRGB[1]+
+                 valoresRGB[2] 
+                ) /3;
+    return media;
 }
