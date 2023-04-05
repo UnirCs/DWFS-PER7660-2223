@@ -135,7 +135,7 @@ function dimBrightness(dimFactor) {
     let outputPath = 'output/tucan_dimed.jpg';
     let pixels = handler.getPixels();
 
-    //Aqui tu codigo
+    pixels=modificadorRGBImagenes(pixels,7,dimFactor);
 
     handler.savePixels(pixels, outputPath);
 }
@@ -151,7 +151,7 @@ function invertColors() {
     let outputPath = 'output/tucan_inverse.jpg';
     let pixels = handler.getPixels();
 
-    //Aqui tu codigo
+    pixels=modificadorRGBImagenes(pixels,8);
 
     handler.savePixels(pixels, outputPath);
 }
@@ -208,7 +208,7 @@ function merge(alphaFirst, alphaSecond) {
  *     Negativo: 8
  *     Fusion de imagenes: 9
  */
-let optionN = 1;
+let optionN = 6;
 
 switch (optionN) {
     case 1: redConverter(); break;
@@ -226,45 +226,51 @@ switch (optionN) {
 
 /* Código propio YSH 04/04/2023 */
 
-function  modificadorRGBImagenes(pixelsRGB,opcion){
+function  modificadorRGBImagenes(pixelsRGB,opcion,inDimFactor=null){
     
-    let newResult=[];
+    let newPixelsRGB=[];
+    let posicionR;
+    let posicionG;
+    let posicionB;
 
     pixelsRGB.forEach( (subpixels,indexPixels) => {   
-
+        let newSubpixels=[];
         subpixels.forEach((element,indexSubpixel)=>{ 
-
             if (opcion===6 ) {
             
-                    if (indexPixels%2 + indexSubpixel%2 ===0 ) 
-                    newResult.push(pixelsRGB[indexPixels][indexSubpixel]); 
+                    if ((indexPixels%2 + indexSubpixel%2) ===0 ) 
+                    newSubpixels.push(pixelsRGB[indexPixels][indexSubpixel]); 
             }
-            else {   
-                    pixelsRGB[indexPixels][indexSubpixel][0]=valoresModificar(opcion,'R', pixelsRGB[indexPixels][indexSubpixel]);
-                    pixelsRGB[indexPixels][indexSubpixel][1]=valoresModificar(opcion,'G', pixelsRGB[indexPixels][indexSubpixel]);
-                    pixelsRGB[indexPixels][indexSubpixel][2]=valoresModificar(opcion,'B', pixelsRGB[indexPixels][indexSubpixel]);
+            else {  
+                    posicionR=valoresModificar(opcion,'R', pixelsRGB[indexPixels][indexSubpixel],inDimFactor);
+                    posicionG=valoresModificar(opcion,'G', pixelsRGB[indexPixels][indexSubpixel],inDimFactor);
+                    posicionB=valoresModificar(opcion,'B', pixelsRGB[indexPixels][indexSubpixel],inDimFactor);
+                    pixelsRGB[indexPixels][indexSubpixel][0]=posicionR;
+                    pixelsRGB[indexPixels][indexSubpixel][1]=posicionG;
+                    pixelsRGB[indexPixels][indexSubpixel][2]=posicionB;
                  
             } 
 
         });
+
+        if (newSubpixels.length>0)
+        newPixelsRGB.push(newSubpixels);
        
      });
 
-     return resultPixelsRGB;
+     return opcion===6 ? newPixelsRGB : pixelsRGB;
 }
 
-function valoresModificar(opcion,posicion,valoresInicialesRGB){
+function valoresModificar(opcion,posicion,valoresInicialesRGB,indimFactor){
     switch (opcion) {
-        case 1: posicion==='R'? valoresInicialesRGB[0]: 0 ; break;
-        case 2: posicion==='G'? valoresInicialesRGB[1]: 0 ; break;
-        case 3: posicion==='B'? valoresInicialesRGB[2]: 0 ; break;
-        case 4: media(valoresInicialesRGB); break;
-        case 5: media(valoresInicialesRGB) < 128 ? 0 : 255; break;
-        /*case 6: scaleDown(); break;*/
-        /*case 7: dimBrightness(2); break;
-        case 8: invertColors(); break;
-        case 9: merge(0.3, 0.7); break;
-        default: ejemplo();*/
+        case 1: result= posicion==='R'? valoresInicialesRGB[0]: 0 ; break;
+        case 2: result= posicion==='G'? valoresInicialesRGB[1]: 0 ; break;
+        case 3: result= posicion==='B'? valoresInicialesRGB[2]: 0 ; break;
+        case 4: result= media(valoresInicialesRGB); break;
+        case 5: result= media(valoresInicialesRGB) < 128 ? 0 : 255; break;
+        case 7: result= indimFactor==null ? 0 : dimFactor(posicion,valoresInicialesRGB,indimFactor); break;
+        case 8: result= restaRGB(posicion,valoresInicialesRGB); break;
+        /*default: result=0;*/
     }
     return result;
 }
@@ -274,5 +280,32 @@ function media (valoresRGB){
                  valoresRGB[1]+
                  valoresRGB[2] 
                 ) /3;
-    return media;
+    return parseInt(media);
+}
+
+function dimFactor(posicion,valoresInicialesRGB,indimFactor){
+    
+    if (posicion==='R')
+    return valoresInicialesRGB[0]/indimFactor;
+
+    if (posicion==='G')
+    return valoresInicialesRGB[1]/indimFactor;
+
+    if (posicion==='B')
+    return valoresInicialesRGB[2]/indimFactor;
+
+}
+
+function restaRGB (posicion,valoresInicialesRGB){
+    
+    if (posicion==='R')
+    return 255-valoresInicialesRGB[0];
+
+    if (posicion==='G')
+    return 255-valoresInicialesRGB[1];
+
+    if (posicion==='B')
+    return 255-valoresInicialesRGB[2];
+    
+    
 }
