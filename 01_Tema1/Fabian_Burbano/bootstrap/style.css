@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(248 249 250) !important;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black impr !important;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    background: #9E9E9E;
+    border: 3px solid #9E9E9E;
+    color: #ffffff;
+    text-align: center;
+    font: 28px Arial, sans-serif;
+}
+
+.colorgreen{
+    color: rgb(66 176 91) !important;
+}
