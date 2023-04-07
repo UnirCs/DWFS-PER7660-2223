@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    async function generateJoke() {
+        var button = document.getElementById("button");
+        var p = document.getElementById("joke");
+        fetch("https://api.chucknorris.io/jokes/random").then(async response => {
+            let json = await response.text()
+            p.innerText = JSON.parse(json).value;
+        });
+    }
+</script>
+
+
+<button type="button" id="button" onclick="generateJoke()">Generar comedia</button>
+
+<p id="joke"></p>
+
+</body>
+</html> 
