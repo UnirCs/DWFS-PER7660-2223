@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris Jokey</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&amp;display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="./assets/img/logo.svg" alt="">
+            <p>@AgudoBot</p>
+        </figure>
+    </header>
+    <main>
+        <section>
+            <figure>
+                <img src="./assets/img/ChuckNorris.png" alt="">
+            </figure>
+            <h1>Chuck Norris Jokey</h1>
+            <p>Call API and get a random joke</p>
+            <button onclick="getJoke();">Random Joke</button>
+            <div>
+                <p></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hgroup>
+            <h3>Developed by Jesus Agudo Murillo</h3>
+        </hgroup>
+    </footer>
+    <script>
+        const getJoke = async () => {
+            const response = await fetch('https://api.chucknorris.io/jokes/random');
+            const data = await response.json();
+            document.querySelector('section div p').innerHTML = data.value;
+        }
+    </script>
+</body>
+
+</html>
