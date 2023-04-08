@@ -1,9 +1,10 @@
 body{
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #3a637f;
     color: #dfde87;
+    margin-bottom: 7em;
 }
 
 .header{
@@ -16,7 +17,7 @@ body{
     margin-bottom: 2rem;
 }
 
-header .horizontal-hr{
+.header .horizontal-hr{
     border: none;
     background-color: white;
     height: 0.2rem;
@@ -32,10 +33,18 @@ header .horizontal-hr{
     margin: 0 3rem;
 }
 
-.content .paragraph-content, .content .ul-contact{
+.content .paragraph-content, .content .ul-contact, .content .ul-experience, .content .ul-education{
     color: white;
     font-size: 14px;
     margin: 0 6rem 4rem 0;
+}
+
+.content .ul-experience, .content .ul-education{
+    margin-right: 0;
+}
+
+ul{
+    padding-left: 15px;
 }
 
 .ul-contact li, .ul-skills li, .ul-experience li, .ul-education li{
@@ -46,4 +55,29 @@ header .horizontal-hr{
 .ul-skills{
     list-style: none;
     padding: 0;
+}
+
+@media (max-width: 950px){
+    body{
+        width:90%;
+    }
+}
+
+@media (max-width: 650px){
+    .content{
+        margin:0;
+    }
+    .content .paragraph-content{
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 500px){
+    .content{
+        display: block;
+    }
+    .content .ul-skills{
+        margin-bottom: 4rem;
+    }
+
 }
