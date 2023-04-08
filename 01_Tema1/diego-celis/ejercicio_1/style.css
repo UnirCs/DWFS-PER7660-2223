@@ -32,15 +32,15 @@ header .horizontal-hr{
     margin: 0 3rem;
 }
 
-.content .paragraph-content{
+.content .paragraph-content, .content .ul-contact{
     color: white;
     font-size: 14px;
     margin: 0 6rem 4rem 0;
 }
 
-.ul-contact li, .ul-skills li, .ul-experience li{
-    color: white;
+.ul-contact li, .ul-skills li, .ul-experience li, .ul-education li{
     margin-top: 1rem;
+    color: white;
 }
 
 .ul-skills{
