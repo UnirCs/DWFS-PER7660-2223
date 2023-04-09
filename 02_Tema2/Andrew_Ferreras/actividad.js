@@ -108,9 +108,10 @@ function greyConverter() {
     pixels.forEach((element)=>{
         element.forEach((property)=>{
             let ValorMedia = (property.reduce((a,b)=> a+b,0)/property.length)
-            property[0] = ValorMedia;
-            property[1] = ValorMedia;
-            property[2] = ValorMedia;
+            property.forEach((value,valueI)=>{
+                property[valueI] =ValorMedia;
+
+            })
 
         });
     });
@@ -130,18 +131,11 @@ function blackAndWhiteConverter() {
 
     pixels.forEach((element)=>{
         element.forEach((property)=>{
-            let ValorMedia = (property.reduce((a,b)=> a+b,0)/property.length)
-            if(ValorMedia<128){
-                property[0] = 0;
-                property[1] = 0;
-                property[2] = 0;
-            }else{
-                property[0] = 255;
-                property[1] = 255;
-                property[2] = 255;
-            }
+            let ValorMedia =  Math.trunc((property.reduce((a,b)=> a+b,0)/property.length))
+                property.forEach((value,valueI)=>{
+                    property[valueI] = (ValorMedia < 128) ? 0: 255
 
-
+                })
         });
     });
 
@@ -173,8 +167,14 @@ function dimBrightness(dimFactor) {
     let outputPath = './output/tucan_dimed.jpg';
     let pixels = handler.getPixels();
 
-    //Aqui tu codigo
+    pixels.forEach((element)=>{
+        element.forEach((property)=>{
+           property.forEach((value, valueI)=>{
+               property[valueI] = value/dimFactor
+           })
+        })
 
+        });
     handler.savePixels(pixels, outputPath);
 }
 
@@ -189,7 +189,14 @@ function invertColors() {
     let outputPath = './output/tucan_inverse.jpg';
     let pixels = handler.getPixels();
 
-    //Aqui tu codigo
+    pixels.forEach((element)=>{
+        element.forEach((property)=>{
+            property.forEach((value, valueI)=>{
+                property[valueI] = Math.abs(255-value);
+            })
+        })
+
+    });
 
     handler.savePixels(pixels, outputPath);
 }
@@ -246,7 +253,7 @@ function merge(alphaFirst, alphaSecond) {
  *     Negativo: 8
  *     Fusion de imagenes: 9
  */
-let optionN = 6;
+let optionN = 5;
 
 switch (optionN) {
     case 1: redConverter(); break;
