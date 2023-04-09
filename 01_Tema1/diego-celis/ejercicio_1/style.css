@@ -3,7 +3,7 @@ body{
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #3a637f;
-    color: #dfde87;
+    color: white;
     margin-bottom: 7em;
 }
 
@@ -25,6 +25,7 @@ body{
 
 .title, .subtitle, .title-content{
     text-transform: uppercase;
+    color: #dfde87;
 }
 
 .content{
@@ -33,8 +34,11 @@ body{
     margin: 0 3rem;
 }
 
+ul{
+    padding-left: 15px;
+}
+
 .content .paragraph-content, .content .ul-contact, .content .ul-experience, .content .ul-education{
-    color: white;
     font-size: 14px;
     margin: 0 6rem 4rem 0;
 }
@@ -43,8 +47,13 @@ body{
     margin-right: 0;
 }
 
-ul{
-    padding-left: 15px;
+.ul-contact{
+    list-style: none;
+    padding-left: 0;
+}
+
+.ul-contact img{
+    margin-right: 1rem;
 }
 
 .ul-contact li, .ul-skills li, .ul-experience li, .ul-education li{
@@ -55,11 +64,27 @@ ul{
 .ul-skills{
     list-style: none;
     padding: 0;
+    position: absolute;
 }
 
-@media (max-width: 950px){
+.star-bar{
+    margin-top: 3rem;
+}
+
+.star-bar p{
+    margin: 0.6rem 0 0 70%;
+}
+
+.hobbies-content{
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1000px){
     body{
         width:90%;
+    }
+    .star-bar{
+        display: none;
     }
 }
 
@@ -69,6 +94,14 @@ ul{
     }
     .content .paragraph-content{
         margin-right: 2rem;
+    }
+
+    .ul-contact{
+        text-align: center;
+    }
+    .ul-contact img{
+        display: block;
+        margin: 0 auto;
     }
 }
 
