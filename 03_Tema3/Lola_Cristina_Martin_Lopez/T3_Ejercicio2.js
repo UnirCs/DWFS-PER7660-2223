@@ -14,10 +14,11 @@
  * 
  * Ejemplo: duplicador([1,2,3,4]) -> [4,8]
  */
-
 let numbers= [1,2,3,4]
 const pares = numbers => numbers.filter(number => number%2 == 0).map(number => number*2)
-console.log(pares(numbers))
+
+//Prueba
+console.log("Numeros pares: ", pares(numbers))
 
 
 
@@ -30,9 +31,11 @@ console.log(pares(numbers))
  * 
  * Ejemplo: media([1,2,3,4]) -> 2.5
  */
+const media = (arr) => Math.round(arr.reduce((ac, elem) => ac + elem) / arr.length * 100) / 100;
 
-const media = arr => arr.reduce((prev, act) => prev + act) /arr.lenght;
-console.log(media([1,2,3,4]))
+//Prueba
+
+console.log("Valor de la media: ", media([1,2,3,4]))
 
 
 /**
@@ -46,7 +49,10 @@ console.log(media([1,2,3,4]))
  * Ejemplo: eliminarDuplicados([5,1,2,1,3,3,4,5]) -> [2,4]
  */
 const eliminarDuplicados= arr => arr.filter(el => arr.indexOf(el) == arr.lastIndexOf(el));
+
+//Prueba
 console.log(eliminarDuplicados([5,1,2,1,3,3,4,5]))
+
 /**
  * Funcion 4
  * 
@@ -71,6 +77,8 @@ console.log(eliminarDuplicados([5,1,2,1,3,3,4,5]))
 
 const nCharConsec = (char,num,str) => str.match(new RegExp(`[${char}]{${num}}`))!=null;
 
+//Prueba
+nCharConsec("t", 4, "Est* *** es un ejemplo"); 
 
 /**
  * Funcion 5
@@ -96,3 +104,31 @@ const nCharConsec = (char,num,str) => str.match(new RegExp(`[${char}]{${num}}`))
  * [1, 4] (2+6+7+1 /4 = 4)
  */
 
+function generador (N)
+{
+    let miArray = Array.from({length: N}, () => Math.floor(Math.random() * N));
+
+    // miarray.forEach(function(item,index,arr){
+    // console.log("El array tiene: ", item);
+    // });
+    console.log("El array(1) tiene: ", miArray);
+
+    miArray=eliminarDuplicados(miArray);
+
+    var miArrayFilter= miArray.filter(num=> num!=0);
+
+    console.log("El array tiene: ", miArrayFilter);
+
+    var valueMap= new Map(); 
+
+    for(let i=0; i< miArrayFilter.length; i++)
+    {   
+        // A la hora de tomar i+1 no ocurre error ya que el bucle está protegido para salir cuando la i>miArrayFilter.lenght
+        valueMap.set(miArrayFilter[i], media(miArrayFilter.slice(0,i+1)))
+        console.log("Para la key" , miArrayFilter[i], "de la casilla del mapa, el value es: ", valueMap.get(miArrayFilter[i]));
+    }
+
+}                                           
+
+//Prueba
+generador(10)

@@ -56,6 +56,7 @@ function esPar(numero)
 
     return true;
 }
+
 //Prueba
 console.log(esPar(2));
 
@@ -75,6 +76,7 @@ const formatStr = str => str.replace(/\s+/g, '').replace(/[^aeiou]+/g, (v) => v.
 
 //Prueba
 console.log(formatStr("mi nombre es lola"))
+
 /**
  * Funcion 3
  * 
@@ -91,4 +93,5 @@ console.log(formatStr("mi nombre es lola"))
 //Le damos la vuelta al string y lo comparamos con el de orden original, para ver si coinciden string a string. 
 const esPalindromo = str => str.replace(/\s+/g, '').toLowerCase().split('').reverse().join('') == str.replace(/\s+/g, '').toLowerCase();
 
+//Prueba
 console.log(esPalindromo("Dabale arroz a la zorra el abad"));
