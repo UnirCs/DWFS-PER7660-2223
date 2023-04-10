@@ -83,9 +83,6 @@ i{
    color: #eaf37f;
 }
 
-ul{
-   list-style: none;
-}
 
 li{
    margin-bottom: 10px;
@@ -133,10 +130,41 @@ svg{
    opacity: 0.2;
 }
 
-.timeline{
- content: '';
+
+
+.timeline ul{
+   list-style: none;
+   border-left: rgba(255, 255, 255, 0.685);
+   border-left-style: solid;
+   border-width: 10%;
+   margin-left: 12%;
+   padding-left: 0%;
+}
+
+.timeline ul li {
+   padding-left: 3%;
    
 }
+
+.timeline ul li::before {
+   content: '';
+   position: absolute;
+   background:#eaf37f;
+   border-radius: 50%;
+   width: 15px;
+   height: 15px;
+   margin-left: -17px;
+}
+
+.timeline ul li h5 {
+   color:  rgba(255, 255, 255, 0.685);
+}
+
+
+
+
+
+
 /*Hola*/
 /*
 .timeline ul li {
