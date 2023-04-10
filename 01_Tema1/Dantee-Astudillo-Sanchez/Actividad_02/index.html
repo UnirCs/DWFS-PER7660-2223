@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+  <body class="container mb-3 bg-light">
+    <!-- Formulario de datos -->
+    <div class="row">
+      <div class="col-lg-8 col-md-6" >
+        <div class="row text-center">
+          <div class="h1 font">Formulario de pago</div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label class="" for="">Nombres</label>
+            <input type="text" placeholder="Nombres" class="form-control" />
+          </div>
+          <div class="col-6">
+            <label for="">Apellidos</label>
+            <input type="text" placeholder="Apellidos" class="form-control" />
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <label for="">Username</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <label for="">Email </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="dantee@corre.co"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <label for="">Address 1 </label>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Address1"
+              placeholder="Av. 1234"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <label for="">Address 2 (Optional) </label>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Address 2 "
+              placeholder="Casa color rojo"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4">
+            <label for="">Country </label>
+            <select class="form-select">
+              <option selected disabled>Chosse Country</option>
+              <option value="1">Ecuador</option>
+              <option value="2">España</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <label for="">State </label>
+            <select class="form-select">
+              <option selected disabled>Chosse State</option>
+              <option value="1">Ecuador</option>
+              <option value="2">España</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <label for="">Zip </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Zip"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+        <div class="row mt-3">
+          <hr class="col-12" />
+        </div>
+        <!-- Payment -->
+        <div class="row mt-2">
+          <span class="h5">Payment</span>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault1"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Credit card
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault2"
+                id="flexRadioDefault2"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Debit card
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault3"
+                id="flexRadioDefault3"
+              />
+              <label class="form-check-label" for="flexRadioDefault3">
+                Paypal
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label for="">Name on card</label>
+            <input type="text" class="form-control" />
+            <span>Full name as displayed on card</span>
+          </div>
+          <div class="col-6">
+            <label for="">Card number</label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <label for="">Expiration</label>
+            <input type="text" class="form-control" />            
+          </div>
+          <div class="col-3">
+            <label for="">CVV</label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+        </div>
+        <!-- Listado de productos -->
+        <div class="col-lg-4 col-md-6">
+          <div class="row">
+            <div class="col-10">
+              <div class="h5 mt-3">Productos Seleccionados               
+              </div>
+            </div>
+            <div class="col">          
+            <span class="mt-2 badge rounded-pill bg-secondary fs-5">4</span>
+            </div>
+          </div>
+          <div class="row">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="row p-2">
+                  <div class="col-8">
+                    <div class="row fw-bold ">First Product name</div>                  
+                    <div class="row text-secondary">Description</div>
+                  </div>
+                  <div class="col text-end text-secondary">
+                    $10
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row p-2">
+                  <div class="col-8">
+                    <div class="row fw-bold ">Second Product name</div>                  
+                    <div class="row text-secondary">Description</div>
+                  </div>
+                  <div class="col text-end text-secondary">
+                    $20
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row p-2">
+                  <div class="col-8">
+                    <div class="row fw-bold ">Third Product name</div>                  
+                    <div class="row text-secondary">Description</div>
+                  </div>
+                  <div class="col text-end text-secondary">
+                    $5
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row p-2 text-success ">
+                  <div class="col-8">
+                    <div class="row fw-bold ">Promo Product name</div>                  
+                    <div class="row ">Promo code</div>
+                  </div>
+                  <div class="col text-end">
+                    -$5
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row p-2">
+                  <div class="col-8">
+                    <div class="row fw-bold ">Total (USD)</div>                  
+                  </div>
+                  <div class="col text-end fw-bold">
+                    $30
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="row mt-2">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="row p-2">
+                  <div class="input-group mb-3">
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Promo code"
+                    />
+                    <div class="input-group-prepend">
+                      <button class="btn btn-secondary">Redeem</button>
+                    </div>
+                  </div>
+                </div>
+              </li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

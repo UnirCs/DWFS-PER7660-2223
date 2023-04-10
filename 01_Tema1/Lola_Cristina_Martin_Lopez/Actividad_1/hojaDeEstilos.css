@@ -1,0 +1,199 @@
+
+html{
+    background-color: #eee;
+}
+body{
+    
+    background-color: #246966;
+    font-family:  Georgia, 'Times New Roman', Times, serif, serif;
+    margin: 1rem;
+}
+
+.NombreFotoProfesion{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+    padding-top: 5%;
+    width: 70%;
+}
+
+.framePhoto {
+    
+    border: 3px solid #ccc;
+    background: #eee;
+    margin: auto;
+    padding: 15px 10px;
+  }
+
+.imagen_cv{
+    align-items: left;
+    text-align: left ;
+    padding-left: -1rem;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+.avion_cv 
+{
+    padding-left: 2em;
+}
+
+.nombre_cv{
+    font-size: 5rem;
+    padding-left: 3rem;
+    color: white;
+    font-family: Montserrat;
+}
+
+.profesion_cv{
+    font-size: 1rem;
+    text-align: center ;
+    justify-content: center;
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.perfil{
+    display: flex;
+    justify-content: inherit; 
+    margin: 3rem 5% 0rem 5%;
+}
+
+.contacto,
+.idiomas,
+.software_usados,
+.tecnologias_usadas,
+.experiencia,
+.educacion,
+.perfil-info{
+    margin: 3rem 5% 0rem 5%;
+}
+
+.tec_cv{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+
+.image_lan{
+    border-radius: 10%;
+    width: 50px; 
+    height: 25px; 
+}
+
+.idioma_nivel{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+
+.image_tec{
+    width: 50px; 
+    height: 50px; 
+}
+
+
+.left_part,.right_part{
+    width: 50%;
+}
+
+.left_part{
+    padding-left: 4em;
+}
+
+.left, .right{
+    color:#ccc;
+    font-size: large;
+}
+
+.profile_cv{
+    
+    color:white;
+    text-align: justify;
+    padding-right: 10%;
+    border-radius: .5rem;
+}
+
+.space_profile{
+    height:20px;
+}
+
+.exp,
+.hab,
+.hob,
+.cont,
+.edu, 
+.tec{
+    display: flex;
+}
+
+.exp_cv,
+.hab_cv,
+.hob_cv,
+.cont_cv,
+.edu_cv,
+.tec_cv{
+    display: block;
+    color: white;
+    margin-left: 1%;
+    text-align: justify;
+    padding-right: 15%;
+}
+
+.border_white{
+    border-color: white;
+    color:white;
+    margin-bottom: 50px;
+    border-radius: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-right-style:dashed;
+    height:70%;
+}
+
+.title_exp,
+.title_hab,
+.title_hob,
+.title_cont,
+.title_edu{
+    font-size: 1.2rem;
+}
+
+.empre_exp,
+.cargo_exp,
+.fechas_exp,
+.fechas_edu,
+.empre_edu{
+    font-size: 1rem; 
+}
+
+.empre_exp,.empre_edu{
+    color:#ccc; 
+}
+
+.container-info{
+    background-color: #eee;
+    backface-visibility: 50%;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: white;
+}
+
+.iconmodified{
+    margin-top: 50%
+}
+
+.title_sftw, .idioma_nivel{
+    color: white; 
+}
+
+
+
+
