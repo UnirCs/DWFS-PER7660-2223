@@ -1,0 +1,22 @@
+html{
+    background:rgb(21,34,46) ;
+}
+button{
+    position: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin: 2em;
+}
+p {
+    position:fixed;
+    color:orange; 
+    font-size:20px;
+    font-family:Courier;
+    font-weight:bold;
+    font-style:italic;
+    line-height:30px;
+    letter-spacing:5px;
+    text-align:left;
+    text-indent:30px;
+}
