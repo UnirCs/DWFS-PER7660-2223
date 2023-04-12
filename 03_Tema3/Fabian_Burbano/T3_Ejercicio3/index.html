@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuentame un chiste Chuck Norris</title>
+    <style type="text/css">
+        body {
+            background-color: #15222e;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        button {
+            font-size: larger;
+        }
+
+        p {
+            color: #ffc323;
+            font-size: x-large;
+            margin-block: auto;
+        }
+
+        .column {
+            float: left;
+        }
+
+        .left {
+            width: 15%;
+        }
+
+        .right {
+            width: 85%;
+        }
+    </style>
+    <script>
+        var url = "https://api.chucknorris.io/jokes/random";
+        function llenadoAsincrono() {
+            let outChiste = document.getElementById("chiste1");
+            let setOfValue = new Set();
+            fetch(url).then(response => response.json()).then(json => setOfValue.add(json.value));
+            const procesarSet = (setVal) => {
+                console.log("Values: " + Array.from(setVal));
+                outChiste.innerHTML = Array.from(setVal)[0];
+            };
+            setTimeout(() => procesarSet(setOfValue), 5000);
+        }
+        function llenadoSincrono() {
+            let outChiste = document.getElementById("chiste2");
+            (async () => {
+                let chisteSincrono = await fetchSincrono();
+                outChiste.innerHTML = chisteSincrono;
+            })();
+        }
+        async function fetchSincrono() {
+            let fetchResponse = await fetch(url);
+            let json = await fetchResponse.json();
+            let chiste = json.value;
+            console.log("Chiste sincrono: " + chiste);
+            return chiste;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <div class="column left">
+            <button id="btn1" onclick="llenadoAsincrono();">Dame un chiste!1</button>
+        </div>
+        <div class="column right">
+            <p id="chiste1">Asincrono</p>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div id="div2">
+        <div class="column left">
+            <button id="btn2" onclick="llenadoSincrono();">Dame un chiste!2</button>
+        </div>
+        <div class="column right">
+            <p id="chiste2">Sincrono</p>
+        </div>
+    </div>
+</body>
+
+</html>
