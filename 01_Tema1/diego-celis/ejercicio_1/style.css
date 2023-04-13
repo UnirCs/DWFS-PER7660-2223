@@ -1,0 +1,116 @@
+body{
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3a637f;
+    color: white;
+    margin-bottom: 7em;
+}
+
+.header{
+    text-align: center;
+}
+
+.header .subtitle{
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.header .horizontal-hr{
+    border: none;
+    background-color: white;
+    height: 0.2rem;
+}
+
+.title, .subtitle, .title-content{
+    text-transform: uppercase;
+    color: #dfde87;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 3rem;
+}
+
+ul{
+    padding-left: 15px;
+}
+
+.content .paragraph-content, .content .ul-contact, .content .ul-experience, .content .ul-education{
+    font-size: 14px;
+    margin: 0 6rem 4rem 0;
+}
+
+.content .ul-experience, .content .ul-education{
+    margin-right: 0;
+}
+
+.ul-contact{
+    list-style: none;
+    padding-left: 0;
+}
+
+.ul-contact img{
+    margin-right: 1rem;
+}
+
+.ul-contact li, .ul-skills li, .ul-experience li, .ul-education li{
+    margin-top: 1rem;
+    color: white;
+}
+
+.ul-skills{
+    list-style: none;
+    padding: 0;
+    position: absolute;
+}
+
+.star-bar{
+    margin-top: 3rem;
+}
+
+.star-bar p{
+    margin: 0.6rem 0 0 70%;
+}
+
+.hobbies-content{
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1000px){
+    body{
+        width:90%;
+    }
+    .star-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 650px){
+    .content{
+        margin:0;
+    }
+    .content .paragraph-content{
+        margin-right: 2rem;
+    }
+
+    .ul-contact{
+        text-align: center;
+    }
+    .ul-contact img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px){
+    .content{
+        display: block;
+    }
+    .content .ul-skills{
+        margin-bottom: 4rem;
+    }
+
+}
