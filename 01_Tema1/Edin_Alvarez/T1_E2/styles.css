@@ -1,6 +1,15 @@
 *{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.container{
+    background-color: rgb(250, 248, 248);
+}
+
+.col-8{
+    margin-top: 15px;
+}
+
 .divider{
 
     margin-top: 2rem;
