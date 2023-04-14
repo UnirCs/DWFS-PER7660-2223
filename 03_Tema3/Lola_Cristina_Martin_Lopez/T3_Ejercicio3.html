@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleCSS.css">
+    <title>T3_Ejercicio3</title>
+</head>
+
+<body>
+    <button>Dame un chiste!</button>
+    <p></p>
+
+    <!-- Se añade el script dentro del Body del código -->
+     <script> 
+
+        // Definición de los elementos a buscar en el cuerpo HTML:
+
+            const buttonHTML = document.querySelector("button");
+            const p = document.querySelector("p"); 
+
+        // Se busca el botón en todo el documento HTML y una vez que este reciba 
+        // un evento de clic, se llamará tal cual a la funcion fetch que se 
+        // indica en la docu: https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch
+        
+            buttonHTML.addEventListener("click", ()=>{
+                fetch("https://api.chucknorris.io/jokes/random").then(response=>response.json()).then(response=> p.textContent = response.value)
+            });
+        //Para tener acceso al valor del párrafo "p", se hará con: https://www.w3schools.com/jsref/prop_node_textcontent.asp
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+.billing_info {
+    width: 80%;
+}
+
+.country_information {
+    padding-right: 1vw;
+    width: 33%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.zip_margin{
+    margin-right: 1vw;
+    margin-left: 2vw;
+}
+
+.card_info {
+    width: 40%;
+}
+
+
+.card_info_container {
+    display: flex;
+}
+
+.user_info_container {
+    width: 45%;
+    padding-right: 1vw;
+}
+
+.credit_info{
+    padding-right: 1vw;
+}
+
+.pay {
+    width: 80%;
+}
+
+.country_information_container {
+    display: flex;
+}

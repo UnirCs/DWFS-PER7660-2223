@@ -1,0 +1,47 @@
+html, body, .container {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .card {
+    border-radius: 15px;
+    background-color: #2eeb66;
+    color: white;
+    box-shadow: 5px 5px 5px #888888;
+    width: 500px;
+    height: 300px;
+  }
+  
+  .card-header {
+    background-color: #2eeb66;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .card-footer {
+    background-color: #2eeb66;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .btn-primary {
+    background-color: #238de4;
+    border-color: #238de4;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0059ff;
+    border-color: #0059ff;
+  }
+
+  .grande{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .card-body{
+    border-radius: 20px;
+    margin: 5px 20px;
+  }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T3_Ejercicio3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function fetchApi() {
+            fetch("https://api.chucknorris.io/jokes/random")
+                .then(response => response.json())
+                .then(response => {
+                    document.getElementById("joke").textContent = response.value
+                })
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <button onclick="fetchApi()">Dame un chiste!</button>
+    <p class="joke-text" id="joke"></p>
+</div>
+</body>
+</html>
