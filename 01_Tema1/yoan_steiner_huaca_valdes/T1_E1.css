@@ -3,11 +3,6 @@
    font-family: 'Montserrat', sans-serif;
    background-color: #3A637F;
 }
-body>header,main,footer{ 
-   margin-left: 10%;
-   margin-right: 10%;
-   /*font-family: ;*/
-}
 
 /*Colores de las letras */
 
@@ -21,6 +16,7 @@ h1,h4 {
    padding-top: 10%;
    margin-bottom: 10px;
    font-weight: 600;
+   font-size: 60;
 }
 
 h4{
@@ -29,7 +25,7 @@ h4{
    margin-bottom: 0px;
    opacity: 0.7;
    font-weight: 10;
-   font-size: 14;
+   font-size: 25;
 }
 
 #divisor{
@@ -43,7 +39,13 @@ h4{
 }
 
 main{
-   height: 30%;
+  margin: 0 auto;
+  height: 913.719px;
+  width: 1154.810px;
+}
+header{
+   margin: 0 auto;
+   width: 1154.810px;
 }
 
 #general{
@@ -68,6 +70,7 @@ h3{
    color: #EAF37F;
    font-weight: 600;
    margin-bottom: 0px;
+   font-size: 40;
 }
 
 article>header,p{
@@ -88,7 +91,7 @@ li{
    margin-bottom: 10px;
 }
 
-#table1{
+#table1,#table2{
    margin-left: 10%;
 }
 
@@ -100,11 +103,6 @@ td{
 svg{
    height: 25PX;
    width: 30px;
-}
-
-#table2{
-   margin-left: 10%;
-   
 }
 
 #botones{
@@ -180,36 +178,14 @@ svg{
 }
 
 #seccion{
-   margin-bottom: 50px;
+   margin-bottom: 25px;
 }
 
-
-
-
-
-
-
-
-
-/*Hola*/
-/*
-.timeline ul li {
-  list-style-type: none;
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
-  background: #fff;
+#descripcionPerfil{
+text-align: start;
+width: 300px;
 }
-.timeline ul li::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: inherit;
-}*/
 
+#izquierdo > #seccion{
+   height: 30%;
+}
