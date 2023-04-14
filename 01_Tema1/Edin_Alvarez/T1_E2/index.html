@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO BOOTSTRAP</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>  
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8 columna">
+                <div class="row">
+                    <div class="col-12">
+                        <div container>
+                            <h2>Billing address</h2>
+                        </div>
+                    </div>
+                </div>          
+                <div class="row">
+                    <div class="col-6">
+                        <div container>
+                            <label for="first_name" class="form-label"> First Name</label>
+                            <input type="text" class="form-control" id="first_name">
+                        </div>
+                    </div> 
+                    <div class="col-6">
+                        <div mt-3>
+                            <label for="last_name" class="form-label"> Last Name</label>
+                            <input type="text" class="form-control" id="last_name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="input_email" class="form-label">Username</label>
+                        <div class="input-group contenido1">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" id="input_email" class="form-control" placeholder="Username"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="mb-3">
+                        <div class="col-12">
+                            <label for="email_opt" class="form-label">Email (Optional)</label>
+                            <input type="email" class="form-control" id="email_opt" placeholder="you@example.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="add_uno" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="add_uno" placeholder="1234 Main St">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="md-3">
+                            <label for="add_dos" class="form-label">Address2</label>
+                            <input type="text" class="form-control" id="add_dos" placeholder="Apartment or suite">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <label for="country">Country</label>
+                        <select class="form-control">
+                            <option value="Choose...">Choose...</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="españa">España</option>
+                        </select>
+                    </div>
+                    <div class="col-5">
+                        <label for="state">State</label>
+                        <select class="form-control">
+                            <option value="Choose...">Choose...</option>
+                            <option value="loja">Loja</option>
+                            <option value="quito">Quito</option>
+                            <option value="guayaquil">Guayaquil</option>
+                        </select>
+                    </div>
+                    <div class="col-2 ml-3">
+                        <label for="cod">ZIP</label>
+                        <input type="number" class="form-control" id="cod">
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="shipping">
+                                <label class="form-check-label" for="shipping">
+                                    Shipping address is the same as my billing address
+                                </label>                                    
+                            </div>
+                            <div class="from-check">
+                                <input class="form-check-input" type="checkbox" value="" id="save_info_nxt_tm">
+                                <label class="form-check-label" for="save_info_nxt_tm">
+                                    Save this information for next time
+                                </label>                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <h3>Payment</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="rom">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <div class="from-radio">
+                                <input class="form-radio-input" type="radio" name="flexRadioDefault" id="credit_cart">
+                                <label class="form-radio-label" for="credit_cart">
+                                    Credit_cart
+                                </label>
+                            </div>
+                            <div class="from-radio">
+                                <input class="form-radio-input" type="radio" name="flexRadioDefault" id="debit_card">
+                                <label class="form-radio-label" for=" debit_card">
+                                    Debit_card
+                                </label>
+                            </div>
+                            <div class="from-radio">
+                                <input class="form-radio-input" type="radio" name="flexRadioDefault" id="paypal">
+                                <label class="form-radio-label" for="paypal">
+                                    Paypal
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-1">
+                            <label for="name_card" class="form-label">Name on card</label>
+                            <input type="text" class="form-control" placeholder="Nombre" id="name_card">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-1">
+                            <label for="credit_cart" class="form-label">Credit cart number</label>
+                            <input type="number" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX" 
+                            id="credit_cart">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Full name as displayed on card</p>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="expiration" class="form-label">Expiration</label>
+                            <input type="date" class="form-control" id="expiration">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="number" class="form-control" placeholder=" XXX" id="cvv">
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-primary">Continue to checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 columna">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3">
+                        <h2>Your cart</h2>
+                        </div>   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto"> 
+                                        <div class="fw-bold">Product name</div>
+                                        Brief description
+                                    </div>
+                                    <span >&12</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Second product</div>
+                                        Brief description
+                                    </div>
+                                    <span>$8</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Third item</div>
+                                        Brief description
+                                    </div>
+                                    <span>$5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start promoCode">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Promo code</div>
+                                        <span>Example code</span>
+                                    </div>
+                                    <span>- $5</span>
+                                </li>                                
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Total (USD)</div>
+                                    </div>
+                                    <span><strong>$20</strong></span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3" style="background-color: white;">
+                            <div class="input-group mb-1" style="padding: 10px;">
+                                <input type="text" class="form-control" placeholder="Promo code" aria-label="Promo code" aria-describedby="button-addon2">
+                                <button class="btn btn-secondary" type="button" id="button-addon2">Redeem</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </div>      
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle
+        .min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923
+        +mo//f6V8Qbsw3"crossorigin="anonymous"></script>
+</body>
+</html>
