@@ -1,0 +1,24 @@
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+body {
+    background-color: rgba(61, 106, 119, 0.938);
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    font-size: larger;
+    border-bottom-color: darkgray;
+}
+p{
+    font-size: x-large;
+    color:rgb(231 231 24);
+    font-weight: bold;
+    margin-top: 5px;
+    width: 600px;
+}
