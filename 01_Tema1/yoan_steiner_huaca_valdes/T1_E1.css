@@ -150,13 +150,13 @@ svg{
    border-width: 10%;
 }
 .timeline ul li::before {
-   content: '';
-   position: absolute;
    background:#eaf37f;
    border-radius: 50%;
-   width: 15px;
+   content: '';
    height: 15px;
    margin-left: -9px;
+   position: absolute;
+   width: 15px;
 }
 
 .tituloitem,
@@ -167,8 +167,8 @@ svg{
 }
 
 .tituloitem{
-   font-weight: 600;
    font-size: 117%;
+   font-weight: 600;
    padding-bottom: 7.5px;
 }
 .subtituloitem{
