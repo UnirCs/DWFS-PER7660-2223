@@ -1,0 +1,33 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    background-color: rgb(250, 248, 248);
+}
+
+.columna{
+    margin-top: 15px;
+}
+
+.div, p{
+    color: rgb(146, 146, 146);
+}
+
+.promoCode{
+    color: rgb(19, 199, 19);
+}
+
+.divider{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: .1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 201, 201);
+    border-radius: 50%;
+}
+
+
+
