@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #1c71c0;
+    --secondary-color: #a5a5a5;
+    --bg-color: #FFF;
+    --contrast-color: #000;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font: Monospace, Sans-Serif;
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+    color: var(--contrast-color)
+}
+
+.dark-mode {
+    --bg-color: #000;
+    --contrast-color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul > li {
+    margin-bottom: 10px;
+}
+
+main {
+    width: 800px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+header {
+    text-align: center;
+    border-bottom: 5px solid var(--contrast-color);
+    padding-bottom: 20px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
+}
+
+.left {
+    max-width: 250px;
+}
+
+li > svg {
+    width: 15px;
+    padding-right: 10px;
+    color: var(--primary-color);
+    display: inline;
+}
+
+li > svg + p {
+    display: inline;
+}
+
+#skills li > p {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+}
+
+.circle {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    border: 1px solid;
+}
+
+.circle.filled {
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.timeline {
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item > span {
+    display: block;
+    font-size: 12px;
+}
+
+.timeline-item > p {
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: " ";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    border: 1px solid;
+    position: absolute;
+    left: -6px;
+}
+
+.switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--bg-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--primary-color);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
