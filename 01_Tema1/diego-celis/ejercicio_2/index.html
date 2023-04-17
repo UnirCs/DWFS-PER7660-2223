@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pago</title>
+</head>
+<body>
+    <section class="container bg-secondary">
+        <div class="row">
+            <div class="col-7">
+                <h4 class="pt-5">Billing address</h4>                
+                <form action="" class=""> 
+                    <div class="input-group justify-content-around">
+                        <div class="col pe-3 mb-3">                      
+                            <label for="first-name" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="first-name" aria-label="First name">
+                        </div> 
+                        <div class="col">   
+                            <label for="last-name" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="last-name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <label for="username" class="form-label">Username</label>
+                    <div class="input-group mb-3">                               
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" id="username" placeholder="Username" aria-label="Username">
+                    </div>
+                    <label for="email" class="form-label">Email</label><span class="form-text"> (Optional)</span>
+                    <div class="input-group mb-3">                               
+                        <input type="text" class="form-control" id="email" placeholder="you@example.com" aria-label="Email">
+                    </div>
+                    <label for="address" class="form-label">Address</label>
+                    <div class="input-group mb-3">                               
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" aria-label="Address">
+                    </div>
+                    <label for="address2" class="form-label">Address</label><span class="form-text"> (Optional)</span>
+                    <div class="input-group mb-3">                               
+                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite" aria-label="Address 2">
+                    </div>
+                    <div class="input-group justify-content-around">
+                        <div class="col pe-2">
+                            <label for="">Country</label>
+                            <select class="form-select" aria-label="Country">
+                                <option selected>Choose...</option>
+                                <option value="1">Colombia</option>
+                                <option value="2">España</option>
+                                <option value="3">Perú</option>
+                            </select>                                
+                        </div>
+                        <div class="col pe-2">
+                            <label for="">State</label>
+                            <select class="form-select" aria-label="Country">
+                                <option selected>Choose...</option>
+                                <option value="1">Quindio</option>
+                                <option value="2">Antioquia</option>
+                                <option value="3">Caldas</option>
+                            </select>                                
+                        </div>
+                        <div class="col mb-3">
+                            <label for="zip">Zip</label>
+                            <input type="text" class="form-control" name="" id="zip">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-check pt-2">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Shipping address is the same as my billing address</label>
+                    </div>
+                    <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">save this information for next time</label>
+                    </div>
+                    <hr>
+                    <h4 class="pt-2">Payment</h4>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" checked>
+                        <label for="credit" class="form-check-label">Credit card</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input">
+                        <label for="debit" class="form-check-label">Debit card</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input">
+                        <label for="paypal" class="form-check-label">Paypal</label>
+                    </div>
+                    <div class="input-group justify-content-around mt-4">
+                        <div class="col pe-4">
+                            <label for="name-card" class="form-label">Name on card</label>
+                            <input type="text" class="form-control" id="name-card">
+                        </div>
+                        <div class="col">
+                            <label for="number-card" class="form-label">Credit card number</label>
+                            <input type="text" class="form-control" id="number-card">
+                        </div>
+                    </div>
+                    <span class="form-text">Full name as displayed on card</span>
+                    <div class="input-group  mt-2 mb-3">
+                        <div class=" pe-4">
+                            <label for="expiration" class="form-label">Expiration</label>
+                            <input type="text" class="form-control" id="expiration">
+                        </div>
+                        <div class="pb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvv">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row m-1 pt-2 pb-3" >
+                        <button type="submit" class="btn btn-primary pt-2 pb-2">Continue to checkout</button>
+                    </div>                    
+                </form>              
+            </div>
+            <div class="col-4">
+                <h4 class="pt-5 pb-2 text-secondary">Your Cart</h4>
+                <div class="bg-white rounded">
+                    <table class="table border border-muted">
+                        <tr>
+                            <td><b>Product name</b><br><span class="form-text">Brief description</span></td>
+                            <td>$12</td>
+                        </tr>
+                        <tr>
+                            <td><b>Second product</b><br><span class="form-text">Brief description</span></td>
+                            <td>$8</td>
+                        </tr>
+                        <tr>
+                            <td><b>Third item</b><br><span class="form-text">Brief description</span></td>
+                            <td>$5</td>
+                        </tr>
+                        <tr class="bg-secondary text-success">
+                            <td><b>Promo code</b><br><span class="form-text text-success">EXAMPLE CODE</span></td>
+                            <td>-$5</td>
+                        </tr>
+                        <tr>
+                            <td>Total (USD)</td>
+                            <th>$20</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="input-group p-2 border bg-white rounded">
+                    <input type="text" class="form-control" placeholder="Promo code" name="" id="">
+                    <button type="button" class="btn btn-secondary">Redeem</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
