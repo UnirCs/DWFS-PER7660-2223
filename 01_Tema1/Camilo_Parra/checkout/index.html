@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-2 fondo">
+        <div class="row ">
+            <div class="col-md-6 p-4">
+                <h2 class="d-flex justify-content-center mb-4">Información de facturación</h2>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6 ">
+                            <label for="first-name" class="form-label"><b> Nombre:</b></label>
+                            <input type="text" class="form-control" id="first-name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="last-name" class="form-label"><b>Apellido:</b></label>
+                            <input type="text" class="form-control" id="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group  mt-3">
+                        <label for="nombre" class="form-label"><b>Nombre Usuario:</b></label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="nombre">@</span>
+                            <input type="text" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Ingrese el usuario" required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="email" class=" form-group form-label"> <b>Email:</b> (Opcional)</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="address1" class="form-label"><b>Dirección 1:</b></label>
+                        <input type="text" class="form-control" id="address1" placeholder="Ingrese dirección" required>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="address2" class="form-label"><b> Dirección 2:</b> (Opcional)</label>
+                        <input type="text" class="form-control" id="address2" placeholder="Ingrese segunda dirección">
+                    </div>
+                    <div class="row mt-2">
+                        <div class="form-group col-md-4">
+                            <label for="country" class="form-label"><b>País:</b></label>
+                            <select id="country" class="form-control">
+                                <option value="">Seleccione un país</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="México">México</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="state" class="form-label"><b>Departamento:</b> </label>
+                            <select id="state" class="form-control" disabled>
+                              <option value="">Un país primero</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="zip" class="form-label"> <b>Código postal:</b> </label>
+                            <input type="number" class="form-control" id="zip" required>
+                        </div>
+                    </div>
+                    <div class="border mt-4 "></div>
+                    <div class="form-check mt-4">
+                        <input class="form-check-input" type="checkbox" value="" id="direccionFactura">
+                        <label class="form-check-label" for="direccionFactura">
+                              La dirección de envió es la misma dirección de la factura
+                            </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="proximaVez" checked>
+                        <label class="form-check-label" for="proximaVez">
+                              Guardar esta Información para la proxima vez
+                            </label>
+                    </div>
+                    <div class="border mt-4"></div>
+                    <div class="row mt-2">
+                        <div class="form-group col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" checked>
+                                <label class="form-check-label" for="creditCard">
+                                  Tarjeta de crédito
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="debitCard" value="debitCard">
+                                <label class="form-check-label" for="debitCard">
+                                  Tarjeta de débito
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal">
+                                <label class="form-check-label" for="paypal">
+                                  PayPal
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="form-group mt-2 col-md-6">
+                            <label for="card-name" class="form-label"> <b> Nombre de la tarjeta de crédito</b></label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="card-name" aria-describedby="card-name-help">
+                            </div>
+                            <div class="form-text" id="card-name-help">Nombre tal como aparece en su tarjeta</div>
+                        </div>
+
+                        <div class="form-group mt-2 col-md-6">
+                            <label for="credit-card-number" class="form-label"> <b>Número de tarjeta:</b> </label>
+                            <input type="text" class="form-control" id="credit-card-number" required>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-2">
+                        <div class="form-group col-md-6">
+                            <label for="expiration" class="form-label"><b>Vencimiento:</b></label>
+                            <input type="date" class="form-control" id="expiration" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cvv" class="form-label"><b>CVV:</b></label>
+                            <input type="text" class="form-control" id="cvv" required>
+                        </div>
+                    </div>
+
+
+
+            </div>
+            </form>
+            <div class="col-md-6  p-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Carrito de compra</h2>
+                            <p class="text-muted">Cantidad de artículos: <span id="item-count">0</span></p>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Producto 1</span>
+                                    <span class="text-muted">Breve descripción</span>
+                                    <span class="badge bg-secondary rounded-pill">$19.99</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Producto 2</span>
+                                    <span class="text-muted">Breve descripción</span>
+                                    <span class="badge bg-secondary rounded-pill">$24.99</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Producto 3</span>
+                                    <span class="text-muted">Breve descripción</span>
+                                    <span class="badge bg-secondary rounded-pill">$14.99</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Código de promoción</span>
+                                    <div class="input-group" style="max-width: 200px;">
+                                        <input type="text" class="form-control" placeholder="Ingresar código">
+                                        <button class="btn btn-outline-secondary" type="button">Aplicar</button>
+                                    </div>
+                                    <span id="promo-code" class="badge bg-success rounded-pill">$0.00</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Total</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Subtotal: <span id="subtotal">$0.00</span></h6>
+                                    <h6 class="card-subtitle mb-2 text-muted">Descuento: <span id="discount">$0.00</span></h6>
+                                    <h4 class="card-subtitle mb-2">Total: <span id="total">$0.00</span></h4>
+                                    <button class="btn btn-primary">Continuar al pago</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

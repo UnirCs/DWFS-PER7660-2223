@@ -1,0 +1,113 @@
+.infcv{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 5% 0rem 5%;
+}
+
+.left_above{
+    width: 50%;
+}
+
+.linewhite{
+    margin-top:3rem;
+    margin-left: 10%;
+    width: 80%;
+    height: .4rem;
+    background-color:rgb(235, 231, 221);
+    border-radius: 5rem;
+}
+h1{
+    text-align: center;
+    color: burlywood;
+    font: 2em sans-serif;
+}
+
+
+
+h5{
+    text-align: center;
+    color: burlywood;
+    font: 1em sans-serif;
+    
+}
+
+body{
+
+    background-color: rgb(43, 92, 94);
+}
+.left, .right{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: burlywood;
+    font: sans-serif;
+    width: 50%;
+}
+
+
+.left{
+    margin-right: 30%;
+}
+.right{
+    margin-left: 2%;
+}
+
+.experience_cv{
+    display: block;
+    color: white;
+    margin-left: 1%;
+    text-align: justify;
+    padding-right: 15%;
+
+}
+
+
+.left_above,.right_above{
+    width: 50%;
+}
+
+.profile_cv{
+    
+    color:white;
+    text-align: justify;
+    padding-right: 5%;
+    
+}
+
+.spaceprofile{
+    height: 5rem;
+}
+
+.material-symbols-outlined {
+    margin-top: 1rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: white;
+   
+}
+
+.iconw{
+    margin-top:50%; 
+}
+
+.github{
+    margin-top: -2%;
+}
+
+
+.border__white{
+    border-color: white;
+    color:white;
+    margin-bottom: 50px;
+    border-radius: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-right-style:solid;
+    height: 100%;
+}
+
+.edu{
+    display: flex;
+}
