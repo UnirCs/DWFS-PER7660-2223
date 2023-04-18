@@ -1,0 +1,116 @@
+
+.titulo {
+    border: 2px solid #324ccd;
+    padding: 15px;
+}
+
+body{
+    font-style: oblique;
+    margin: 50px;
+}
+
+form{
+    margin: 10px;
+    margin-top: 50px;
+}
+
+#promo{
+    color: limegreen;
+    font-weight: bold;
+}
+
+p.promo{
+    color: limegreen;
+    font-weight: bold;
+}
+
+span.promo{
+    color: limegreen;
+    font-weight: bold;
+}
+
+span.cart{
+    color: black;
+    font-weight: bold;
+
+}
+
+.div-form{
+    flex: auto;
+}
+
+.form-group {
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.div-general{
+    margin-right: 30px;
+    margin-left: 30px;
+
+}
+
+.div-cart{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.form-control{
+    width: 155px;
+}
+
+.form-control-car{
+    width: 155px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.form-control-card{
+    width: 175px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+.list-group{
+    width: 205px;
+
+}
+
+.div-promo{
+    font-weight: bold;
+    color: limegreen;
+
+}
+
+.div-country{
+    width: 200px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+.div-credit{
+    width: 155px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.form-select{
+    width: 180px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.small {
+    font-size: smaller;
+}
+
+.list-group-item{
+    display: flex;
+    align-items: center;
+    justify-content: inherit;
+
+}
