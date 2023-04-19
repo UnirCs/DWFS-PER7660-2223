@@ -1,0 +1,160 @@
+
+.dark-mode {
+  background-color: black;
+}
+
+.personal-data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 1000px;
+}
+.form-check{
+  margin-top: 50px;
+}
+
+.left-position{
+    background-color: #c5e0b4;
+}
+
+.right-position{
+    background-color: #e2e4e5;
+    display: grid;
+}
+
+#foto-perfil{
+    align-items: center;
+    text-align: center ;
+    width: 150px;
+    border: 3px solid #92d050;
+}
+
+.image-content{
+    text-align: center;
+    width: 100%;
+}
+
+.section-title{
+    position: block;
+    margin-bottom: 60px !important;
+}
+
+.section-title-ico, .section-title-ico_d{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 50px;
+}
+
+
+.section-title-back, .section-title-back_d{
+    position: absolute;
+    margin-left: -40px;
+    width: 540px;
+    height:50px;
+}
+
+.texto {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top:  10px;
+    width: 100%;
+  }
+
+  .section-content{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .section-content-left{
+    line-height: 5px;
+    margin-top: 25px;
+  }
+
+  .foto-br, .foto-br_d{
+    width: 430px;
+    height: 5px;
+  }
+
+  .name{
+    text-align: center;
+  }
+  .title{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .info{
+    margin-top: 15px;
+    line-height: 25px;
+  }
+
+  .justified-description{
+    width: 400px; 
+    text-align: justify;
+  }
+
+  .items{
+    width: 15px;
+  }
+
+.dark-mode .left-position{
+    background-color: #3a1f4b ;
+}
+
+.dark-mode .right-position{
+    background-color: #1d1b1a;
+}
+
+.section-title-ico_d{
+  display: none;
+}
+
+.dark-mode .section-title-ico{
+  display: none;
+}
+.dark-mode .section-title-ico_d{
+  display: block;
+}
+
+
+.section-title-back_d{
+  display: none;
+}
+
+.dark-mode .section-title-back{
+  display: none;
+}
+.dark-mode .section-title-back_d{
+  display: block;
+}
+
+
+.foto-br_d{
+  display: none;
+}
+
+.dark-mode .foto-br{
+  display: none;
+}
+.dark-mode .foto-br_d{
+  display: block;
+}
+
+
+.dark-mode #foto-perfil{
+  border: 3px solid #3a1f4b ;
+}
+
+
+.dark-mode .texto{
+  color: black;
+}
+
+.dark-mode{
+  color: white;
+}
