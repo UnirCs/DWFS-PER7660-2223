@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Factura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid p-5 my-2 general">
+        <h3>
+            <strong>
+                Dirección de Facturación
+            </strong>
+        </h3>
+
+        <form>
+            <section>
+                <div class="row form-group pt-2 my-4">
+                    <div class="col-4">
+                        <label for="name">
+                            <strong>First name</strong>
+                        </label>
+                        <input id="name" class="form-control  w-75" type="name" placeholder="Nombre" required>
+                    </div>
+
+
+                    <div class="col-4">
+                        <label for="name">
+                            <strong>Last name</strong>
+                        </label>
+                        <input id="name" class="form-control  w-75" type="name" placeholder="Apellido" required>
+                    </div>
+
+
+                    <div class="col-4 border">
+                        <h4>Your cart</h4>
+
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="w-100"></div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="col-12 my-4">
+                    <label for="name">
+                        <strong>Username</strong>
+                    </label>
+                    <span class="input-group-text" id="basic-addon1">@
+                        <input type="text" class="form-control w-75" placeholder="Nombre de usuario"
+                            aria-label="Nombre de usuario" aria-describedby="basic-addon1">
+                    </span>
+                </div>
+
+                <div class="col-12 my-4">
+                    <label for="name">
+                        <strong>Email</strong>
+                    </label>
+                    <input type="text" class="form-control w-75" placeholder="you@example.com"
+                        aria-label="Nombre de usuario" aria-describedby="basic-addon1">
+                    </span>
+                </div>
+                <div class="col-12 my-4">
+                    <label for="name">
+                        <strong>Dirección</strong>
+                    </label>
+                    <input type="text" class="form-control w-75" placeholder="Mza 34 cll 2"
+                        aria-label="Nombre de usuario" aria-describedby="basic-addon1">
+                    </span>
+                </div>
+
+                <div class="col-12">
+                    <label for="name">
+                        <strong>Dirección 2</strong>
+                    </label>
+                    <input type="text" class="form-control w-75" placeholder="Apartamento 2"
+                        aria-label="Nombre de usuario" aria-describedby="basic-addon1">
+                    </span>
+                </div>
+
+                <div class="row form-group pt-2 my-4">
+                    <div class="col-4">
+                        <label for="name">
+                            <strong>Ciudad</strong>
+                        </label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose..</option>
+                            <option value="1">Uno</option>
+                            <option value="2">Dos</option>
+                            <option value="3">Tres</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-4">
+                        <label for="name">
+                            <strong>Pais</strong>
+                        </label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose..</option>
+                            <option value="1">Uno</option>
+                            <option value="2">Dos</option>
+                            <option value="3">Tres</option>
+                        </select>
+                    </div>
+
+                    <div class="col-4">
+                        <label for="name">
+                            <strong>Zip</strong>
+                        </label>
+                        <input type="text" class="form-control w-75" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+
+            </section>
+            <div class="col-12">
+                <!-- Solid divider -->
+                <hr class="solid">
+            </div>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
+                <label class="custom-control-label" for="customCheckDisabled">Shipping address is the same as my billing
+                    address</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
+                <label class="custom-control-label" for="customCheckDisabled">Save this information for next y
+                    time</label>
+            </div>
+
+            <div class="col-12 my-4">
+                <!-- Solid divider -->
+                <hr class="solid">
+            </div>
+            <h2>Payment</h2>
+            <div class="form-check">
+                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1"
+                    value="option1" aria-label="...">
+                <label class="custom-control-label" for="customCheckDisabled">Credit card</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1"
+                    value="option1" aria-label="...">
+                <label class="custom-control-label" for="customCheckDisabled">Debit card</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1"
+                    value="option1" aria-label="...">
+                <label class="custom-control-label" for="customCheckDisabled">Paypal</label>
+            </div>
+
+            <div class="row form-group pt-2 my-4">
+                <div class="col-6">
+                    <label for="name">
+                        <strong>Name on card</strong>
+                    </label>
+                    <input id="name" class="form-control  w-75" type="name" placeholder="Nombre" required>
+                </div>
+
+
+                <div class="col-6 my-4">
+                    <label for="name">
+                        <strong>Credit card number</strong>
+                    </label>
+                    <input id="name" class="form-control  w-75" type="name" placeholder="Apellido" required>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 my-4">
+                <section class="boton pb-5">
+                    <button type="submit" class="btn btn-primary w-75 boton">Pagar</button>
+                </section>
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
