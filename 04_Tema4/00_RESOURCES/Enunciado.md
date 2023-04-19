@@ -16,6 +16,6 @@ Para realizarlo, puedes optar por seguir estos pasos, aunque puedes hacerlo de a
 
 ## 2.- El árbol del documento
 
-Una vez que el documento HTML haya cargado correctamente, se deberá ejecutar una función en JavaScript que usará la API del DOM para mostrar por consola las hojas (elementos finales) del árbol de elementos asociado al documento HTML de tu CV.
+Una vez que el documento HTML haya cargado correctamente, se deberá ejecutar una función en JavaScript que usará la API del DOM para mostrar por consola las hojas (elementos finales) del árbol de elementos asociado al body del documento HTML de tu CV.
 
 Para asegurarte de que ejecutas el script cuando la página haya cargado por completo, puedes usar el [evento load](https://developer.mozilla.org/es/docs/Web/API/Window/load_event).
