@@ -1,0 +1,46 @@
+.bg {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(244, 244, 244) ;
+    padding: 30px;
+}
+
+.total {
+    font-weight:800;
+}
+
+.cart {
+    font-weight: 1000;
+    color: rgb(93, 93, 93);
+    font-size: 20px;
+}
+
+.cart2 {
+    background-color: rgb(109, 109, 109);
+    border-radius: 50%;
+    width: 30px;
+    height: 27px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    
+}
+
+.pie {
+    background-color: white; 
+    padding: 10px;
+    border-radius: 2%;
+    display: flex;
+}
+
+.cab {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.cab button {
+    font-weight: 1000;
+    font-size: 15px !important;
+    border-radius: 50%;
+}
