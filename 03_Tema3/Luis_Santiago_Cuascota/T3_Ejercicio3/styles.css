@@ -1,0 +1,13 @@
+body {
+    background: #182635;
+}
+
+.container {
+    display: flex;
+    padding: 50px 150px;
+}
+
+.joke-text {
+    padding-left: 20px;
+    color: #F9C800;
+}
