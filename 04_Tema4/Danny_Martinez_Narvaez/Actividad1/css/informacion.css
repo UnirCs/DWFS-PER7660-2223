@@ -1,0 +1,16 @@
+#userFoto{
+    width:52%;
+    height:22%;
+    border-radius: 50%;
+}
+
+.tutloSecundarioInfo{
+    margin: 0%;
+    font-size: 90%;
+    text-align: justify;
+}
+
+.listasInfo{
+    text-align: left;
+    margin: 0%;
+}
