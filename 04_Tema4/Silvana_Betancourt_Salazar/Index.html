@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <title>Currículum Vitae (CV)</title>
+
+</head>
+
+<body id="body">
+    <div id="form">
+        <h1 class="titulo-text" id="tituloUno">SILVANA BETANCOURT</h1>
+        <h3 class="titulo-text">web developer</h3>
+        <br>
+        <hr>
+        <div class="switchCentrar">
+            <label class="switch">
+                <input type="checkbox" onclick="cambiarModoVisualizacion()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="contenedor">
+            <div class="div-dimenciones">
+                <h4>PROFILE</h4>
+                <P>Ingeniero de Sistemas, de la Universidad Católica Los Ángeles de Chimbote- Filial
+                    Piura, de la Escuela Profesional de Ingeniería de Sistemas, con experiencia en
+                    desarrollo de software, administración de base de datos, administración de
+                    servidores, configuración de redes (LAM). Con sólidos conocimientos, habilidades y
+                    destrezas en Ciencia de la computación y sus tecnologías asociadas, que son: de
+                    hardware, de software y de comunicaciones, bases para la construcción de
+                    Sistemas informáticos.</P>
+                <br>
+
+                <h4>CONTACT</h4>
+                <diV>
+                    <img class="p-inLine" src="./imagenes/celular.png">
+                    <p class="p-inLine">0987995978</p>
+                </diV>
+                <diV>
+                    <img class="p-inLine" src="./imagenes/correo.png">
+                    <p class="p-inLine">practica@hotmail.com</p>
+                </diV>
+                <div>
+                    <img class="p-inLine" src="./imagenes/direccion.png">
+                    <p class="p-inLine">3455 av rio napo y torres</p>
+                </div>
+                <h4>SKILLS</h4>
+                <div>
+                    <p class="p-inLine p-inLine-ancho">Wordpress</p>
+                    <img class="p-inLine" src="./imagenes/puntos.png">
+                </div>
+                <div>
+                    <p class="p-inLine p-inLine-ancho">HTML CSS</p>
+                    <img class="p-inLine" src="./imagenes/puntos.png">
+                </div>
+
+                <div>
+                    <p class="p-inLine p-inLine-ancho">Photoshop</p>
+                    <img class="p-inLine" src="./imagenes/puntos.png">
+                </div>
+
+                <div>
+                    <p class="p-inLine p-inLine-ancho">Jquery</p>
+                    <img class="p-inLine" src="./imagenes/puntos.png">
+                </div>
+                <div>
+                    <p class="p-inLine p-inLine-ancho">Joomia</p>
+                    <img class="p-inLine" src="./imagenes/puntos.png">
+                </div>
+                <div>
+                    <p class="p-inLine p-inLine-ancho">Indesign</p>
+                    <img class="p-inLine" src="./imagenes/puntos.png">
+                </div>
+                <br>
+                <br>
+            </div>
+
+            <div class="div-dimenciones">
+                <h4>EXPERIENCE</h4>
+                <ul>
+                    <li>
+                        <p id="exp1" class="p-negrita">Municipalidad Provincial de Ayabaca</p>
+                        <p>abril 2014 hasta diciembre 2015</p>
+                        <p>Asistente de soporte técnico de toda la MPA en la sub gerencia de Sistemas Informáticos y
+                            Estadística.
+                        </p>
+                    </li>
+                    <li>
+                        <p id="exp2" class="p-negrita">Municipalidad Provincial de Ayabaca</p>
+                        <p>abril 2015 hasta diciembre 2015</p>
+                        <p>Asistente de soporte técnico de toda la MPA en la sub gerencia de Sistemas Informáticos y
+                            Estadística.
+                        </p>
+                    </li>
+                    <li>
+                        <p id="exp3" class="p-negrita">Municipalidad Provincial de Ayabaca</p>
+                        <p>abril 2016 hasta diciembre 2015</p>
+                        <p>Asistente de soporte técnico de toda la MPA en la sub gerencia de Sistemas Informáticos y
+                            Estadística.
+                        </p>
+                    </li>
+                </ul>
+
+                <h4>EDUCACION</h4>
+                <ul>
+                    <li>
+                        <p>Universidad Central Del Ecuador</p>
+                        <p>Jun 2019 - JAN 2020</p>
+                        <p>Ingeniero informatico</p>
+                    </li>
+                    <li>
+                        <p>Colegio Don Bosque</p>
+                        <p>Jun 2010 - JAN 2015</p>
+                        <p>Ingeniero informatico</p>
+                    </li>
+                </ul>
+                <h4>HOBBIES|</h4>
+                <p>Travel|Film|Biking|Baking|Gadgets</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const cuerpo = document.querySelector('body');
+        const hUno = document.querySelector('h1');
+        const hTres = document.querySelector('h3');
+        const hCuatro = document.querySelectorAll('h4');
+        const parrafo = document.querySelectorAll("p");
+        const exp1 = document.querySelector("#exp1");
+        const exp2 = document.querySelector("#exp2");
+        const exp3 = document.querySelector("#exp3");
+
+        function cambiarModoVisualizacion() {
+            cuerpo.classList.toggle("bodyOscuro");
+            hUno.classList.toggle("tituloTextOscuro");
+            hTres.classList.toggle("tituloTextOscuro");
+            hCuatro.forEach(elemento => elemento.classList.toggle("tituloTextOscuro"));
+            parrafo.forEach(elemento => elemento.classList.toggle("tituloTextOscuro"));
+            exp1.classList.toggle("p-negritaOscuro");
+            exp2.classList.toggle("p-negritaOscuro");
+            exp3.classList.toggle("p-negritaOscuro");
+        };
+        window.addEventListener("load", function (event) {
+            console.log("Todos los recursos terminaron de cargar!");
+            const elementosCV = document.getElementById("body");
+
+            console.log("***********hojas de CV *********");
+            obtenerHijos(elementosCV);
+        });
+        function obtenerHijos(elementosCV) {
+            elementosCV.childNodes.forEach(elemento => {
+                if (elemento.nodeType !== 3) {
+                    if (elemento.children.length === 0) {
+                        console.log(elemento);
+                    } else if (elemento.children.length > 1) {
+                        obtenerHijos(elemento);
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
