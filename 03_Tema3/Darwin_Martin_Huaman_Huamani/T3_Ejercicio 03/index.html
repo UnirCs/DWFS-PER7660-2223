@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&amp;display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <title>
+            <h1>Chistes de Chuck Norris</h1>
+        </title>
+    </header>
+    <main>
+        <div id="contenedor">
+            <div>
+                <h1>Chuck Norris</h1>
+                <button onclick="getChiste();">Dame un chiste!</button>
+            </div>
+        </div>
+        <div>
+            <p id="parrafo"></p>
+        </div>
+    </main>
+    <script>
+        const getChiste = async () => {
+            const response = await fetch('https://api.chucknorris.io/jokes/random');
+            const chiste = await response.json();
+            document.getElementById('parrafo').innerHTML = chiste.value;
+        }
+    </script>
+</body>
+
+</html>
