@@ -1,0 +1,82 @@
+body {
+    background-color: #246f9a;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #246f9a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+div {
+    margin: 50px;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #008080;
+    text-decoration: none;
+}
+
+#info-personal h3,
+p {
+    margin: 0;
+    text-align: center;
+}
+
+#experiencia-laboral h4,
+#educacion p,
+#habilidades li {
+    margin: 0 0 5px;
+}
+
+#experiencia-laboral p {
+    font-weight: bolder;
+    margin: 0;
+}
+
+#adicionales li {
+    margin: 0;
+}
+
+#experiencia-laboral ul,
+#habilidades ul,
+#adicionales ul {
+    margin-left: 20px;
+}
+
+#adicionales li a:before {
+    content: "\f0c1";
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
