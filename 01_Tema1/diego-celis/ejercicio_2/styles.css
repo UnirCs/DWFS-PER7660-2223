@@ -1,0 +1,7 @@
+.container{
+    width: 70%;
+}
+
+.bg-secondary{
+    --bs-bg-opacity: .1;
+}

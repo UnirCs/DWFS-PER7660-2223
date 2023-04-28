@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulario pago</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Styles.css" />
+  </head>
+  <body>
+    <div class="container mt-4" style="background-color: #f1f1f1ea;">
+      <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+        <div class="card text-center p-3">
+          <div class="card-header">
+            <h5 class="card-title">¿Quieres leer un chiste?</h5>
+          </div>
+          <div class="card-body">
+            <p id="chiste" class="card-text"></p>
+          </div>
+          <div class="card-footer d-grid">
+            <button id="boton" class="btn btn-primary btn-block">!Dame un chiste!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module">
+      import Script from './script.js';
+      const miObjeto = new Script();
+    </script>
+  </body>
+</html>
