@@ -18,10 +18,10 @@
 .tarjeta-verde {
   width: calc(
     33.33% - 10px
-  ); 
+  ); /* define el ancho de las cartas (el 10px es para tener margen entre ellas) */
   padding-top: 25px;
   height: 100%;
-  margin-bottom: 40px; 
+  margin-bottom: 40px; /* separa las filas */
   text-align: center;
   border: 1px solid green;
 
@@ -30,10 +30,10 @@
 .tarjeta-azul {
     width: calc(
       33.33% - 10px
-    ); 
+    ); /* define el ancho de las cartas (el 10px es para tener margen entre ellas) */
     padding-top: 25px;
     height: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* separa las filas */
     text-align: center;
     border: 1px solid blue;
   
