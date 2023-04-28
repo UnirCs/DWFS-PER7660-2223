@@ -1,0 +1,41 @@
+.contenedor img {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+.contenedor {
+  margin: 0 auto;
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.tarjeta-verde {
+  width: calc(
+    33.33% - 10px
+  ); /* define el ancho de las cartas (el 10px es para tener margen entre ellas) */
+  padding-top: 25px;
+  height: 100%;
+  margin-bottom: 40px; /* separa las filas */
+  text-align: center;
+  border: 1px solid green;
+
+}
+
+.tarjeta-azul {
+    width: calc(
+      33.33% - 10px
+    ); /* define el ancho de las cartas (el 10px es para tener margen entre ellas) */
+    padding-top: 25px;
+    height: 100%;
+    margin-bottom: 40px; /* separa las filas */
+    text-align: center;
+    border: 1px solid blue;
+  
+  }
+  
