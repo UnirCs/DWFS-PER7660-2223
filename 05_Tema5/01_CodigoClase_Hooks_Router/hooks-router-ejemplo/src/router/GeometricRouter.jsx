@@ -11,8 +11,8 @@ export const GeometricRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/cuadrado/:id" element={<Cuadrado />} />
-        <Route exact path="/Triangulo/" element={<Triangulo />} />
+        <Route path="/cuadrado/:id" element={<Cuadrado />} />
+        <Route path="/Triangulo/" element={<Triangulo />} />
         <Route caseSensitive path="/rombo/" element={<Rombo />} />
         <Route path="/trapecio" element={<Trapecio />} />
         <Route path="/hook" element={<Header />} />
