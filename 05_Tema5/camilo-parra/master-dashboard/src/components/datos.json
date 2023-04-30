@@ -1,0 +1,40 @@
+[
+    {
+      "id":1,
+      "nombre": "Desarrollo Web Full Stack",
+      "imagen": "img/desarrollo.png",
+      "abreviatura": "DWFS",
+      "per": 7660,
+      "cuatrimestre": 2,
+      "nota" : 3
+    },
+    {
+      "id":2,
+      "nombre": "Plataforma Desarrollo de Software",
+      "imagen": "img/ps.png",
+      "abreviatura": "PDS",
+      "per": 7660,
+      "cuatrimestre": 1,
+      "nota" : 4
+    },
+    {
+      "id":3,
+      "nombre": "Ciberseguridad Online",
+      "imagen": "img/dw.png",
+      "abreviatura": "CSON",
+      "per": 7660,
+      "cuatrimestre": 1,
+      "nota" : 11
+    }
+    ,
+    {
+      "id":3,
+      "nombre": "DevOps",
+      "imagen": "img/devOps.png",
+      "abreviatura": "DVOP",
+      "per": 7660,
+      "cuatrimestre": 2,
+      "nota" : 10
+    }
+  ]
+  
