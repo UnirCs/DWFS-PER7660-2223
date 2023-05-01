@@ -1,0 +1,22 @@
+.inicial {
+    text-align: center;
+    border: 4px solid;
+    width: 300px;
+    min-height: 286px;
+    margin: 3px;
+    float: left;
+    overflow: hidden;
+}
+
+.bordeazul {
+    border-color: darkblue;
+}
+
+.bordeverde {
+    border-color: green;
+}
+
+.imagen > img {
+    height: 100px;
+    margin-top: 5px;
+}
