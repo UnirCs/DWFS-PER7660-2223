@@ -1,0 +1,21 @@
+.card-margin{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-alto-logo{
+    height: 60px;
+}
+
+.card-alto-desc{
+    height: 150px;
+    background-color: white;
+}
+
+.color-border-verde{
+    border: solid green;
+}
+
+.color-border-azul{
+    border: solid blue;
+}
