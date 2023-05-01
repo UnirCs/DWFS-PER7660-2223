@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600&display=swap"
+          rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Santiago Cuascota CV</title>
+</head>
+<body>
+<div class="container">
+    <div class="left-container">
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" onclick="changeStyle()">
+                <span class="slider round"></span>
+            </label>
+            <p class="switch-text">Modo Oscuro</p>
+        </div>
+        <img class="cv-image"
+             src="https://media.licdn.com/dms/image/C4E03AQEkHr8mPaMSBg/profile-displayphoto-shrink_800_800/0/1608162668289?e=1684368000&v=beta&t=k2OSaThvGjYIo6k4Fo8MqGaMp3smWM2wwCzWL-ijbg0">
+        <div>
+            <h1 class="mt-0 mb-0">Santiago Cuascota</h1>
+            <h2 class="mt-0">Full stack developer</h2>
+        </div>
+        <div>
+            <h4 class="mb-0">PROFILE</h4>
+            <p class="mt-0 justify-text">Ecuadorian with 4 years of experience in systems development for multiple
+                contractors inside and outside my country. Experience using agile methodologies such as SCRUM and
+                KANBAN, specialized in JAVA and JavaScript languages, also the use of frameworks such as Hibernite,
+                Springboot, Serverless, Angular , React, RXJS. Passionate researcher, positive attitude and always focus
+                on high code performance and quality.</p>
+        </div>
+        <div>
+            <h4 class="mb-0">CONTACT</h4>
+            <li>+593 995497436</li>
+            <li>cuascota442@gmail.com</li>
+        </div>
+    </div>
+    <div class="right-container">
+        <h3>EDUCATION</h3>
+        <div class="item-desc">
+            <h4>Universidad de las Fuerzas Armadas ESPE</h4>
+            <h5>Ingeniero de Sistemas e Informática - 2020</h5>
+        </div>
+        <h3>EXPERIENCE</h3>
+        <div class="item-desc">
+            <h4>Kushki | 2022-actual</h4>
+            <h5>Senior Developer</h5>
+            <p>Fullstack Senior Developer for projects related to the management and implementation of payment gateways
+                for LATAM:</p>
+            <ul>
+                <li>Backend using Serverless and RXJS</li>
+                <li>Frontend using React and Micro Frontends</li>
+                <li>Use of languages like Golang and Scala</li>
+                <li>Use of AWS Cloud Tools</li>
+            </ul>
+        </div>
+        <div class="item-desc">
+            <h4>Kruger Corporation | 2020-2022</h4>
+            <h5>Project Lead</h5>
+            <p>Software fullsatck components development for Corporacion Favorita contractor:</p>
+            <ul>
+                <li>Angular and JAVA Libraries development and maintenance</li>
+                <li>Implementation of best development practices and standards, TDD, clean code, project architecture
+                </li>
+                <li>Migration and update of projects</li>
+                <li>Project support in the implementation of code and deployment solutions using CI with Jenkins, Docker
+                    and Kubernetes
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    const body = document.querySelector("body");
+
+    function changeStyle() {
+        body.classList.toggle("dark-mode");
+    }
+
+    window.addEventListener("load", function (event) {
+        const body = document.querySelector("body");
+
+        printChildNodes(body);
+    });
+
+    function printChildNodes(elementosCV) {
+        elementosCV.childNodes.forEach(child => {
+            if (child.nodeType !== 3)
+                if (child.children.length === 0) console.log(child);
+                else if (child.children.length > 1)
+                    printChildNodes(child);
+        })
+    }
+</script>
+</body>
+</html>

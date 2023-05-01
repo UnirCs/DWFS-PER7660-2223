@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Formulario1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+
+<body class="container pt-3">
+    <br>
+        <div class="titulo">
+            <h2> Billing address</h2>
+        </div>
+    <form class="form">
+        <div class="form-group">
+            <div >
+                <br>
+                <label for="exampleInputFirstName">First name</label>
+                <input type="text" class="form-control" id="exampleInputFirstName" >
+                <br>
+                <div class="form-group" >
+                    <label for="autoSizingInputGroup">Username</label>
+                    <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-text">@</div>
+                        <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username" >
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleInputAddres1">Address 1</label>
+                    <input type="text" class="form-control" id="exampleInputAddres1" placeholder="Apartment or Suite" >
+                </div>
+            </div>
+            <div class="div-general" >
+                <br>
+                <label for="exampleInputLasttName">Last name</label>
+                <input type="text" class="form-control" id="exampleInputLasttName">
+                <br>
+                <div class="form-group">
+                    <label for="exampleInputEmail">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="you@example.com" >
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleInputAddres2s">Address 2</label>
+                    <input type="text" class="form-control" id="exampleInputAddres2s" placeholder="Apartment or Suite" >
+                </div>
+            </div>
+            <div class="div-cart">
+                <br>
+                <div class="d-flex justify-content-around">
+                    <h2>Your Cart</h2>
+                    <div class="p-3 bd-highlight">3</div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item ">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Product name</div>
+                            Brief description
+                        </div>
+                        <span class="cart">$12</span>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Second product</div>
+                            Brief description
+                        </div>
+                        <span class="cart">$8</span>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Third item</div>
+                            Brief description
+                        </div>
+                        <span class="cart">$5</span>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="ms-2 me-auto">
+                            <div class="div-promo">Promo code</div>
+                            <p class="promo">asd</p>
+                        </div>
+                        <span class="promo" >-$5</span>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Total (USD)</div>
+                        </div>
+                        <span class="cart">$20</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <div class="div-country">
+                <label for="exampleInputCountry">Country</label>
+                <select id="exampleInputCountry" class="form-select" >
+                    <option selected>Choose...</option>
+                    <option value="spain">Spain</option>
+                    <option value="italy">Italy</option>
+                    <option value="germany">Germany</option>
+                </select>
+            </div>
+            <div >
+                <label for="exampleInputState">State</label>
+                <select id="exampleInputState" class="form-select" >
+                    <option selected>Choose...</option>
+                    <option value="andalucia">Andalucia</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="catalunya">Cataluña</option>
+                </select>
+            </div>
+            <div class="div-country">
+                <label for="exampleInputZip">Zip</label>
+                <input type="text" class="form-control" id="exampleInputZip" >
+            </div>
+        </div>
+        <hr class="hr" />
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1">
+            <label class="form-check-label" for="check1">Shipping address is the same as my billign address</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check2">
+            <label class="form-check-label" for="check2">Save this information for next time</label>
+        </div>
+        <hr class="hr" />
+        <h2>Payment</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">Credit card</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">Debit card</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">Paypal</label>
+        </div>
+        <br>
+        <div class="form-group" >
+            <div class="div-country">
+                <label for="exampleInputCardName">Name on Card</label>
+                <input type="text" class="form-control-card" id="exampleInputCardName"  >
+                <small class="small">Full name as displayed on card</small>
+            </div>
+            <div class="div-country">
+                <label for="exampleInputCardNumber">Credit card number</label>
+                <input type="text" class="form-control" id="exampleInputCardNumber" >
+            </div>
+        </div>
+        <div class="form-group" >
+            <div class="div-country" >
+                <label for="exampleInputExpiration">Expiration</label>
+                <input type="text" class="form-control" id="exampleInputExpiration" >
+            </div>
+            <div class="div-country">
+                <label for="exampleInputCVV">CVV</label>
+                <input type="number" class="form-control" id="exampleInputCVV" >
+            </div>
+        </div>
+        <hr class="hr" />
+        <button type="submit" class="btn btn-primary" >Continue to checkout</button>
+        <br>
+        <br>
+        <br>
+    </form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+.body_container {
+    margin: 0 auto;
+    width: 90%;
+    background-color: #f8f9fb;
+    display: flex;
+}
