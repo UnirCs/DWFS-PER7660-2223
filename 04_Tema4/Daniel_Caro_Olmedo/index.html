@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function initialFunctions() {
+            addLightMode();
+            showLeafs(document.getElementsByTagName("body")[0]);
+        }
+
+        function addLightMode() {
+            const checkbox = document.getElementById("clarityCheckbox");
+
+            checkbox.addEventListener('change', (event) => {
+                //Yellow text
+                document.getElementsByTagName("body")[0].classList.toggle("lighterBody")
+
+                //Normal Text
+                var pArray = [...document.getElementsByTagName("p")];
+                pArray.forEach(element => {
+                    element.classList.toggle("lighterSmallText")
+                });
+
+                //Lines
+                document.getElementById("header").classList.toggle("lighterBorder")
+                var experienceArray = [...document.getElementsByClassName("experienceInfo")];
+                experienceArray.forEach(element => {
+                    element.classList.toggle("lighterBorder")
+                });
+                var educationArray = [...document.getElementsByClassName("educationInfo")];
+                educationArray.forEach(element => {
+                    element.classList.toggle("lighterBorder")
+                });
+            })
+        }
+
+        function showLeafs(element) {
+            if (element.childElementCount == 0) console.log(element)
+            else {
+                let children = [...element.childNodes]
+                children.forEach(el => showLeafs(el));
+            }
+        }
+
+        window.onload = initialFunctions;
+        
+    </script>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Style.css"/>
+    </head>
+    <body>
+        <label class="switch">
+            <input type="checkbox" id="clarityCheckbox">
+            <span class="slider round"></span>
+          </label>
+        <div id="header">
+            <h1>DANIEL CARO OLMEDO</h1>
+            <h5>Ingeniero de Software</h4>
+        </div>
+        <div id="body">
+            <div class="column" id="left">
+                <div class="info" id="profile">
+                    <h3>PROFILE</h3>
+                    <p>Extremely motivated to<br>constantly develop my skills<br>and grow professionally.<br>
+                        I am confident in my ability<br>to come up with interesing<br>ideas for unforgettable<br>marketing campaings.
+                    </p>
+                </div>
+                <div class="info" id="contact">
+                    <h3>CONTACT</h3>
+                    <div class="contactInfo" id="phone">
+                        <img src="phoneIcon.png">
+                        <p>+910 8132 5371</p>
+                    </div>
+                    <div class="contactInfo" id="email">
+                        <img src="mailIcon.png">
+                        <p>erikasanchez@mail.com</p>
+                    </div>
+                    <div class="contactInfo" id="direction">
+                        <img src="locationIcon.png">
+                        <p>41 Kirkland St.<br>Apple Valley. CA</p>
+                    </div>
+                </div>
+                <div class="info" id="skills">
+                    <h3>SKILLS</h3>
+                    <div class="skillsInfo">
+                        <p>Wordpress</p>
+                        <div class="skillsScore">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="blueCircleIcon.png">    
+                        </div>
+                    </div>
+                    <div class="skillsInfo">
+                        <p>HTML CSS</p>
+                        <div class="skillsScore">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="blueCircleIcon.png">    
+                        </div>
+                    </div>
+                    <div class="skillsInfo">
+                        <p>Photoshop</p>
+                        <div class="skillsScore">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="blueCircleIcon.png">
+                            <img src="blueCircleIcon.png">    
+                        </div>
+                    </div>
+                    <div class="skillsInfo">
+                        <p>Jquery</p>
+                        <div class="skillsScore">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="blueCircleIcon.png">
+                            <img src="blueCircleIcon.png">    
+                        </div>
+                    </div>
+                    <div class="skillsInfo">
+                        <p>Joomia</p>
+                        <div class="skillsScore">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="blueCircleIcon.png">
+                            <img src="blueCircleIcon.png">    
+                        </div>
+                    </div>
+                    <div class="skillsInfo">
+                        <p>Indesing</p>
+                        <div class="skillsScore">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="yellowCircleIcon.png">
+                            <img src="blueCircleIcon.png">    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" id="right">
+                <div class="info" id="experience">
+                    <h3>EXPERIENCE</h3>
+                    <div class="experienceInfo" id="experience1">
+                        <p class="title">Mondaze Studios, Web Designer</p>
+                        <p class="date">JUN 2019 - JAN 2020</p>
+                        <p>Overall in charge of the Mondaze website. Chief operations in other websites</p>
+                    </div>
+                    <div class="experienceInfo" id="experience2">
+                        <p class="title">Halibi's Web office, Web Designer</p>
+                        <p class="date">JUN 2019 - JAN 2020</p>
+                        <p>Handled different website domains andteam leader of web team</p>
+                    </div>
+                    <div class="experienceInfo" id="experience3">
+                        <p class="title">Orphan Offices, Web Designer</p>
+                        <p class="date">JUN 2019 - JAN 2020</p>
+                        <p>Maintained and organized numerous files.Constantly updated the company's contact</p>
+                    </div>
+                </div>
+                <div class="info" id="education">
+                    <h3>EDUCATION</h3>
+                    <div class="educationInfo" id="education1">
+                        <p class="title">Sanderville College</p>
+                        <p class="date">JUN 2019 - JAN 2020</p>
+                        <p>Certificate in Web Development</p>
+                    </div>
+                    <div class="educationInfo" id="education2">
+                        <p class="title">Unibersided de Chicago</p>
+                        <p class="date">JUN 2019 - JAN 2020</p>
+                        <p>Bachelor of Science in Computer Science</p>
+                    </div>
+                </div>
+                <div class="info" id="hobbies">
+                    <h3>HOBBIES</h3>
+                    <p>Travel | Film | Biking | Baking</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html> 
