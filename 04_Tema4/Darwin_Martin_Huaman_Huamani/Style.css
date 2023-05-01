@@ -1,0 +1,102 @@
+body {
+  color: yellow;
+  background-color: hsla(210, 90%, 27%, 0.816);
+  margin-top: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.cabecera {
+  display: flex;
+}
+
+h1,
+h3 {
+  color: rgb(209, 209, 30);
+  text-align: center;
+}
+
+h4,
+p,
+li {
+  color: white;
+}
+
+h2 {
+  color: rgb(209, 209, 30);
+}
+
+.tabla-datos {
+  margin: 0 auto;
+  width: 80%;
+}
+
+td {
+  width: 50%;
+}
+
+ol {
+  list-style: none;
+}
+
+#perfil {
+  text-align: justify;
+}
+
+.nombre {
+  text-align: center;
+}
+
+.darkModeSwitch {
+  background: #f8fcfa;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.darkModeSwitch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #fff;
+
+  background: none;
+}
+
+.darkModeSwitch::after {
+  display: block;
+  background: #940909de;
+  width: 1.9rem;
+  height: 1.9rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 3rem;
+  transition: all .5s ease;
+
+  content: "";
+}
+
+.darkModeSwitch.active {
+  background: #f9fafc;
+}
+
+.darkModeSwitch.active::after {
+  left: unset;
+  right: 0;
+}
+
+
+
+
