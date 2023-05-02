@@ -1,0 +1,115 @@
+
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: #220606;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.cv {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px;
+  margin: 50px;
+}
+
+.cv__header:hover {
+  box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
+}
+
+.cv__title {
+  font-size: 10px;
+}
+
+.cv__section:hover {
+  box-shadow: 0 0 10px rgb(255, 255, 252);
+}
+
+.cv__section-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cv__item {
+  margin-bottom: 20px;
+}
+
+.cv__item-title {
+  font-size: 22px;
+}
+
+.cv__item-info {
+  color: #110436;
+  margin-bottom: 18px;
+}
+
+.cv__item-list {
+  margin-left: 15px;
+}
+
+-------------------
+
+.cv__skill-group {
+  margin-bottom: 30px;
+}
+
+.cv__skill-group-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.cv__item:hover {
+  background-color: #e8c8c8;
+  color: rgb(15, 15, 15);
+  transition: all 0.3s ease-in-out;
+}
+
+.cv__item {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.cv__title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: color-change 5s ease-in-out infinite;
+  text-shadow: 1px 1px 2px rgba(8, 3, 48, 0.507);
+}
+
+.profile-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-image: url('./img/profile-pic.jpeg');
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.shape {
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  animation: changeShape 10s linear infinite;
+  z-index: 0;
+}
+
+.shape path {
+  fill-opacity: 0.4;
+  stroke-width: 0;
+}
