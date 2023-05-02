@@ -1,0 +1,14 @@
+.Card {
+    border: 1px solid green;
+    width: 220px;
+    padding: 5px;
+    text-align: center;
+}
+
+.blue-border {
+    border-color: blue;
+}
+
+.CardImage > img {
+    height: 100px;
+}
