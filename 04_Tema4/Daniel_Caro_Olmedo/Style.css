@@ -1,0 +1,209 @@
+body {
+    color: yellow;
+    font-family: monospace;
+    background-color: hsla(210, 65%, 30%, 0.816);
+    margin-top: 10px;
+}
+
+h1, h3 {
+    font-weight: bold;
+}
+
+h3 {
+    padding-bottom: 10px;
+}
+
+p {
+    color: white
+}
+
+#header {
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 50%;
+    border-bottom: 3px solid white;
+}
+
+#body {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50%;
+}
+
+.column {
+    width: 48%;
+}
+
+img {
+    width: 20px;
+    margin-right: 15px;
+}
+
+#contact {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.skillsInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillsScore img{
+    margin-right: 5px;
+}
+
+.experienceInfo {
+    border-left: 2px solid white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.experienceInfo p {
+    margin: 5px
+}
+
+.title {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+}
+
+#experience1 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#experience1 .title {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#experience3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#experience {
+    margin-bottom: 25px;
+}
+
+.educationInfo {
+    border-left: 2px solid white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.educationInfo p {
+    margin: 5px
+}
+
+#education1 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#education1 .title {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#education2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#education {
+    margin-bottom: 25px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 10px;;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.lighterBody {
+    color: darkgoldenrod;
+    background-color: hsla(210, 73%, 75%, 0.816);
+}
+
+.lighterSmallText {
+    color: black
+}
+
+.lighterBorder {
+    border-color: black !important
+}
