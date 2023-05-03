@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3_Ejercicio3</title>
+</head>
+<body>
+    <button>Dame un chiste!</button>
+    <p></p>
+
+    <script>
+        const buttom = document.querySelector("button");
+        const p = document.querySelector("p");
+
+        buttom.addEventListener("click", () => {
+            fetch("https://api.chucknorris.io/jokes/random")
+            .then(response => response.json())
+            .then(response => p.textContent = response.value)
+        });
+    </script>
+</body>
+</html>
