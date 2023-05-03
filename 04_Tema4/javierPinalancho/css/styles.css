@@ -1,0 +1,64 @@
+title {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-spacing: 10px;
+    border-collapse: separate;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.table_information {
+    width: 100%;
+}
+
+.cell_information {
+    width: 70%;
+}
+
+hr {
+    border: 0px;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+#personal_information th {
+    text-align: left;
+}
+
+.experience {
+    margin-top: 30px;
+}
+
+.name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.photo_face {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+.photo_face:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark_mode {
+    background-color: black;
+    color: white;
+}
