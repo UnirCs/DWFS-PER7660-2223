@@ -2,8 +2,7 @@
 
 Recursos identificados (Underline)
 
-- Operaciones: Este recurso permite realizar una operación matemática y almacenarla en la memoria de la calculadora, obteniendo un ID único para poder recuperarla posteriormente.
-- Operación: Este recurso permite recuperar una operación previamente realizada, identificada por su ID.
+- Operación: Este recurso permite recuperar una operación previamente realizada, identificada por su ID para poder recuperarla posteriormente.
 
 
 API REST (Underline)

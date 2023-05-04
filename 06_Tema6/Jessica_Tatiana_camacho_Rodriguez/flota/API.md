@@ -5,11 +5,12 @@ Recursos identificados (Underline)
 - Partida
 - Usuario
 - Barco
+- Disparo
 
 Relaciones (underline)
 
 - Una partida tiene dos jugadores, cada uno con su propia cuadrícula de 10x10 cuadrados y sus barcos.
-- Un usuario puede estar asociado a varias partidas y puede tener varios barcos.
+- Un usuario puede estar asociado a varias partidas, puede tener varios barcos y disparos.
 - Un barco pertenece a un jugador en una partida.
 
 Atributos de los recursos (Underline)
@@ -44,15 +45,12 @@ Atributos de los recursos (Underline)
 | GET	| /partidas	| N/A	| 200 OK, 404 NF
 | GET	| /partidas/{id_partida}	| N/A	| 200 OK, 404 NF
 | POST	|/partidas	|{"jugador_1": "id_jugador_1", "jugador_2": "id_jugador_2"}	|201 Created, 400 Bad Request
-| PUT	| /partidas/{id_partida}|	{"ganador": "id_jugador"}	|200 OK, 404 NF
+| PATCH	| /partidas/{id_partida}|	{"ganador": "id_jugador"}, {"estado": "iniciada" || "finalizada"}	|200 OK, 404 NF
 | DELETE	| /partidas/{id_partida} |	N/A	| 204 No Content, 404 NF
-| PUT	| /partidas/{id_partida}/iniciar |	N/A	| 200 OK, 404 NF
-| PUT	| /partidas/{id_partida}/finalizar|	N/A	| 200 OK, 404 NF
-| GET	| /partidas/{id_partida}/datos	| N/A	| 200 OK, 404 NF
-| POST	| /partidas/{id_partida}/barcos/{id_jugador} |	{"tipo": "tipo_barco", "coordenadas": [(x1, y1), (x2, y2), ...]}	| 201 Created, 400 Bad Request
-| DELETE	| /partidas/{id_partida}/barcos/{id_jugador}/{id_barco}	| N/A	|204 No Content, 404 NF
-| GET	| /partidas/{id_partida}/barcos/{id_jugador}|	N/A	|200 OK, 404 NF
-| POST	| /partidas/{id_partida}/disparos/{id_jugador_origen}/{id_jugador_destino}	| {"coordenadas": (x, y)}	| 201 Created, 400 Bad Request
+| POST	| partidas/{id_partida}/jugador/{id_jugador}/barcos |	{"tipo": "tipo_barco", "coordenadas": [(x1, y1), (x2, y2), ...]}	| 201 Created, 400 Bad Request
+| DELETE	| /partidas/{id_partida}/jugadores/{id_jugador}/barcos/{id_barco} | N/A	|204 No Content, 404 NF
+| GET	| /partidas/{idPartida}/jugadores/{idJugador}/barcos|	N/A	|200 OK, 404 NF
+| POST	| /partidas/{id_partida}/disparos | {"jugador_origen":"id_jugador_origen","jugador_destino":"id_jugador_destino","coordenadas": (x, y)}	| 201 Created, 400 Bad Request
 
 > La tabla para el recurso Usuario es:
 
@@ -62,10 +60,3 @@ Atributos de los recursos (Underline)
 | GET	| /usuarios/{id}	| N/A	| 200 OK, 404 NF
 | DELETE	|/usuarios/{id}	| N/A	|204 Sin contenido, 404 No encontrado
 
-> La tabla para el recurso Barco es:
-
-| Método HTTP  | URI | Body | Respuesta |
-| ------------- | ------------- | ------------- | ------------- |
-| POST	| /partidas/{id_partida}/jugadores/{id_jugador}/barcos	| { "tipo": "string", "coordenadas": ["A1", "A2"] }	| 201 Created, 400 Bad Request, 404 Not Found
-| GET	| /partidas/{id_partida}/jugadores/{id_jugador}/barcos	| N/A	| 200 OK, 404 NF
-| DELETE	| /partidas/{id_partida}/jugadores/{id_jugador}/barcos/{id_barco} | N/A	|204 Sin contenido, 404 No encontrado
