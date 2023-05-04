@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+    margin: 0;
+    background-image: url('img/fondo.jpeg');
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilos para la información personal */
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.personal-info .name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.personal-info .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.personal-info .contact-info p {
+    margin-bottom: 5px;
+}
+
+.personal-info .contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.personal-info .contact-info a:hover {
+    color: #fff;
+}
+
+/* Estilos para las secciones */
+.section {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+.section span {
+    font-weight: bold;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
