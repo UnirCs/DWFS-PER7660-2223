@@ -1,0 +1,275 @@
+:root {
+    --primary-color: #1c71c0;
+    --secondary-color: #a5a5a5;
+    --tercery-color: #31742b; 
+    --bg-color: #FFF;
+    --contrast-color: #000;
+}
+
+
+body{
+    
+    font-family:  Georgia, 'Times New Roman', Times, serif, serif;
+    margin: 1rem;
+    background-color: var(--bg-color);
+    color: var(--contrast-color);
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.NombreFotoProfesion{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+    padding-top: 5%;
+    width: 70%;
+}
+
+.framePhoto {
+    
+    border: 3px solid;
+    margin: auto;
+    padding: 15px 10px;
+  }
+
+.imagen_cv{
+    align-items: left;
+    text-align: left ;
+    padding-left: -1rem;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+.avion_cv 
+{
+    padding-left: 2em;
+}
+
+.nombre_cv{
+    font-size: 5rem;
+    padding-left: 3rem;
+    font-family: Montserrat;
+}
+
+.profesion_cv{
+    font-size: 1rem;
+    text-align: center ;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.perfil{
+    display: flex;
+    justify-content: inherit; 
+    margin: 3rem 5% 0rem 5%;
+}
+
+.contacto,
+.idiomas,
+.software_usados,
+.tecnologias_usadas,
+.experiencia,
+.educacion,
+.perfil-info{
+    margin: 3rem 5% 0rem 5%;
+    color: var(--secondary-color);
+}
+
+.tec_cv{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+
+.image_lan{
+    border-radius: 10%;
+    width: 50px; 
+    height: 25px; 
+}
+
+.idioma_nivel{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+
+.image_tec{
+    width: 50px; 
+    height: 50px; 
+}
+
+
+.left_part,.right_part{
+    width: 50%;
+}
+
+.left_part{
+    padding-left: 4em;
+}
+
+.left, .right{
+    color: var(--primary-color);
+    font-size: large;
+
+}
+
+.profile_cv{
+    
+    text-align: justify;
+    padding-right: 10%;
+    border-radius: .5rem;
+}
+
+.space_profile{
+    height:20px;
+}
+
+.exp,
+.hab,
+.hob,
+.cont,
+.edu, 
+.tec{
+    display: flex;
+}
+
+.exp_cv,
+.hab_cv,
+.hob_cv,
+.cont_cv,
+.edu_cv,
+.tec_cv{
+    display: block;
+    margin-left: 1%;
+    text-align: justify;
+    padding-right: 15%;
+}
+
+.border_white{
+
+    border-radius: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-right-style:dashed;
+    height:100%;
+    color: var(--secondary-color);
+}
+
+.title_exp,
+.title_hab,
+.title_hob,
+.title_cont,
+.title_edu{
+    font-size: 1.2rem;
+}
+
+.empre_exp,
+.cargo_exp,
+.fechas_exp,
+.fechas_edu,
+.empre_edu{
+    font-size: 1rem; 
+}
+
+.empre_exp,.empre_edu{
+    color: var(--tercery-color);
+}
+
+.container-info{
+  
+    backface-visibility: 50%;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  
+}
+
+.iconmodified{
+    margin-top: 50%
+}
+
+.title_sftw, .idioma_nivel{
+    color: var(--secondary-color);
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+     background-color: var(--bg-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+     background-color: var(--primary-color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--primary-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .night-mode {
+    --bg-color: #000;
+    --contrast-color: #FFF;
+}
+
+

@@ -1,0 +1,25 @@
+.card {
+  background-color: rgb(200, 198, 198) !important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border: 3px solid green !important;
+}
+
+.card-img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-img-top{
+  width: 80% !important;
+}
+
+.my-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-blue{
+  border: 3px solid blue !important;
+}
