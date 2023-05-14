@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="dameChiste()">
+        Dame un chiste!
+    </button>
+    <br>
+    <p id="boton" ></p>
+
+    
+</body>
+<script>
+
+    async function dameChiste() {
+        const chiste = await getChiste();
+        console.log(chiste)
+        const elemento = document.getElementById("boton");
+        elemento.innerHTML = chiste
+
+    }
+
+
+    async function getChiste() {
+        const url  = "https://api.chucknorris.io/jokes/random";
+        let fetchResponse = await fetch(url);
+        let json = await fetchResponse.json();
+        let value = json.value;
+        return value;
+
+    }
+    
+</script>
+</html>
