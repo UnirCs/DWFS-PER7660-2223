@@ -1,0 +1,164 @@
+.name {
+    width: 100%;
+    height: 300px;
+    background-color: #A3C4BC;
+    transform: skewY(-5deg);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F7EBE8;
+}
+
+.name .content {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%
+}
+
+.name .img {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    transform: skewY(5deg);
+    overflow: hidden;
+}
+
+.name .img img {
+    width: 185px;
+    height: 200px;
+}
+
+.name .content .p-1 {
+    color: #4A6C6F;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 65px;
+    transform: skewY(5deg);
+    margin-bottom: 0;
+}
+
+.name .content .p-2 {
+    color: #4A6C6F;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    transform: skewY(5deg);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.info {
+    width: 90%;
+    height: auto;
+    background-color: #A3C4BC;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.info .tituloSeccion {
+    color: #4A6C6F;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px #4A6C6F dashed;
+}
+
+.info .tituloInfo {
+    color: #4A6C6F;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    display: inline;
+    margin-right: 20px;
+}
+
+.info .infoInfo {
+    color: #4A6C6F;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    display: inline;
+}
+
+.dark-mode {
+    background-color: black;
+    color: #fff;
+}
+
+.dark-mode-components {
+    background-color: black;
+    color: #fff;
+    border: 2px solid #4A6C6F;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #4A6C6F;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #4A6C6F;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
