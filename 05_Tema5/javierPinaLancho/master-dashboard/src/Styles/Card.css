@@ -1,0 +1,40 @@
+.card {
+    max-width: 320px;
+    border-radius: 1rem;
+    background-color: rgb(236, 223, 223);
+    padding: 1rem;
+}
+
+.border-card-red {
+    border: 10px solid #ff0000fc;
+}
+
+.border-card-green {
+    border: 10px solid #0eed3efc;
+}
+
+img {
+    width: 15em;
+    height: 15em;
+    margin: auto;
+}
+
+.wrapper-image {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+}
+
+.info {
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    font-size: 0.72em;
+    margin: 1em;
+}

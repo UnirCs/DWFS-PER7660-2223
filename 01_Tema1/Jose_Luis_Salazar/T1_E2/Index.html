@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Form Checkout</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container d-lg-flex">
+        <div class="box-1 bg-light user">
+            <div class="d-flex align-items-center mb-3">
+                <img src="img/car.png" class="pic rounded-circle" alt="">
+                <p class="ps-2 name">Cart</p>
+            </div>
+            <div class="box-inner-1 pb-3 mb-3 ">
+                <div class="d-flex justify-content-between mb-3 userdetails">
+                    <p class="fw-bold">Productos</p>
+                    <p class="fw-lighter"><span class="fas fa-dollar-sign"></span>45.00 USD+</p>
+                </div>
+                <div id="my" class="carousel slide carousel-fade img-details" data-bs-ride="carousel"
+                    data-bs-interval="2000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#my" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#my" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#my" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/product.png" width="360" height="300" alt="Sin imagen">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#my" data-bs-slide="prev">
+                        <div class="icon">
+                            <span class="fas fa-arrow-left"></span>
+                        </div>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#my" data-bs-slide="next">
+                        <div class="icon">
+                            <span class="fas fa-arrow-right"></span>
+                        </div>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p class="dis info my-3">Seleccione los productos a pagar:
+                </p>
+                <div class="radiobtn">
+                    <input type="radio" name="box" id="one">
+                    <input type="radio" name="box" id="two">
+                    <input type="radio" name="box" id="three">
+                    <label for="one" class="box py-2 first">
+                        <div class="d-flex align-items-start">
+                            <span class="circle"></span>
+                            <div class="course">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                        Producto 01
+                                    </span>
+                                    <span class="fas fa-dollar-sign">29</span>
+                                </div>
+                                <span>10 x Algo</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="two" class="box py-2 second">
+                        <div class="d-flex">
+                            <span class="circle"></span>
+                            <div class="course">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                        Producto 02
+                                    </span>
+                                    <span class="fas fa-dollar-sign">25</span>
+                                </div>
+                                <span>10 x Otro Algo</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="three" class="box py-2 third">
+                        <div class="d-flex">
+                            <span class="circle"></span>
+                            <div class="course">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <span class="fw-bold">
+                                        Producto 03
+                                    </span>
+                                    <span class="fas fa-dollar-sign">30</span>
+                                </div>
+                                <span>10 x Mas ...</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="box-inner-2">
+                <div>
+                    <p class="fw-bold">Detalles de pago</p>
+                    <p class="dis mb-3">Complete los datos de pago</p>
+                </div>
+                <form action="">
+                    <div class="mb-3">
+                        <p class="dis fw-bold mb-2">Email address</p>
+                        <input class="form-control" type="email" placeholder="email@correo.com">
+                    </div>
+                    <div>
+                        <p class="dis fw-bold mb-2">Detalles de la tarjeta</p>
+                        <div class="d-flex align-items-center justify-content-between card-atm border rounded">
+                            <div class="fab fa-cc-visa ps-3"></div>
+                            <input type="text" class="form-control" placeholder="Número">
+                            <div class="d-flex w-50">
+                                <input type="text" class="form-control px-0" placeholder="MM/YY">
+                                <input type="password" maxlength=3 class="form-control px-0" placeholder="CVV">
+                            </div>
+                        </div>
+                        <div class="my-3 cardname">
+                            <p class="dis fw-bold mb-2">Cardholder name</p>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="address">
+                            <p class="dis fw-bold mb-3">Dirección de entrega</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Colombia</option>
+                                <option value="2">España</option>
+                                <option value="3">Estados Unidos</option>
+                            </select>
+                            <div class="d-flex">
+                                <input class="form-control zip" type="text" placeholder="Codigo postal">
+                                <input class="form-control state" type="text" placeholder="Ciudad">
+                            </div>
+                            <div class=" my-3">
+                                <p class="dis fw-bold mb-2">Celular</p>
+                                <div class="inputWithcheck">
+                                    <input class="form-control" type="text" placeholder="+57 3102548751">
+                                    <span class="fas fa-check"></span>
+
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column dis">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p>Subtotal</p>
+                                    <p><span class="fas fa-dollar-sign"></span>30.0</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p>IVA<span>(19%)</span></p>
+                                    <p><span class="fas fa-dollar-sign"></span>5.7</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p class="fw-bold">Total</p>
+                                    <p class="fw-bold"><span class="fas fa-dollar-sign"></span>35.7</p>
+                                </div>
+                                <div class="btn btn-primary mt-2">Total a pagar<span class="fas fa-dollar-sign px-1"></span>35.7
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>
