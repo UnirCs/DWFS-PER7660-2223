@@ -12,8 +12,14 @@
  * Se pide: Mediante funciones de primer orden, crear una funcion duplicador que recibe como argumento un array de numeros y devuelve otro array duplicando aquellos que sean pares
  * El tamaño del array resultado, por tanto, podra ser distinto del tamaño del array original
  * 
- * Ejemplo: duplicador([1,2,3,4]) -> [4,8]
+ * Ejemplo: duplicador() -> [4,8]
  */
+
+
+const values = [1,2,3,4]
+
+const result = values.filter(it => it%2 == 0);
+
 
 
 
@@ -28,6 +34,16 @@
  */
 
 
+const media = (values) =>  {
+    let sum = 0;
+    values.forEach (it => sum = sum + it)
+    return sum / values.length
+}
+
+media([1,2,3,4])
+
+
+
 
 /**
  * Funcion 3
@@ -38,7 +54,13 @@
  * Se valoraran especialmente soluciones donde sea necesario recorrer el array pasado como argumento una unica vez (de una pasada)
  * 
  * Ejemplo: eliminarDuplicados([5,1,2,1,3,3,4,5]) -> [2,4]
+ * 
  */
+
+const arr = [5,1,2,1,3,3,4,5]
+const eliminarDuplicados = arr.filter(
+    it => arr.indexOf(it) == arr .lastIndexOf(it))
+
 
 
 /**
@@ -59,6 +81,10 @@
  * Ejemplo: nCharConsec(*, 4, "Est** e**** un ej**plo") -> false
  * 
  */
+
+const nCharConsec = (char, rep, cadena) =>  cadena.match(new RegExp(`[${char}]{${rep}}`))!=null;
+console.log(nCharConsec('*', 4, "Est* *** es un ejemplo"))
+
 
 
 /**
@@ -84,3 +110,17 @@
  * [7, 5] (2+6+7 /3 = 5)
  * [1, 4] (2+6+7+1 /4 = 4)
  */
+
+const generador = (number) => {
+    const arr = Array.from({length: number}, () => Math.floor(Math.random() * number));
+    const arrNoDupli = arr.filter(
+        it => arr.indexOf(it) == arr .lastIndexOf(it))
+        .filter(it => it != 0);
+
+    const map = new Map();
+
+    arrNoDupli.forEach(
+        it => map.set(it,media(arrNoDupli.slice(0,arrNoDupli.indexOf(it) + 1))) 
+    )
+    return map
+}
