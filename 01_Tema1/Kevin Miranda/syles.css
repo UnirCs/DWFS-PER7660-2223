@@ -1,0 +1,90 @@
+.nombrecv {
+	font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(217, 231, 93);
+
+}
+
+.profesion{
+    color: rgb(207, 216, 86);
+    text-align: center;
+
+}
+.linea1{
+    width: 1300px;
+    text-align: center;
+    border-width: 3px;
+
+}
+
+.encabezado1fila{
+    color: rgb(207, 216, 86);
+    text-align: left;
+    position:relative;
+            left:145px;
+            top:0px;
+}
+
+.F1C1{
+    color: white;
+    text-align: justify;
+    margin: auto;
+    width: 60%;
+    
+}
+.F1C2{
+    color: white;
+    text-align: justify;
+    margin: auto;
+    width: 60%;
+    
+}
+.experiencia{
+    font-family: sans-serif;
+    font-size:smaller;
+    color: rgba(255, 255, 255, 0.79);
+    text-align: left;
+    margin: auto;
+    width: 60%;
+    
+}
+
+.contacto{
+    font-family: sans-serif;
+    font-size:smaller;
+    color: rgba(255, 255, 255, 0.79);
+    text-align: left;
+
+    
+}
+
+hr{
+    background-color: white;
+}
+body {
+    background-color: rgba(61, 106, 119, 0.938);
+}
+
+.columna1{
+    margin: auto;
+    width: 750px;
+
+}
+.columna2{
+    margin: auto;
+    width: 750px;
+
+}
+
+
+.imagenes{
+    width: 25px;
+    height: 25px;
+    padding: 0px 10px;
+}
+.img{
+    margin-left: 145px;
+    text-align: justify;
+    
+}
+
