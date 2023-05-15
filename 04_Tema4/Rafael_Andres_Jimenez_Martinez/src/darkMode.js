@@ -89,3 +89,24 @@ changeMode = () => {
     else changeToDarkMode()
 
 }
+const imprimirHijos = (element) => {
+    if (element && element.nodeType === Node.ELEMENT_NODE) {
+      Array.from(element.children).forEach(child => { 
+        console.log(child);        
+      });
+    }
+  };
+  
+  const iterarSobreHijos = (element) => {
+    Array.from(element.children).forEach(child => {
+      console.log(child);
+      imprimirHijos(child);
+    });
+  };
+  
+  window.addEventListener("load", () => {
+    const contenedor = document.getElementById("contenedor");
+    if (contenedor) {
+      iterarSobreHijos(contenedor);
+    }
+  });
