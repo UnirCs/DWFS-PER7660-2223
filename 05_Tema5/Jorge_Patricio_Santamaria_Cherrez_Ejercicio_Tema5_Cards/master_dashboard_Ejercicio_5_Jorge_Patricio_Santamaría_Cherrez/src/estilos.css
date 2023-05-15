@@ -156,13 +156,13 @@
   left: 500px;
 }
 
-.segundocuatrimestre2 h2 {
+h2 {
   font-size: 16px;
   margin-bottom: 5px;
   text-align: center;
 }
 
-.segundocuatrimestre2 p {
+.h3 {
   font-size: 14px;
   color:black;
  text-align: center;
@@ -180,3 +180,5 @@ text-align: center;
 
   height: 100px;
  }
+
+ 
