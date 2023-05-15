@@ -5,8 +5,7 @@
 | PUT  | /partidas/:id  | { jugadores: Usuario[] } | 200 OK { jugadores: Usuario[] }, 400 BADREQUEST { message: string }, 404 NOTFOUND, 401 UNAUTHORIZED
 | PATCH  | /partidas/:id  | { jugadores: Usuario[] } | 200 OK { jugadores: Usuario[] }, 400 BADREQUEST { message: string }, 404 NOTFOUND, 401 UNAUTHORIZED
 | DELETE  | /partidas/:id  | N/A | 200 OK, 404 NOTFOUND, 401 UNAUTHORIZED
-| POST  | /partidas/:id/inicio  | N/A | 200 OK, 404 NOTFOUND, 412 PRECONDITIONFAILED, 401 UNAUTHORIZED
-| POST  | /partidas/:id/fin  | N/A | 200 OK, 404 NOTFOUND, 412 PRECONDITIONFAILED, 401 UNAUTHORIZED
+| PATCH  | /partidas/:id  | { estado: string } | 200 OK, 404 NOTFOUND, 412 PRECONDITIONFAILED, 401 UNAUTHORIZED
 | GET  | /partidas/:id/barcos  | N/A | 200 OK { barcos: Barco[] }, 404 NOTFOUND, 401 UNAUTHORIZED
 | POST  | /partidas/:id/barcos  | { barco: Barco } | 200 OK, 400 BADREQUEST { message: string }, 404 NOTFOUND, 401 UNAUTHORIZED
 | DELETE  | /partidas/:id/barcos  | { barco: Barco } | 200 OK, 404 NOTFOUND, 401 UNAUTHORIZED
