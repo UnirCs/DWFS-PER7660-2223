@@ -54,8 +54,7 @@
 | POST  | /partidas  | {"jugador_uno": "id_usuario_uno", "jugador_dos": "id_usuario_dos"} | 201 Created, 400 Bad Request
 | DELETE  | /partidas/{id_partida}  | N/A | 204 No Content, 404 Not Found
 | PUT  | /partidas/{id_partida}  |  los atributos de la partida que se quieren modificar | 200 OK, 400 Bad Request, 404 Not Found
-| PATCH  | /partidas/{id_partida}/finalizar  | {"vencedor": "usuario1"|  200 OK, 400 Bad Request, 404 Not Found
-| PATCH  | /partidas/{id_partida}/iniciar  | N/A | 200 OK, 400 Bad Request, 404 Not Found
+| PATCH  | /partidas/{id_partida} | {"vencedor": "usuario1", "estado": "espera" || "iniciada" || "finalizada"}| 200 OK, 400 Bad Request, 404 Not Found
 | GET  | /partidas/{id_partida}/jugadores/{id_jugador}/barcos  | N/A | 200 OK (datos de la partida), 404 Not Found
 | POST  | /partidas/{id_partida}/jugadores/{id_jugador}/barcos  | {"tipo": "1x1", "posicion_inicio": [1,1], "posicion_fin": [1,2], "orientacion": "horizontal"} | 201 Created, 400 Bad Request, 404 Not Found
 | DELETE  | /partidas/{id_partida}/jugadores/{id_jugador}/barcos/{id_barco}  | N/A | 204 No Content, 404 Not Found
