@@ -1,0 +1,31 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form-control:focus {
+  border-color: #4d90fe;
+  box-shadow: 0 0 0 0.2rem rgba(77, 144, 254, 0.25);
+}
+
+.btn-primary {
+  background-color: #4d90fe;
+  border-color: #4d90fe;
+}
+
+.btn-primary:hover {
+  background-color: #357ae8;
+  border-color: #357ae8;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}

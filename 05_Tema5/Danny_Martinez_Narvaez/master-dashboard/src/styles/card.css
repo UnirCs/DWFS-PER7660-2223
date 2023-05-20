@@ -1,0 +1,26 @@
+.card {
+    width: 25%;
+    padding: 0%;
+    margin: 2%;
+    background-color: darkgrey;
+    box-shadow: 4px 4px 15px rgba(178, 244, 242, 0.8);
+    text-align: center;
+}
+
+.borde {
+    border: 2px solid green;
+}
+
+.bordeDos {
+    border: 2px solid blue;
+}
+
+.imagenCard{
+    width: 35%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+.parrafo{
+    font-size: 70%;
+}

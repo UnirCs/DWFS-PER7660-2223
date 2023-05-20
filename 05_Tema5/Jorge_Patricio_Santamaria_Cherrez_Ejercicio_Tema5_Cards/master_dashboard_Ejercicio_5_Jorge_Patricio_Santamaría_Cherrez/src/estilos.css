@@ -1,0 +1,184 @@
+.primercuatrimestre1 {
+  
+  border: 4px solid;
+  border-radius: 4px;
+  padding: 28px;
+  width: 200px;
+  border-color: blue;
+  position: absolute;
+  top: 100px;
+  left: 160px;
+}
+
+.primercuatrimestre1 h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.primercuatrimestre1 p {
+  font-size: 14px;
+  color:black;
+ text-align: center;
+}
+
+
+.primercuatrimestre2 {
+  border: 4px solid;
+  border-radius: 4px;
+  padding: 28px;
+  width: 200px;
+  border-color: blue;
+  position: absolute;
+  top: 100px;
+  left: 500px;
+
+}
+
+.primercuatrimestre2 h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.primercuatrimestre2 p {
+  font-size: 14px;
+  color:black;
+ text-align: center;
+}
+
+
+.primercuatrimestre3 {
+  border: 4px solid;
+  border-radius: 4px;
+  padding: 28px;
+  width: 200px;
+  border-color: blue;
+  position: absolute;
+  top: 100px;
+  left: 850px;
+}
+
+.primercuatrimestre3 h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.primercuatrimestre3 p {
+  font-size: 14px;
+  color:black;
+ text-align: center;
+}
+
+
+.primercuatrimestre4 {
+  border: 4px solid;
+  border-radius: 4px;
+  padding: 28px;
+  width: 200px;
+  border-color: blue;
+  position: absolute;
+  top: 400px;
+  left: 160px;
+}
+
+.primercuatrimestre4 h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.primercuatrimestre4 p {
+  font-size: 14px;
+  color:black;
+ text-align: center;;
+}
+
+
+.primercuatrimestre5 {
+  border: 4px solid;
+  border-radius: 4px;
+  padding: 28px;
+  width: 200px;
+  border-color: blue;
+  position: absolute;
+  top: 400px;
+  left: 500px;
+}
+
+.primercuatrimestre5 h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.primercuatrimestre5 p {
+  font-size: 14px;
+  color:black;
+ text-align: center;
+}
+
+
+
+.segundocuatrimestre1{
+  border: 4px solid;
+  border-radius: 4px;
+  padding: 28px;
+  width: 200px;
+  border-color: green;
+  position: absolute;
+  top: 400px;
+  left: 850px;
+}
+
+.segundocuatrimestre1 h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.segundocuatrimestre1 p {
+  font-size: 14px;
+  color:black;
+ text-align: center;
+}
+
+
+.segundocuatrimestre2{
+  border: 4px solid;
+  border-radius: 4px;
+  padding: 28px;
+  width: 200px;
+  border-color: green;
+  position: absolute;
+  top: 740px;
+  left: 500px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.h3 {
+  font-size: 14px;
+  color:black;
+ text-align: center;
+}
+
+.título {
+
+text-align: center;
+
+}
+
+.logo{
+
+  width: 200px;
+
+  height: 100px;
+ }
+
+ 

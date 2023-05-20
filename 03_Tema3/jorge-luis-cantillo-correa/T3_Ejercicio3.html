@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Chuck Norris Jokes</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #jokeContainer {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+	<button id="jokeBtn">Get a Chuck Norris Joke</button>
+	<div id="jokeContainer"></div>
+</body>
+<script>
+    const jokeBtn       = document.querySelector('#jokeBtn');
+    const jokeContainer = document.querySelector('#jokeContainer');
+    jokeBtn.addEventListener('click', getJoke);   
+    function getJoke() {
+        jokeContainer.innerHTML = 'Loading...'
+        fetch('https://api.chucknorris.io/jokes/random')
+            .then(response => response.json())
+            .then(data => {
+                jokeContainer.innerHTML = data.value;
+            });
+    }
+</script>
+</html>

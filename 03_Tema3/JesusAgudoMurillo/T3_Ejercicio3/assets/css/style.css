@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(180deg, rgba(33, 192, 139, 1) 0%, rgba(143, 87, 253, 1) 100%);
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Header */
+
+header{
+    padding: 2em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header figure{
+    width: 15em;
+    text-align: center;
+}
+
+header figure img{
+    width: 75%;
+    filter: invert(1);
+}
+
+header p{
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
+    margin-top: 1em;
+}
+
+/* Main */
+
+main section{
+    height: 50em;
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 1em;
+    border: 2px solid white;
+    margin-bottom: 4em;
+    gap: 2em;
+    padding: 2em;
+}
+
+main section figure{
+    width: 24%;
+}
+
+main section figure img{
+    width: 100%;
+}
+
+main section h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+main section p{
+    font-size: 1.5em;
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+}
+
+main section button{
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+main section button:hover{
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+
+main section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Footer */
+
+footer hgroup{
+    text-align: center;
+    color: white;
+}
+
+footer hgroup h3{
+    font-size: 1.5em;
+    padding: 1rem 0;
+    border-top: 1px solid white;
+}

@@ -1,0 +1,15 @@
+#root {
+  height: 100vh;
+}
+
+.App {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+  border: solid 1px red;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
