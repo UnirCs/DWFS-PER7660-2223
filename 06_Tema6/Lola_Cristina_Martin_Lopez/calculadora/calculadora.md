@@ -3,7 +3,6 @@
 ## Recuros identificados
 
 -Operación: Mostrar operación actual o previas, si se direcciona con el id de la misma. 
--Elementos: Lista en la que se guardarán los números para la operación. 
 
 
 ## Relacion entre recursos 
