@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.container {
+  
+  width: 22%;
+  height: 15vh;
+  margin-top: 2vh;
+  margin-right: 1vw;
+}
+
+.green_card {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+}
+
+.blue_card {
+  border-radius: 25px;
+  border: 2px solid #1313eb;
+  padding: 20px;
+
+}
