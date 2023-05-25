@@ -72,8 +72,8 @@
 | GET	| /partidas/{idPartida}/jugadores/{idJugador}/barcos|	N/A	|200 OK, 404 NF
 | POST	| /partidas/{id_partida}/disparos | {"jugador_actual":"id_jugador_actual","jugador_contrincante":"id_jugador_contrincante","coordenadas": (x, y)}	| 201 Created, 400 Bad Request
 | GET	| /partidas/{id_partida}/disparos/{id_usuario} | {"jugador_actual":"id_jugador_actual","disparos_totales":"disparos_totales_actual"}	| 201 Created, 400 Bad Request
-| GET	| /partidas/{idPartida}/jugadores/{idJugador}/{partidas_ganadas}| N/A |200 OK, 404 NF
-| GET	|/partidas/{idJugador}/{estado}/{partidas_jugadas}|	N/A	|200 OK, 404 NF
+
+
 
 
 ### Tabla para el recurso usuario es:
