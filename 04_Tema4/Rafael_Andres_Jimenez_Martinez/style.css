@@ -1,0 +1,75 @@
+.header {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.name {
+    text-align: center;
+    font-size: 6vw;
+    margin-bottom: 1vh;
+
+}
+
+.job {
+    color: #e0ed8d;
+    text-align: center;
+    font-size: 4vw;
+    margin: 0;
+    margin-bottom: 2vh;
+
+}
+
+.separator {
+    width: 90%;
+    height: 0.4vh;
+    background-color: #e9ffff;
+
+
+}
+.contenedor {
+    background-color: #39637c;
+}
+
+.title {
+    color: #e0ed8d;
+}
+
+.info {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.column {
+    width: 45%;
+    margin-right: 2vw;
+
+}
+
+.parrafo {
+    color: #adcdde;
+    text-align: justify;
+    margin-right: 1vw;
+}
+
+.icon {
+    width: 2vw;
+    height: 3vh;
+}
+
+.circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 0.4vw;
+    height: 1vh;
+    margin-right: 0.5vw;
+}
+
+.skill_container {
+    display: flex;
+    height: 3vh;
+    align-items: center;
+}
