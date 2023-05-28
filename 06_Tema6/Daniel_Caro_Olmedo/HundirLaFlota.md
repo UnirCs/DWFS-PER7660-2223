@@ -6,7 +6,7 @@
 - Casilla: cada una esta asignada a un jugador y puede o no estar ocupada por un barco. Sus estados son "atacada" o "nada" dependiendo de si ha sido alcanzada por un ataque
 - Ataque: realizado por un jugador, representa cada turno de juego. Apunta a una casilla concreta que debe de ser del jugador contrario al que pertenece el ataque. Su resultado puede ser "agua" o "tocado".
 
-#####Relaciones
+##### Relaciones
 - Cuando un Barco tenga todas sus Casillas asignadas en el estado "atacada", el Barco pasará a estar "hundido"
 - Cuando una Casilla sea marcada por un Ataque, su estado pasará de "nada" a "atacada". Una Casilla "atacada" no puede ser marcada de nuevo por un Ataque. Además se debe informar si la Casilla estaba ocupada por un Barco.
 - Si todos los Barcos de un Jugador tienen el estado "hundido", la Partida se dará por "finalizada" y el ganador será el Jugador que aún tenga barcos "bien".
