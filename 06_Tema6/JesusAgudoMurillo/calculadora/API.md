@@ -30,16 +30,16 @@
 
 | Método HTTP  | URI | Body | Respuesta |
 | ------------- | ------------- | ------------- | ------------- |
-| POST  | /suma  | { sumandos: number[] } | 200 OK { id: number, suma: number }, 400 BR { message: string }
-| POST  | /resta  | { resta: number[] } | 200 OK { id: number, resta: number }, 400 BR { message: string }
-| POST  | /multiplicacion  | { multiplicando: number, multiplicador: number } | 200 OK { id: number, multiplicacion: number }, 400 BR { message: string }
-| POST  | /division  | { dividendo: number, divisor: number } | 200 OK { id: number, division: number }, 400 BR { message: string }
-| POST  | /raiz  | { indice: number, radicando: number } | 200 OK { id: number, raiz: number }, 400 BR { message: string }
-| POST  | /potencia  | { base: number, exponente: number } | 200 OK { id: number, potencia: number }, 400 BR { message: string }
-| GET  | /suma/:id  | N/A | 200 OK { id: number, sumandos: number[], suma: number, fecha: datetime }, 404 NF
-| GET  | /resta/:id  | N/A | 200 OK { id: number, resta: number[], resta: number, fecha: datetime }, 404 NF
-| GET  | /multiplicacion/:id  | N/A | 200 OK { id: number, multiplicando: number, multiplicador: number, multiplicacion: number, fecha: datetime }, 404 NF
-| GET  | /division/:id  | N/A | 200 OK { id: number, dividendo: number, divisor: number, division: number, fecha: datetime }, 404 NF
-| GET  | /raiz/:id  | N/A | 200 OK { id: number, indice: number, radicando: number, raiz: number, fecha: datetime }, 404 NF
-| GET  | /potencia/:id  | N/A | 200 OK { id: number, base: number, exponente: number, potencia: number, fecha: datetime }, 404 NF
+| POST  | /sumas  | { sumandos: number[] } | 200 OK { id: number, suma: number }, 400 BR { message: string }
+| POST  | /restas  | { resta: number[] } | 200 OK { id: number, resta: number }, 400 BR { message: string }
+| POST  | /multiplicaciones  | { multiplicando: number, multiplicador: number } | 200 OK { id: number, multiplicacion: number }, 400 BR { message: string }
+| POST  | /divisiones  | { dividendo: number, divisor: number } | 200 OK { id: number, division: number }, 400 BR { message: string }
+| POST  | /raices  | { indice: number, radicando: number } | 200 OK { id: number, raiz: number }, 400 BR { message: string }
+| POST  | /potencias  | { base: number, exponente: number } | 200 OK { id: number, potencia: number }, 400 BR { message: string }
+| GET  | /sumas/:id  | N/A | 200 OK { id: number, sumandos: number[], suma: number, fecha: datetime }, 404 NF
+| GET  | /restas/:id  | N/A | 200 OK { id: number, resta: number[], resta: number, fecha: datetime }, 404 NF
+| GET  | /multiplicaciones/:id  | N/A | 200 OK { id: number, multiplicando: number, multiplicador: number, multiplicacion: number, fecha: datetime }, 404 NF
+| GET  | /divisiones/:id  | N/A | 200 OK { id: number, dividendo: number, divisor: number, division: number, fecha: datetime }, 404 NF
+| GET  | /raices/:id  | N/A | 200 OK { id: number, indice: number, radicando: number, raiz: number, fecha: datetime }, 404 NF
+| GET  | /potencias/:id  | N/A | 200 OK { id: number, base: number, exponente: number, potencia: number, fecha: datetime }, 404 NF
     
