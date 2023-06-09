@@ -15,6 +15,6 @@ public interface PartidaService {
 
     Boolean removePartida(String idPartida);
 
-    Partida partiallyUpdatePartida(PatchPartidaRequest patchPartidaRequest);
+    Partida partiallyUpdatePartida(PatchPartidaRequest patchPartidaRequest, String idPartida);
 
 }
