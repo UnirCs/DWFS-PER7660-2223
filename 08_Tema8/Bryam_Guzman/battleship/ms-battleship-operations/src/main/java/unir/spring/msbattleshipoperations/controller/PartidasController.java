@@ -19,9 +19,10 @@ public class PartidasController {
     private final PartidaService service;
 
     @PostMapping("/partidas")
-    public ResponseEntity<Partida> createOrder(@RequestBody PartidaRequest request) {
+    public ResponseEntity<Partida> createPartida(@RequestBody PartidaRequest request) {
 
         try {
+
             Partida result = service.savePartida(request);
             return result.getId() != null ? ResponseEntity.status(HttpStatus.CREATED).body(result) : ResponseEntity.badRequest().build();
         } catch (Exception e) {
@@ -31,7 +32,7 @@ public class PartidasController {
     }
 
     @GetMapping("/partidas/{partidaId}")
-    public ResponseEntity<Partida> getCompraById(@PathVariable String partidaId) {
+    public ResponseEntity<Partida> getPartidaById(@PathVariable String partidaId) {
 
         Partida partida = service.getPartidaById(partidaId);
         return partida.getId() != null ? ResponseEntity.ok(partida) : ResponseEntity.notFound().build();
@@ -52,7 +53,7 @@ public class PartidasController {
     }
 
     @PatchMapping("/partidas/{partidaId}")
-    public ResponseEntity<Partida> partiallyUpdateCompra(@RequestBody PatchPartidaRequest request, @PathVariable String partidaId) {
+    public ResponseEntity<Partida> partiallyUpdatePartida(@RequestBody PatchPartidaRequest request, @PathVariable String partidaId) {
 
         Partida result = service.partiallyUpdatePartida(request, partidaId);
 

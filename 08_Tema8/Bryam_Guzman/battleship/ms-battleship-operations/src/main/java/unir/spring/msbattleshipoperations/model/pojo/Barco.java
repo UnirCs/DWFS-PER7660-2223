@@ -24,11 +24,11 @@ public class Barco {
     private String tipo;
 
     @ElementCollection
-    @CollectionTable(name = "pocisiones", joinColumns = @JoinColumn(name = "posicion_id"))
+    @CollectionTable(name = "pocisiones_inicio", joinColumns = @JoinColumn(name = "posicion_id"))
     private List<Double> posicionesInicio;
 
     @ElementCollection
-    @CollectionTable(name = "pocisiones", joinColumns = @JoinColumn(name = "posicion_id"))
+    @CollectionTable(name = "pocisiones_fin", joinColumns = @JoinColumn(name = "posicion_id"))
     private List<Double> posicionesFin;
 
     @Column(name = "orientacion")

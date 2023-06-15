@@ -32,7 +32,7 @@ public class BarcosServiceImpl implements BarcosService {
 
         Barco barco = Barco.builder().tipo(barcoRequest.getTipo()).posicionesInicio(barcoRequest.getPosicionesInicio()).
                 posicionesFin(barcoRequest.getPosicionesFin()).idJugadorAsociado(Long.valueOf(idJugador)).
-                partida(partida).build();
+                partida(partida).orientacion(barcoRequest.getOrientacion()).build();
 
         return barcoRepository.save(barco);
     }
