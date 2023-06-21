@@ -45,7 +45,12 @@ public class DisparosServiceImpl implements DisparosService{
         Barco barcoObjetivo = barcoRepository.findById(disparo.getIdJugadorObjetivo()).orElse(null);
 
         if (barcoObjetivo != null) {
-            marcarCasillaBarco(barcoObjetivo, disparo.getPosiciones());
+            Boolean disparoEfectivo = marcarCasillaBarco(barcoObjetivo, disparo.getPosiciones());
+            if (disparoEfectivo)
+                disparo.setResultado("DISPARO EFECTIVO");
+            else
+                disparo.setResultado("DISPARO ERRÓNEO");
+
             if (barcoHundido(barcoObjetivo)) {
                 barcoRepository.delete(barcoObjetivo);
                 verificarFinPartida(partida, Long.valueOf(idJugador));
@@ -65,13 +70,14 @@ public class DisparosServiceImpl implements DisparosService{
         }
     }
 
-    private void marcarCasillaBarco(Barco barco, List<Double> posicionDisparo) {
+    private boolean marcarCasillaBarco(Barco barco, List<Double> posicionDisparo) {
         for (Casilla casilla : barco.getCasillas()) {
             if (casilla.getPosiciones().equals(posicionDisparo)) {
                 casilla.setEstado(Boolean.FALSE);
-                break;
+                return true;
             }
         }
+        return false;
     }
 
     private boolean barcoHundido(Barco barco) {
