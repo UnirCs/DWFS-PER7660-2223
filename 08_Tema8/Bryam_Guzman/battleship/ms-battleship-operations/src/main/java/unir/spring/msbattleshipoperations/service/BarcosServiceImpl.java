@@ -3,11 +3,15 @@ package unir.spring.msbattleshipoperations.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import unir.spring.msbattleshipoperations.data.BarcoRepository;
+import unir.spring.msbattleshipoperations.data.CasillaRepository;
 import unir.spring.msbattleshipoperations.data.PartidaRepository;
 import unir.spring.msbattleshipoperations.model.pojo.Barco;
+import unir.spring.msbattleshipoperations.model.pojo.Casilla;
 import unir.spring.msbattleshipoperations.model.pojo.Partida;
 import unir.spring.msbattleshipoperations.model.request.BarcoRequest;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -18,6 +22,10 @@ public class BarcosServiceImpl implements BarcosService {
 
     @Autowired
     private PartidaRepository partidaRepository;
+
+    @Autowired
+    private CasillaRepository casillaRepository;
+
 
     @Override
     public List<Barco> getBarcosByIdPartidaAndIdJugador(String idPartida, String idJugador) {
@@ -30,6 +38,9 @@ public class BarcosServiceImpl implements BarcosService {
 
         Partida partida = partidaRepository.findById(Long.valueOf(idPartida)).orElse(null);
 
+        if (partida.getEstado().equals("FINALIZADA"))
+            throw new IllegalArgumentException("Esta partida ya ha sido finalizada");
+
         Barco barco = Barco.builder().tipo(barcoRequest.getTipo()).posicionesInicio(barcoRequest.getPosicionesInicio()).
                 posicionesFin(barcoRequest.getPosicionesFin()).idJugadorAsociado(Long.valueOf(idJugador)).
                 partida(partida).orientacion(barcoRequest.getOrientacion()).build();
@@ -37,6 +48,10 @@ public class BarcosServiceImpl implements BarcosService {
         if (!validarBarco(barco)) {
             throw new IllegalArgumentException("Barco no válido");
         }
+
+        List<Casilla> casillas = generarCasillasBarco(barco, barcoRequest.getPosicionesInicio(),
+                barcoRequest.getPosicionesFin());
+        barco.setCasillas(casillas);
 
         return barcoRepository.save(barco);
     }
@@ -201,6 +216,33 @@ public class BarcosServiceImpl implements BarcosService {
         }
 
         return true;
+    }
+
+    private List<Casilla> generarCasillasBarco(Barco barco, List<Double> posicionesInicio, List<Double> posicionesFin) {
+        List<Casilla> casillas = new ArrayList<>();
+
+        double posXInicio = posicionesInicio.get(0);
+        double posYInicio = posicionesInicio.get(1);
+        double posXFin = posicionesFin.get(0);
+        double posYFin = posicionesFin.get(1);
+
+        int minPosX = (int) Math.min(posXInicio, posXFin);
+        int maxPosX = (int) Math.max(posXInicio, posXFin);
+        int minPosY = (int) Math.min(posYInicio, posYFin);
+        int maxPosY = (int) Math.max(posYInicio, posYFin);
+
+        for (int posX = minPosX; posX <= maxPosX; posX++) {
+            for (int posY = minPosY; posY <= maxPosY; posY++) {
+                Casilla casilla = Casilla.builder()
+                        .posiciones(Arrays.asList((double) posX, (double) posY))
+                        .estado(Boolean.TRUE)
+                        .barco(barco)
+                        .build();
+                casillas.add(casilla);
+            }
+        }
+
+        return casillas;
     }
 
 }

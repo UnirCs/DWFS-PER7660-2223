@@ -42,4 +42,8 @@ public class Barco {
     @Column(name = "idJugadorAsociado")
     private Long idJugadorAsociado;
 
+    @OneToMany(mappedBy = "barco", cascade = CascadeType.ALL)
+    private List<Casilla> casillas;
+
+
 }

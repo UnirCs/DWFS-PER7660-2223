@@ -21,7 +21,7 @@ public class DisparosController {
     private final DisparosService service;
 
     @PostMapping("/partidas/{partidaId}/jugadores/{jugadorId}/disparos")
-    public ResponseEntity<Disparo> createOrder(@RequestBody DisparoRequest request,
+    public ResponseEntity<Disparo> createDisparo(@RequestBody DisparoRequest request,
                                                @PathVariable String partidaId,
                                                @PathVariable String jugadorId) {
 

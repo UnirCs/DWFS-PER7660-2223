@@ -34,7 +34,6 @@ public class Disparo {
     private String resultado;
 
     @ManyToOne
-    @JsonIgnore
     @JoinColumn(name = "partida_id")
     private Partida partida;
 
