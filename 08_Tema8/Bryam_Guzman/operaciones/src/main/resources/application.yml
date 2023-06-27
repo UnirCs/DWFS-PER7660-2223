@@ -1,0 +1,17 @@
+## Configuracion de Spring
+spring:
+  application:
+    name: ms-operaciones
+  datasource:
+    url: jdbc:mysql://localhost:3306/operaciones
+    username: root
+    password: LIGAdequito00
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+## Configuracion de Instancia
+server:
+  port: 8088
