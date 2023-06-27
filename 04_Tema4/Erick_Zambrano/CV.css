@@ -1,0 +1,89 @@
+
+body{
+    background-color: white;
+
+}
+
+.dark-mode {
+    background-color: dimgray;
+    color: #f4f4f4;
+}
+
+.dark-mode .myDiv {
+    background-color: #757474;
+    color: #f4f4f4;
+}
+
+.dark-mode .box {
+    background-color: #777;
+    color: #f4f4f4;
+}
+
+.h1{
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #c5dcef;
+    color: black;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.justify{
+    text-align: center;
+}
+
+.th1 {
+    color: black;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: cornflowerblue;
+}
+
+.myDiv {
+    border: 5px outset #2051e5;
+    background-color: #cdecf6;
+    text-align: center;
+}
+
+
+.skillsInfo {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 40px;
+    grid-template-columns: auto auto auto auto;
+    padding: 50px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.grid-item-selected {
+    background-color: rgba(122, 202, 236, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.div-table{
+    overflow-x: auto;
+}
