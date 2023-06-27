@@ -32,10 +32,10 @@
 
 | Método HTTP  | URI | Body | Respuesta |
 | ------------- | ------------- | ------------- | ------------- |
-| POST  | /operaciones  | {"tipo_operacion": string,"elementos": array, "orden_elementos": array}| 200 OK: {"id": string, "resultado": number} , 400 Bad Request: {"error": string}
-| GET  | /operaciones/{id_operacion}  | N/A | 200 OK: {"tipo_operacion": string, "resultado": number, "elementos": array} , 404 Not Found: {"error": string}
-| GET  | /operaciones  | N/A | 200 OK: [{"id": string, "resultado": number}, ...] , 400 Bad Request: {"error": string}
-| DELETE  | /operaciones/{id_operacion} | N/A| 204 No content , 404 Not found: {"error": string}
+| GET  | /operaciones  | N/A | 200 OK: [{"id": string, "resultado": number}, ...] , 400 Bad Request
+| GET  | /operaciones/{id_operacion}  | N/A | 200 OK: {"tipo_operacion": string, "resultado": number, "elementos": array} , 404 Not Found
+| POST  | /operaciones  | {"tipo_operacion": string,"elementos": array, "orden_elementos": array}| 201 CREATED: {"id": string, "resultado": number} , 400 Bad Request
+| DELETE  | /operaciones/{id_operacion} | N/A| 200 OK , 404 Not found
 
 
  ### POST: Operación en curso.
