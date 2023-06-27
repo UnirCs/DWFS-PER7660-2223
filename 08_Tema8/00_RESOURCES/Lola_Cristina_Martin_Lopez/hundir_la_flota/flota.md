@@ -58,7 +58,7 @@
 - Posición inicial: coordenadas del primer cuadrado del barco.
 - Posición final: coordenadas del último cuadrado del barco.
 
-### Tabla para recurso de partida 
+### Tabla para recurso de partida (renovada)
 
 | Método HTTP  | URI | Body | Respuesta |
 | ------------- | ------------- | ------------- | ------------- |
@@ -73,7 +73,7 @@
 
 
 
-### Tabla para el recurso usuario es:
+### Tabla para el recurso usuario (renovada)
 
 | Método HTTP  | URI | Body | Respuesta |
 | ------------- | ------------- | ------------- | ------------- |
