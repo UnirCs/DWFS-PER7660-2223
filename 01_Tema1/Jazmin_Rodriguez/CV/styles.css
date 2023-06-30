@@ -1,0 +1,106 @@
+body {
+
+    font-family: 'Glacial Indifference', sans-serif;
+    
+    }
+div{
+    padding: 8px;
+}
+.cv-principal {
+    display: flex; /*Convertimos al menú en flexbox*/
+    justify-content: space-between; /*Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda*/
+    align-items: center; /*con esto alineamos de manera vertical*/
+}
+
+.cv-first {
+    width:30%; 
+    display:inline-block; 
+    background-color: #335384;
+    align-content: center;
+    height: 1800px;
+    
+}
+.cv-second {
+    width:70%; 
+    display:inline-block; 
+    
+
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  h1 {
+    text-align: center;
+    color: #335384;                                    
+    font-size: 60px;
+
+  }
+  h2 {
+    text-align: center;
+    color: #5BA7D1;
+    font-size: 40px;
+  }
+
+  h3 {
+    text-align: justify;
+    color: #5BA7D1;
+    font-size: 25px;
+  }
+
+  .first {
+    color: #e6f3fa
+  }
+
+  .progress {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #428bca;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+    margin-bottom: 15px;
+}
+ 
+.progress-bar1,
+.progress-bar2,
+.progress-bar3,
+.progress-bar4,
+.progress-bar5,
+.progress-bar6 {
+    height: 100%;
+    background: #428bca;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+
+.progress-bar1 {
+  width: 90%;
+}
+
+.progress-bar2 {
+  width: 75%;
+}
+
+.progress-bar3 {
+  width: 95%;
+}
+.progress-bar4 {
+  width: 95%;
+}
+.progress-bar5 {
+  width: 50%;
+}
+.progress-bar6 {
+  width: 25%;
+}
+
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #cce7f5;
+}
