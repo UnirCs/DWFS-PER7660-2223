@@ -125,6 +125,7 @@
                         <span class="progress-bar-text">95%</span>
                     </div>
                 </div>
+                <div id="tree-leaves"></div>
             </div>
         </div>
 
@@ -144,6 +145,20 @@
         progress.classList.toggle('dark-mode');
   });
     });
+    window.addEventListener('load', function() {
+  const treeLeavesDiv = document.getElementById('tree-leaves');
+  const bodyElements = document.querySelectorAll('body *');
+
+  const treeLeaves = [];
+
+  bodyElements.forEach(element => {
+    if (element.children.length === 0) {
+      treeLeaves.push(element);
+      console.log(element);
+    }
+  });
+  treeLeavesDiv.textContent = 'Hojas del árbol de elementos: ' + treeLeaves.length;
+});
 </script>
 
 </html>
