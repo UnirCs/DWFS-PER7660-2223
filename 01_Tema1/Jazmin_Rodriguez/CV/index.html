@@ -71,26 +71,26 @@
                 <h3> IDIOMAS</h3>
                 <h4> Español</h4>
                 <div class="progress">
-                    <div class="progress-bar" style="width:95%;">
+                    <div class="progress-bar4">
                         <span class="progress-bar-text">95%</span>
                     </div>
                     
                 </div>
                 <h4> Ingles</h4>
                 <div class="progress">
-                    <div class="progress-bar" style="width:75%;">
+                    <div class="progress-bar2">
                         <span class="progress-bar-text">75%</span>
                     </div>
                 </div>
                 <h4> Ruso</h4>
                 <div class="progress">
-                    <div class="progress-bar" style="width:50%;">
+                    <div class="progress-bar5">
                         <span class="progress-bar-text">50%</span>
                     </div>
                 </div>
                 <h4> Alemam</h4>
                 <div class="progress">
-                    <div class="progress-bar" style="width:30%;">
+                    <div class="progress-bar6">
                         <span class="progress-bar-text">30%</span>
                     </div>
                 </div>
@@ -99,26 +99,26 @@
                 <h3> LENGUAJES</h3>
                 <h4> Python</h4>
                 <div class="progress">
-                    <div class="progress-bar" style="width:90%;">
+                    <div class="progress-bar1">
                         <span class="progress-bar-text">90%</span>
                     </div>
                     
                 </div>
                 <h4> JavaScript</h4>
                 <div class="progress">
-                    <div class="progress-bar" style="width:75%;">
+                    <div class="progress-bar2">
                         <span class="progress-bar-text">75%</span>
                     </div>
                 </div>
                 <h4> C#</h4>
                 <div class="progress">
-                    <div class="progress-bar" style="width:75%;">
+                    <div class="progress-bar2">
                         <span class="progress-bar-text">75%</span>
                     </div>
                 </div>
                 <h4> SQL</h4>
                 <div class="progress">
-                    <div class="progress-bar" style="width:95%;">
+                    <div class="progress-bar3">
                         <span class="progress-bar-text">95%</span>
                     </div>
                 </div>
@@ -129,5 +129,14 @@
 
 
 </body>
-
+<script>
+window.addEventListener('load', function() {
+    const progressBars = document.querySelectorAll('.progress-bar');
+  
+    progressBars.forEach(progressBar => {
+      const width = progressBar.dataset.width;
+      progressBar.style.setProperty('--progress-width', width);
+    });
+  });
+</script>
 </html>

@@ -64,7 +64,12 @@ img {
     margin-bottom: 15px;
 }
  
-.progress-bar {
+.progress-bar1,
+.progress-bar2,
+.progress-bar3,
+.progress-bar4,
+.progress-bar5,
+.progress-bar6 {
     height: 100%;
     background: #428bca;
     display: flex;
@@ -72,7 +77,28 @@ img {
     transition: width 0.25s;
     border-radius: 5px;
 }
- 
+
+.progress-bar1 {
+  width: 90%;
+}
+
+.progress-bar2 {
+  width: 75%;
+}
+
+.progress-bar3 {
+  width: 95%;
+}
+.progress-bar4 {
+  width: 95%;
+}
+.progress-bar5 {
+  width: 50%;
+}
+.progress-bar6 {
+  width: 25%;
+}
+
 .progress-bar-text {
     margin-left: 10px;
     font-weight: bold;
