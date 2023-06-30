@@ -14,6 +14,7 @@ function suma(n1=9, n2) {
     console.log("Operador 2: " + n2);
     let resultado = n1 + n2;
     console.log(resultado);
+    //return resultado;
 }
 console.log(suma(1,2));
 
