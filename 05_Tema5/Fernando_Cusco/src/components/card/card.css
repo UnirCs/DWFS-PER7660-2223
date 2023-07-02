@@ -23,3 +23,11 @@ img {
     font-weight: 700;
     margin: 10px 0;
 }
+
+.border-verde {
+    border: 2px solid #00ff00;
+}
+
+.border-azul {
+    border: 2px solid #0000ff;
+}

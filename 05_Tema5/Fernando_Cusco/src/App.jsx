@@ -1,8 +1,7 @@
 import './App.css'
-import Card from './components/card/card';
+import Card from './components/card/Card';
 
 function App() {
-  const size = 5;
   const materias = [
     new Materia("Metodologías, Desarrollo y Calidad en la Ingeniería de Software", "https://definicion.de/wp-content/uploads/2009/03/ingenieria-de-software.png", "AS", "PER 7660", true),
     new Materia("Dirección y Gestión de Proyectos de Software", "https://web-static.wrike.com/blog/content/uploads/2016/06/La-importancia-de-la-gestio-n-de-proyectos-preguntas-y-respuestas-con-Robert-Kelly.jpg?av=9cca9b92e52017d677996195ca78c04a", "DS", "PER 7660", true),
