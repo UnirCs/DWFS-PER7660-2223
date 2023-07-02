@@ -1,0 +1,38 @@
+.card{  
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+  }
+  
+  .green{
+    border: 1px solid #a2e3ab;
+  }
+  
+  .blue{  
+    border: 1px solid #004a9e;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
