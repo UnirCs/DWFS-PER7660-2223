@@ -1,0 +1,169 @@
+* {
+    margin: 0%;
+}
+
+img {
+    height: 150px;
+    width: 145px;
+    border-radius: 50%;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: rgb(3, 24, 54);
+}
+
+.section1 {
+    background-color: rgb(3, 24, 54);
+    width: 15%;
+    padding: 30px 30px;
+    font-size: small;
+}
+
+.section1 h2 {
+    color: white;
+    font-family: 'Raleway';
+    text-align: justify;
+}
+
+hr {
+    border: 2px solid floralwhite;
+    width: auto;
+}
+
+div .fecha {
+    text-align: center;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    padding: 0px;
+}
+
+.section2 {
+
+    background-color: white;
+    padding: 30px;
+    text-align: justify;
+    width: 50%;
+
+}
+
+.section2 h2
+{
+color: rgb(3, 24, 54);
+}
+
+.section2 h3 {
+    color: rgb(3, 24, 54);
+}
+
+.section2 p {
+    color: rgb(3, 24, 54);
+}
+
+.section2 hr {
+    border: 2px solid rgb(3, 24, 54);
+}
+
+.p3 {
+    display: flex;
+}
+
+.sub {
+    padding: 0px 60px 0 0;
+
+}
+
+/* DARK STYLE */
+
+.dark {
+    background-color: black;
+    color: white
+}
+
+.principalDark {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white
+}
+
+.section1Dark {
+
+    width: 15%;
+    padding: 30px 30px;
+    font-size: small;
+    background-color: white;
+    color: rgb(3, 24, 54);
+}
+
+.section1Dark p,
+h2 {
+    color: rgb(3, 24, 54);
+    font-family: 'Raleway';
+    text-align: justify;
+}
+
+.section1Dark hr {
+    border: 2px solid rgb(3, 24, 54);
+    width: auto;
+}
+
+.section1Dark div .fecha {
+    text-align: center;
+}
+
+
+.section2Dark {
+
+    background-color: rgb(3, 24, 54);
+    color: white;
+    padding: 30px;
+    text-align: justify;
+    width: 50%;
+}
+
+.section2Dark h2,
+h3,
+p {
+    color: white;
+}
+
+.section2Dark hr {
+    border: 2px solid white;
+}
+
+.p3 {
+    display: flex;
+}
+
+.sub {
+    padding: 0px 60px 0 0;
+
+}
+
+
+
+.darkButton {
+    margin: 5px 5px;
+    padding: 10px 30px;
+    flex-direction: column;
+}
+
+/*  Light */
+
+.light {
+    color: rgb(3, 24, 54);
+    background-color: white;
+}
