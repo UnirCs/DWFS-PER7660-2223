@@ -1,0 +1,40 @@
+.contenedorCard {
+    background-color: rgb(8, 132, 132);
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5%;
+}
+
+.border-green {
+    border: 4px solid;
+    border-color: green;
+    background-color: rgb(8, 132, 132);
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5%;
+}
+
+.border-blue {
+    border: 4px solid;
+    border-color: blue;
+    background-color: rgb(8, 132, 132);
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5%;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+}
+
+p{
+    font-weight: bolder;
+}
