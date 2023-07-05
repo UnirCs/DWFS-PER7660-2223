@@ -23,6 +23,7 @@ import service.implementation.OperacionServiceImpl;
 @RestController
 public class OperacionController {
 	
+	//se usa Qualifier cuando hay varios beans. 
 	@Qualifier("Servicio player controller")
 	private OperacionServiceImpl serviceOperacion;
 	@Autowired 

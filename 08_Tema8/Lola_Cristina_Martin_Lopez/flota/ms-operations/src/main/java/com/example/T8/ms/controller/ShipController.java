@@ -29,7 +29,7 @@ public class ShipController {
 	@Autowired 
 	public void ShipController(ShipServiceImpl service) {this.serviceShip = service;}
 
-	@GetMapping("/{jugador_id}/barcos")
+	@GetMapping("/partidas/{partida_id}/{jugador_id}/barcos")
 	public ResponseEntity<List<Ship>> getShipsFromUser(@PathVariable String userId) { 
 		
 		//**TO DO: Aqui añadir que el barco sea de una persona **

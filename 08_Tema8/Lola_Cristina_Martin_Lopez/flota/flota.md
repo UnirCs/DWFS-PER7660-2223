@@ -64,7 +64,7 @@
 | ------------- | ------------- | ------------- | ------------- |
 | GET	| /partidas	| N/A	| 200 OK, 404 NF
 | GET	| /partidas/{id_partida}	| N/A	| 200 OK, 404 NF
-| POST	|/partida	|{"jugador_1": "id_jugador_1", "jugador_2": "id_jugador_2"}	|201 Created, 400 Bad Request
+| POST	|/partidas	|{"jugador_1": "id_jugador_1", "jugador_2": "id_jugador_2"}	|201 Created, 400 Bad Request
 | PATCH	| /partidas/{id_partida}|	{"ganador": "id_jugador"}, {"estado_actual": "iniciada" || "finalizada"}	|200 OK, 404 NF
 | DELETE	| /partidas/{id_partida} |	N/A	| 204 No Content, 404 NF
 
