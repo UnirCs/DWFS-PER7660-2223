@@ -1,0 +1,147 @@
+* {
+    font-family: 'Roboto';
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #8eb0f6;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #424141;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+img {
+    position: relative;
+    left: 110px;
+    top: 60px;
+    margin-top: -50px;
+}
+
+.contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.detalle {
+    width: 50%;
+    padding: 20px;
+    border: 8px solid rgb(37, 32, 109);
+}
+
+.experiencia {
+    width: 50%;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.detalle > hr {
+    border: 3px solid rgb(37, 32, 109);
+    width: 80%;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    color: #10357d;
+}
+
+p, h3, ul {
+    color: #000000;
+}
+
+.tituloexp {
+    height: 50px;
+    background-color: #a6a6a6;
+    padding: 5px 40px;
+    
+}
+
+.tituloexp > h2 {
+    margin-bottom: 30px;
+}
+
+.psubtitulo {
+    font-size: 24px;
+}
+
+/* estilo dark */
+.dark {
+    background-color: #050505;
+    color: #fff;
+}
+
+.dark p, .dark li, .dark h3 {
+    color: #fff;
+}
+
+.dark .detalle {
+    border: 8px solid rgb(243, 243, 246);
+}
+
+
+/* estilo light */
+.light {
+    background-color: #fff;
+    color: #000;
+}
+
+.light p .light li, .light h3 {
+    color: #000;
+}
+

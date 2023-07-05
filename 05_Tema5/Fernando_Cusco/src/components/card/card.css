@@ -1,0 +1,33 @@
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    transition: all 0.5s ease;
+}
+
+.name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.border-verde {
+    border: 2px solid #00ff00;
+}
+
+.border-azul {
+    border: 2px solid #0000ff;
+}
