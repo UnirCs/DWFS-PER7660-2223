@@ -29,6 +29,7 @@ public class ShipController {
 	@Autowired 
 	public void ShipController(ShipServiceImpl service) {this.serviceShip = service;}
 
+	@Autowired 
 	@GetMapping("/partidas/{partida_id}/{jugador_id}/barcos")
 	public ResponseEntity<List<Ship>> getShipsFromUser(@PathVariable String userId) { 
 		
