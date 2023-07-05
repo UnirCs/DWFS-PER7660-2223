@@ -20,8 +20,12 @@ import com.example.T8.ms.data.Ship;
 import com.example.T8.ms.service.implementation.PlayServiceImpl;
 import com.example.T8.ms.service.implementation.ShipServiceImpl;
 
-@RestController
+//Annotations
 
+@RestController
+@RequestMapping("/partidas") //Hace que los endpoints declarados en la clase de abajo comiencen por partidas
+
+//Class
 public class ShipController {
 	
 	@Qualifier("Servicio ship controller")
@@ -30,7 +34,7 @@ public class ShipController {
 	public void ShipController(ShipServiceImpl service) {this.serviceShip = service;}
 
 	@Autowired 
-	@GetMapping("/partidas/{partida_id}/{jugador_id}/barcos")
+	@GetMapping("/{partida_id}/{jugador_id}/barcos")
 	public ResponseEntity<List<Ship>> getShipsFromUser(@PathVariable String userId) { 
 		
 		//**TO DO: Aqui añadir que el barco sea de una persona **
