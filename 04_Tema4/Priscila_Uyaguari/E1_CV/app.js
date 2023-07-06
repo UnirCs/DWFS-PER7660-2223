@@ -1,3 +1,12 @@
+window.onload = (event) => {
+    const nodos = document.body.querySelectorAll('*');
+    console.log(nodos);
+    nodos.forEach(element => {
+        element.childNodes.forEach(ch => {
+            console.log(ch);
+        })
+    });
+}
 const darkButton = document.getElementById('buttonDark');
 let cont = 1
 darkButton.addEventListener('click', () => {

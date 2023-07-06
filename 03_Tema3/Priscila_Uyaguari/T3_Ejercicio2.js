@@ -185,4 +185,4 @@ function generador(n) {
     return mapa;
 }
 
-console.log("Unicos", generador(6));
+console.log("Unicos", generador(8));
