@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,26 @@
     <title>T3 Ejercicio 3</title>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
-    <button>Dame un chiste </button>
+    <button id="buttonc">Dame un chiste </button>
+    <p id="chiste"> </p>
+
     <script>
-        let url = ('https://api.chucknorris.io/');
-        
+        let url = ('https://api.chucknorris.io/jokes/random');
+        const boton = document.getElementById("buttonc")
+        boton.addEventListener("click", (event) => {
+            fetch(url).then(response => {
+
+                return response.json();
+            })
+                .then(data => {
+                    const p = document.getElementById("chiste")
+                    p.textContent = data.value;
+                })
+        })
     </script>
     <p></p>
 </body>
+
 </html>
