@@ -47,6 +47,24 @@ public class ShootServiceImpl implements ShootService {
 			return repository.save(shoot);
 
 	};
+
+		
+	@Override 
+	public Shoot partialModifyShoot (PatchShootRequest request, int id_partida) 
+	{
+		Shoot shoot = repository.findById(Long.valueOf(Long.valueOf(id_partida))).orElse(null); 
+		
+		if (shoot == null)
+            return null;
+
+		shoot.setStatus(request.getStatus());
+        if (request.getStatus().equals("FINISHED"))
+        	
+        shoot.setExitoDisparo(request.isExitoDisparo());
+        repository.save(shoot);
+        return shoot;
+		
+	}
 	
 	@Override
 	public Shoot getShoots(int id) {

@@ -13,6 +13,8 @@ public interface ShootService {
 
 	public Shoot createShoots(CreateShootRequest shoots);
 
+	public Shoot partialModifyShoot(PatchShootRequest request, int id_partida);
+
 	public Shoot getShoots(int id);
 	
 	public Shoot postShoots(int id);
