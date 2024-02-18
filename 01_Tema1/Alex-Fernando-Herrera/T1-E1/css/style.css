@@ -1,0 +1,88 @@
+*{
+    background-color: #3a637f;
+}
+
+.cabecera h1{
+    color:#cdda89;
+    text-align: center;
+    font-family: arial,helvetica;
+}
+.cabecera p{
+    color:#cdda89;
+    text-align: center;
+}
+.cabecera hr{
+    border: none;
+    background-color: #e8ffff;   
+    height: 3px;  
+    width: 80%;    
+}
+.contenedor{
+    width: 90%;
+}
+.perfil{
+    float: left;
+    display: inline;  
+    margin-left: 10%;  
+    width: 40%;
+}
+.perfil h4{
+    color:#cdda89;
+    text-align: left;
+    font-family: arial,helvetica;
+    bottom: 1px;
+
+}
+.perfil p{
+    color: #9abad3;
+    font-size: 85%;
+    text-align: justify;
+    margin-top: 2px;
+}
+.experiencia{
+    display: inline;
+    float: left;
+    margin-left: 10%;
+    width: 40%;
+}
+.experiencia h4{
+    color:#cdda89;
+    text-align: left;
+    font-family: arial,helvetica;
+    /*bottom: 1px;*/
+}
+
+.experiencia ul li{
+    color:#cdda89;
+}
+.experiencia ul li > p, h5{
+    color: #9abad3;
+    font-size: 85%;
+    text-align: justify;
+    margin-top: 2px;
+}
+
+.experiencia p{
+    color: #9abad3;
+    font-size: 85%;
+    text-align: justify;
+    margin-top: 2px;
+}
+
+.perfil ul {
+    list-style: none;
+}
+.perfil ul li{
+    color:#cdda89;
+}
+.perfil ul li > p, h5{
+    color: #9abad3;
+    font-size: 85%;
+    text-align: justify;
+    margin-top: 2px;
+}
+img{
+    width: 20px;
+    margin: 2px;
+    margin-right: 10px;    
+}
