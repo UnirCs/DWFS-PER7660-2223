@@ -27,3 +27,5 @@ Follow these instructions to work with it:
 * Commit your changes into your local repository
 * Push your changes to your online repository
 * Make a pull request, so that I can check your changes and accept them into the master branch if everything is OK and there's no conflicts.
+
+TEST
